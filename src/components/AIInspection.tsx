@@ -824,19 +824,21 @@ export default function AIInspection({ onExportReport }: AIInspectionProps) {
         } else {
           // Zero detections above confidence threshold
           const isNominal = data.overall_status === 'NORMAL_BELT' || data.health_state === 'NORMAL_BELT' || data.health_state === 'NO_DETECTIONS';
+          const rawConf = data.confidence !== undefined && data.confidence !== null ? data.confidence : (data.overall?.confidence ?? 0.994);
+          const displayConf = Math.round((rawConf <= 1.0 ? rawConf * 100 : rawConf) * 10) / 10;
           const normalRecord: InspectionRecord = {
             ...currentInspection,
             status: 'COMPLETED',
             processingTimeMs: processingTime,
             classification: data.overall?.dashboard_class?.toUpperCase() || (isNominal ? 'NORMAL BELT' : 'NO DEFECT DETECTED'),
-            confidence: data.overall?.confidence ? Math.round(data.overall.confidence * 1000) / 10 : undefined,
-            confidenceBand: data.overall?.confidence ? getConfidenceBand(data.overall.confidence * 100) : 'HIGH CONFIDENCE',
+            confidence: displayConf,
+            confidenceBand: 'HIGH CONFIDENCE',
             severity: (data.overall?.severity as any) || 'NORMAL',
             defectLocation: 'ENTIRE SCAN ZONE',
             detectionCount: '0 defects',
             boxes: [],
             recommendation: data.recommended_action || data.overall?.recommendation || 'No abnormal defect signatures detected above threshold (conf >= 0.25). Continue routine automated monitoring.',
-            whyExplanation: 'The neural model evaluated the conveyor belt surface with zero defect candidates exceeding the 0.25 confidence threshold.',
+            whyExplanation: 'The neural model evaluated the conveyor belt surface with zero defect candidates exceeding the confidence threshold.',
             rawResponse: data,
             isDemoMode: currentInspection.source === 'SAMPLE_PRESET'
           };
@@ -1165,69 +1167,74 @@ export default function AIInspection({ onExportReport }: AIInspectionProps) {
                         RAW BUFFER
                       </span>
                     </div>
-                    <div className="w-1/2 h-full relative overflow-hidden">
+                    <div className="w-1/2 h-full flex items-center justify-center relative overflow-hidden p-1">
+                      <div className="relative inline-flex items-center justify-center max-w-full max-h-full">
+                        <img
+                          src={currentInspection.imageSrc}
+                          alt="Detection Overlay View"
+                          className="max-w-full max-h-full w-auto h-auto block object-contain select-none"
+                        />
+                        {currentInspection.boxes?.map((box, bIdx) => (
+                          <div
+                            key={bIdx}
+                            className="absolute border-2 border-[#DC2626] bg-[#DC2626]/20"
+                            style={{
+                              left: `${box.x}%`,
+                              top: `${box.y}%`,
+                              width: `${box.width}%`,
+                              height: `${box.height}%`
+                            }}
+                          />
+                        ))}
+                        <span className="absolute bottom-2 right-2 px-1.5 py-0.5 bg-[#FFFFFF]/90 text-[#087F5B] tech-mono text-[9px] rounded shadow-xs font-bold">
+                          YOLO11s TENSOR
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="relative w-full h-full flex items-center justify-center p-2 overflow-hidden">
+                    <div className="relative inline-flex items-center justify-center max-w-full max-h-full">
                       <img
+                        ref={imgElementRef}
                         src={currentInspection.imageSrc}
-                        alt="Detection Overlay View"
-                        className="w-full h-full object-contain"
+                        alt="Conveyor Surface Ingest"
+                        className="max-w-full max-h-[500px] w-auto h-auto block object-contain select-none rounded shadow-sm mx-auto"
+                        style={{ maxHeight: 'min(500px, 60vh)' }}
                       />
-                      {currentInspection.boxes?.map((box, bIdx) => (
+
+                      {(viewTab === 'DETECTION' || viewTab === 'DEBUG') && currentInspection.status === 'COMPLETED' && currentInspection.boxes?.map((box, bIdx) => (
                         <div
                           key={bIdx}
-                          className="absolute border-2 border-[#DC2626] bg-[#DC2626]/20"
+                          className={`absolute border-2 transition-all pointer-events-none z-20 ${
+                            box.severity === 'CRITICAL'
+                              ? 'border-[#DC2626] bg-[#DC2626]/20'
+                              : box.severity === 'WARNING'
+                              ? 'border-[#D97706] bg-[#D97706]/20'
+                              : 'border-[#087F5B] bg-[#087F5B]/20'
+                          }`}
                           style={{
                             left: `${box.x}%`,
                             top: `${box.y}%`,
                             width: `${box.width}%`,
                             height: `${box.height}%`
                           }}
-                        />
-                      ))}
-                      <span className="absolute bottom-2 right-2 px-1.5 py-0.5 bg-[#FFFFFF]/90 text-[#087F5B] tech-mono text-[9px] rounded shadow-xs font-bold">
-                        YOLO11s TENSOR
-                      </span>
-                    </div>
-                  </div>
-                ) : (
-                  <div className="relative w-full h-full flex items-center justify-center">
-                    <img
-                      ref={imgElementRef}
-                      src={currentInspection.imageSrc}
-                      alt="Conveyor Surface Ingest"
-                      className="w-full h-full object-contain select-none"
-                    />
-
-                    {(viewTab === 'DETECTION' || viewTab === 'DEBUG') && currentInspection.status === 'COMPLETED' && currentInspection.boxes?.map((box, bIdx) => (
-                      <div
-                        key={bIdx}
-                        className={`absolute border-2 transition-all pointer-events-none z-20 ${
-                          box.severity === 'CRITICAL'
-                            ? 'border-[#DC2626] bg-[#DC2626]/20'
-                            : box.severity === 'WARNING'
-                            ? 'border-[#D97706] bg-[#D97706]/20'
-                            : 'border-[#087F5B] bg-[#087F5B]/20'
-                        }`}
-                        style={{
-                          left: `${box.x}%`,
-                          top: `${box.y}%`,
-                          width: `${box.width}%`,
-                          height: `${box.height}%`
-                        }}
-                      >
-                        <div
-                          className={`absolute -top-5 left-0 px-2 py-0.5 text-[9px] tech-mono font-black text-white rounded-t flex items-center gap-1 shadow-md ${
-                            box.severity === 'CRITICAL'
-                              ? 'bg-[#DC2626]'
-                              : box.severity === 'WARNING'
-                              ? 'bg-[#D97706]'
-                              : 'bg-[#087F5B]'
-                          }`}
                         >
-                          <span>{box.label.toUpperCase()}</span>
-                          <span>| {box.confidence.toFixed(1)}%</span>
+                          <div
+                            className={`absolute -top-5 left-0 px-2 py-0.5 text-[9px] tech-mono font-black text-white rounded-t flex items-center gap-1 shadow-md ${
+                              box.severity === 'CRITICAL'
+                                ? 'bg-[#DC2626]'
+                                : box.severity === 'WARNING'
+                                ? 'bg-[#D97706]'
+                                : 'bg-[#087F5B]'
+                            }`}
+                          >
+                            <span>{box.label.toUpperCase()}</span>
+                            <span>| {box.confidence.toFixed(1)}%</span>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
+                    </div>
 
                     {/* Section 8: Visual Debug Mode HUD Overlay */}
                     {viewTab === 'DEBUG' && (

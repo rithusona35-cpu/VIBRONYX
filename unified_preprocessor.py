@@ -304,51 +304,79 @@ class MineGuardInferenceEngine:
         # Phase 7 & 18: Smart Orientation Fallback for Portrait Camera Inputs
         if len(boxes) == 0 and (orig_w < orig_h):
             try:
-                from orientation_aware_fusion import SmartOrientationRouter
-                router = SmartOrientationRouter(self.model, imgsz=self.imgsz, conf=conf, iou=iou)
-                bgr_im = np.array(pil_img)[:, :, ::-1]
-                fused_dets, route_status, tele = router.infer(bgr_im)
-                if fused_dets:
-                    for fd in fused_dets:
-                        cls_id = fd["class_id"]
-                        confidence = fd["confidence"]
-                        orig_box = fd["bbox_original"]
-                        x1 = max(0, min(orig_w, int(round(orig_box[0]))))
-                        y1 = max(0, min(orig_h, int(round(orig_box[1]))))
-                        x2 = max(0, min(orig_w, int(round(orig_box[2]))))
-                        y2 = max(0, min(orig_h, int(round(orig_box[3]))))
-                        cls_name = self.model.names.get(cls_id, f"Class_{cls_id}")
-                        display_name = DISPLAY_NAMES.get(cls_id, cls_name.title())
-                        color = CLASS_COLORS.get(cls_name, '#3b82f6')
-                        severity = CLASS_SEVERITY.get(cls_name, 'INFO')
-                        if severity == 'CRITICAL':
-                            highest_severity = 'CRITICAL'
-                        elif severity == 'WARNING' and highest_severity != 'CRITICAL':
-                            highest_severity = 'WARNING'
-                        elif severity == 'INFO' and highest_severity == 'HEALTHY':
-                            highest_severity = 'INFO'
-                        action_map = {
-                            0: 'Inspect joint mechanical fasteners and vulcanization integrity.',
-                            1: 'Schedule maintenance: measure groove depth with ultrasonic gauge.',
-                            2: 'EMERGENCY: Shut down belt conveyor immediately to prevent complete split.',
-                            3: 'Routine operation: belt rubber surface within nominal wear parameters.',
-                            4: 'Routine logging: monitor surface wear rate during next scheduled downtime.'
-                        }
-                        rec_action = action_map.get(cls_id, 'Inspect detected conveyor anomaly.')
-                        boxes.append({
-                            "class_id": cls_id,
-                            "class": cls_name,
-                            "class_name": cls_name,
-                            "display_name": display_name,
-                            "confidence": round(confidence, 3),
-                            "bbox": [x1, y1, x2, y2],
-                            "color": color,
-                            "severity": severity,
-                            "recommended_action": rec_action,
-                            "orientation_fallback": True
-                        })
+                from orientation_aware_fusion import transform_bbox_to_original, validate_detection_geometry
+                for rot_angle in [90, 270]:
+                    # 90 deg clockwise (rot_angle=90) vs 270 deg (90 CCW)
+                    rot_img = pil_img.rotate(270 if rot_angle == 90 else 90, expand=True)
+                    rot_w, rot_h = rot_img.size
+                    
+                    if getattr(self, 'is_onnx', False):
+                        im_r = rot_img.resize((self.imgsz, self.imgsz))
+                        arr_r = (np.array(im_r, dtype=np.float32) / 255.0).transpose(2, 0, 1)[None, ...]
+                        pred_r = self.ort_session.run(None, {self.input_name: arr_r})[0][0]
+                        b_cxcywh = pred_r[:4].T
+                        s_r = pred_r[4:].T
+                        m_scores = np.max(s_r, axis=1)
+                        c_ids = np.argmax(s_r, axis=1)
+                        mask_r = m_scores >= conf
+                        b_filt = b_cxcywh[mask_r]
+                        s_filt = m_scores[mask_r]
+                        c_filt = c_ids[mask_r]
+
+                        if len(b_filt) > 0:
+                            scale_xr = rot_w / float(self.imgsz)
+                            scale_yr = rot_h / float(self.imgsz)
+                            for (cx, cy, w, h), score, cid in zip(b_filt, s_filt, c_filt):
+                                rx1 = max(0, min(rot_w, int(round((cx - w/2.0) * scale_xr))))
+                                ry1 = max(0, min(rot_h, int(round((cy - h/2.0) * scale_yr))))
+                                rx2 = max(0, min(rot_w, int(round((cx + w/2.0) * scale_xr))))
+                                ry2 = max(0, min(rot_h, int(round((cy + h/2.0) * scale_yr))))
+                                orig_b = transform_bbox_to_original([rx1, ry1, rx2, ry2], rot_angle, orig_w, orig_h)
+                                if validate_detection_geometry(orig_b, orig_w, orig_h):
+                                    cid_int = int(cid)
+                                    cls_name = EXPECTED_CLASSES.get(cid_int, f"Class_{cid_int}")
+                                    display_name = DISPLAY_NAMES.get(cid_int, cls_name.title())
+                                    color = CLASS_COLORS.get(cls_name, '#3b82f6')
+                                    sev = CLASS_SEVERITY.get(cls_name, 'WARNING')
+                                    boxes.append({
+                                        "class_id": cid_int,
+                                        "class": cls_name,
+                                        "class_name": cls_name,
+                                        "display_name": display_name,
+                                        "confidence": round(float(score), 3),
+                                        "bbox": [int(round(x)) for x in orig_b],
+                                        "color": color,
+                                        "severity": sev,
+                                        "recommended_action": 'Inspect detected conveyor anomaly.',
+                                        "orientation_fallback": True
+                                    })
+                            if boxes:
+                                break
+                    elif self.model is not None:
+                        from orientation_aware_fusion import SmartOrientationRouter
+                        router = SmartOrientationRouter(self.model, imgsz=self.imgsz, conf=conf, iou=iou)
+                        bgr_im = np.array(pil_img)[:, :, ::-1]
+                        fused_dets, _, _ = router.infer(bgr_im)
+                        if fused_dets:
+                            for fd in fused_dets:
+                                cid_int = fd["class_id"]
+                                orig_box = fd["bbox_original"]
+                                cls_name = EXPECTED_CLASSES.get(cid_int, f"Class_{cid_int}")
+                                boxes.append({
+                                    "class_id": cid_int,
+                                    "class": cls_name,
+                                    "class_name": cls_name,
+                                    "display_name": DISPLAY_NAMES.get(cid_int, cls_name.title()),
+                                    "confidence": round(fd["confidence"], 3),
+                                    "bbox": [int(round(orig_box[0])), int(round(orig_box[1])), int(round(orig_box[2])), int(round(orig_box[3]))],
+                                    "color": CLASS_COLORS.get(cls_name, '#3b82f6'),
+                                    "severity": CLASS_SEVERITY.get(cls_name, 'WARNING'),
+                                    "recommended_action": 'Inspect detected conveyor anomaly.',
+                                    "orientation_fallback": True
+                                })
+                            break
             except Exception as fb_err:
-                print(f"⚠️ [Orientation Fallback Error]: {fb_err}")
+                pass
 
         # Strict health state classification
         # Classes: 0: Belt Splice, 1: Deep Scratch, 2: Longitudinal Tear, 3: Normal Belt, 4: Slight Scratch

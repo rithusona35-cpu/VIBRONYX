@@ -31,7 +31,6 @@ COPY unified_preprocessor.py .
 COPY models/ ./models/
 COPY static/ ./static/
 COPY golden_test_images/ ./golden_test_images/
-COPY dist/ ./dist/
 
 # Expose container application port
 EXPOSE 8000

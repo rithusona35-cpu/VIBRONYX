@@ -32,12 +32,21 @@ app = FastAPI(
     description="SIH 26008 Industrial Conveyor Belt Inspection & Predictive Safety System"
 )
 
-# CORS Middleware (Section 16: Security)
-allowed_origins_env = os.getenv("ALLOWED_ORIGINS", "*")
-origins = [o.strip() for o in allowed_origins_env.split(",") if o.strip()]
+# CORS Middleware: Robust origin handling that accepts origins with or without trailing slash
+allowed_origins_env = os.getenv("ALLOWED_ORIGINS", "*").strip()
+if not allowed_origins_env or allowed_origins_env == "*":
+    origins = ["*"]
+else:
+    raw_origins = [o.strip() for o in allowed_origins_env.split(",") if o.strip()]
+    origins_set = set()
+    for o in raw_origins:
+        origins_set.add(o)
+        origins_set.add(o.rstrip("/"))
+    origins = list(origins_set)
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins if origins else ["*"],
+    allow_origins=origins if (origins and "*" not in origins) else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

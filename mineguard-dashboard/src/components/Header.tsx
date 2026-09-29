@@ -53,7 +53,7 @@ export default function Header({
   const checkBackendHealth = useCallback(async () => {
     try {
       const healthUrl = getApiUrl('/health');
-      const res = await fetch(healthUrl, { signal: AbortSignal.timeout(2000) });
+      const res = await fetch(healthUrl, { signal: AbortSignal.timeout(8000) });
       if (res.ok) {
         const data = await res.json();
         setApiStatus('ONLINE');

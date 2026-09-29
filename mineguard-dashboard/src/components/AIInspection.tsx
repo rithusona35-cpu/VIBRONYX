@@ -384,7 +384,7 @@ export default function AIInspection({ onExportReport }: AIInspectionProps) {
   const checkModelHealth = useCallback(async () => {
     try {
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 2000);
+      const timeoutId = setTimeout(() => controller.abort(), 8000);
       const healthUrl = getApiUrl('/health');
       const res = await fetch(healthUrl, { signal: controller.signal });
       clearTimeout(timeoutId);
@@ -654,7 +654,7 @@ export default function AIInspection({ onExportReport }: AIInspectionProps) {
     let isBackendAlive = false;
     try {
       const healthUrl = getApiUrl('/health');
-      const hcRes = await fetch(healthUrl, { signal: AbortSignal.timeout(2000) });
+      const hcRes = await fetch(healthUrl, { signal: AbortSignal.timeout(8000) });
       if (hcRes.ok) {
         const hcData = await hcRes.json();
         isBackendAlive = Boolean(hcData.model_loaded || hcData.engine_ready || hcData.status === 'online' || hcData.status === 'HEALTHY');
@@ -738,7 +738,7 @@ export default function AIInspection({ onExportReport }: AIInspectionProps) {
       formData.append('file', blob, `${currentInspection.id}.jpg`);
 
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 10000);
+      const timeoutId = setTimeout(() => controller.abort(), 20000);
 
       const detectUrl = getApiUrl('/api/detect');
       const apiRes = await fetch(detectUrl, {
@@ -1476,7 +1476,7 @@ export default function AIInspection({ onExportReport }: AIInspectionProps) {
                     RETRY CONNECTION
                   </button>
                   <button
-                    onClick={() => handleSelectSample('tear')}
+                    onClick={() => handleSelectSample(selectedSampleKey || 'normal')}
                     className="flex-1 py-2 px-3 rounded bg-[#087F5B] hover:bg-[#065F46] text-[#FFFFFF] text-xs font-bold flex items-center justify-center gap-1.5 transition-colors cursor-pointer shadow-xs"
                   >
                     <Play size={13} fill="currentColor" />

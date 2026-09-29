@@ -56,6 +56,7 @@ ALLOWED_MIMES = {'image/jpeg', 'image/png', 'image/webp'}
 
 # 1. Resolve Validated Production YOLO Model (Quantized INT8 preferred for Render 512MB RAM)
 candidate_weights = [
+    os.getenv("MINEGUARD_MODEL_PATH", ""),
     os.path.join(BASE_DIR, 'models', 'final_sih_model_int8.onnx'),
     os.path.join(BASE_DIR, 'models', 'final_sih_model.onnx'),
     os.path.join(BASE_DIR, 'models', 'final_sih_model.pt'),
@@ -67,20 +68,25 @@ candidate_weights = [
 
 selected_weights = None
 for w_path in candidate_weights:
-    if os.path.exists(w_path):
+    if w_path and os.path.exists(w_path):
         selected_weights = w_path
         break
 
 if not selected_weights:
     raise FileNotFoundError("Critical Error: Validated YOLO model weights not found in models directory.")
 
+imgsz_val = int(os.getenv("INFERENCE_IMGSZ", "800"))
+conf_val = float(os.getenv("CONF_THRESHOLD", "0.25"))
+iou_val = float(os.getenv("IOU_THRESHOLD", "0.45"))
+device_val = os.getenv("INFERENCE_DEVICE", "cpu")
+
 print(f"🚀 [FastAPI Backend] Initializing YOLO Engine from: {selected_weights}")
 inference_engine = MineGuardInferenceEngine(
     weights_path=selected_weights,
-    imgsz=800,
-    conf_threshold=0.25,
-    iou_threshold=0.45,
-    device='cpu'
+    imgsz=imgsz_val,
+    conf_threshold=conf_val,
+    iou_threshold=iou_val,
+    device=device_val
 )
 
 # Mount Static Files if directory exists

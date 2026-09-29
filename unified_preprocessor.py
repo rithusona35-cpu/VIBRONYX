@@ -12,7 +12,12 @@ import base64
 from typing import Dict, Any, List, Tuple
 from PIL import Image, ImageOps
 import numpy as np
-from ultralytics import YOLO
+
+# Optional/Lazy import for PyTorch YOLO models (not required for lightweight ONNX runtime)
+try:
+    from ultralytics import YOLO
+except ImportError:
+    YOLO = None
 
 # Strict 5-Class Definitions
 EXPECTED_CLASSES = {
@@ -82,6 +87,11 @@ class MineGuardInferenceEngine:
             return
 
         self.is_onnx = False
+        if YOLO is None:
+            raise ImportError(
+                "The 'ultralytics' package is required to run PyTorch (.pt) weights. "
+                "For low-memory cloud hosting (Render 512MB RAM), use the quantized ONNX model: models/final_sih_model_int8.onnx"
+            )
         self.model = YOLO(self.weights_path)
         
         # Validate class mapping integrity

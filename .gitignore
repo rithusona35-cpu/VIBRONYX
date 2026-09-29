@@ -1,12 +1,62 @@
+# ==============================================================================
+# MINEGUARD AI BACKEND — PRODUCTION GITIGNORE
+# Smart India Hackathon (SIH 26008)
+# ==============================================================================
+
+# 1. Environment Secrets & Local Overrides (CRITICAL: NEVER COMMIT)
+.env
+.env.*
+.env.local
+!.env.example
+*.pem
+*.key
+*.cert
+credentials.json
+service_account.json
+
+# 2. Dependencies & Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# 3. Python Bytecode & Runtime Cache
 __pycache__/
 *.py[cod]
 *$py.class
-venv/
-env/
-.venv/
-.env
-.env.*
-!.env.example
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 4. Server Logs & Temporary Files
+logs/
 *.log
 uploads/*
 !uploads/.gitkeep
+scratch/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# 5. Heavy Weights (Retain only deployment ONNX models)
+*.pt
+runs/
+experiments/
+!models/final_sih_model_int8.onnx
+!models/final_sih_model.onnx
+
+# 6. Archives & Compressed Packages
+*.zip
+*.tar.gz
+*.rar
+
+# 7. IDE & OS Artifacts
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

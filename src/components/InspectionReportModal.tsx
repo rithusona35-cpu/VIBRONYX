@@ -38,8 +38,8 @@ export default function InspectionReportModal({
         {/* Report Header */}
         <div className="flex items-center justify-between pb-4 border-b-2 border-[var(--color-mine-dark)] mb-4">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded bg-[var(--color-mine-dark)] flex items-center justify-center text-white">
-              <Shield size={22} className="text-[#45D59E]" />
+            <div className="w-11 h-11 rounded-lg flex items-center justify-center shrink-0 overflow-hidden border border-[#E5E7EB] bg-[#FFFFFF] shadow-xs">
+              <img src="/logo.png" alt="MineGuard AI Logo" className="w-full h-full object-contain p-0.5" />
             </div>
             <div>
               <h2 className="text-base font-extrabold tracking-tight">MINEGUARD AI — OPTICAL INSPECTION REPORT</h2>

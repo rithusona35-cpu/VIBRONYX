@@ -106,8 +106,8 @@ export default function Header({
         
         {/* LEFT: Project Identity (Section 2) */}
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-lg bg-[#ECFDF5] border border-[#A7F3D0] flex items-center justify-center shrink-0 shadow-xs">
-            <Shield size={20} className="text-[#087F5B] stroke-[2.3]" />
+          <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0 overflow-hidden shadow-xs border border-[#E5E7EB] bg-[#FFFFFF]">
+            <img src="/logo.png" alt="MineGuard AI Logo" className="w-full h-full object-contain p-0.5" />
           </div>
           
           <div className="flex flex-col">

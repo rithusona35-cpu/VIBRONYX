@@ -1,0 +1,13 @@
+case,angle,detected_count,top_class,confidence,bbox_valid
+Longitudinal_Tear,0,1,longitudinal tear,0.605,VALID
+Longitudinal_Tear,90,0,NO_DETECTIONS,0.0,N/A
+Longitudinal_Tear,180,1,longitudinal tear,0.605,VALID
+Longitudinal_Tear,270,0,NO_DETECTIONS,0.0,N/A
+Clean_Belt,0,0,NO_DETECTIONS,0.0,N/A
+Clean_Belt,90,1,normal belt,0.294,VALID
+Clean_Belt,180,1,longitudinal tear,0.329,VALID
+Clean_Belt,270,1,normal belt,0.379,VALID
+Slight_Scratch,0,1,slight scratch,0.415,VALID
+Slight_Scratch,90,1,slight scratch,0.428,VALID
+Slight_Scratch,180,0,NO_DETECTIONS,0.0,N/A
+Slight_Scratch,270,2,deep scratch,0.328,VALID

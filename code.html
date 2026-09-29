@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>MineGuard AI — Industrial Monitoring Platform</title>
+  
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <script src="telemetryConfig.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script id="tailwind-config">
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            "mine-bg": "#F3F5F2",
+            "mine-panel": "#FFFFFF",
+            "mine-secondary-bg": "#EEF2EE",
+            "mine-border": "#D6DDD7",
+            "mine-dark": "#17221C",
+            "mine-secondary": "#617068",
+            "mine-green": "#176B4D",
+            "mine-green-dark": "#0F5139",
+            "mine-green-light": "#DCEFE5",
+            "mine-amber": "#D59620",
+            "mine-warning": "#D99A20",
+            "mine-red": "#C94B4B",
+            "mine-info": "#3C7899"
+          },
+          fontFamily: {
+            "sans": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body { background-color: #F3F5F2; color: #17221C; font-family: 'Inter', sans-serif; }
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #D6DDD7; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #617068; }
+  </style>
+</head>
+
+<body class="min-h-screen flex flex-col antialiased">
+
+  <!-- 4. HEADER -->
+  <header class="sticky top-0 z-40 bg-white border-b border-mine-border px-6 py-4 shadow-sm">
+    <div class="max-w-[1600px] mx-auto flex items-center justify-between">
+      
+      <!-- Left: Branding -->
+      <div class="flex items-center gap-4">
+        <div class="size-10 rounded bg-mine-green flex items-center justify-center text-white shrink-0">
+          <i data-lucide="shield-check" class="size-6"></i>
+        </div>
+        <div>
+          <div class="flex items-baseline gap-3">
+            <h1 class="text-xl font-bold tracking-tight text-mine-dark">MINEGUARD AI</h1>
+            <span class="text-xs font-semibold text-mine-secondary bg-mine-bg px-2 py-0.5 rounded border border-mine-border">SIH 26008</span>
+          </div>
+          <p class="text-xs text-mine-secondary font-medium">Intelligent Conveyor Belt Safety & Predictive Monitoring</p>
+        </div>
+      </div>
+
+      <!-- Center: Context -->
+      <div class="hidden md:flex flex-col items-center">
+        <span class="text-[10px] font-bold text-mine-secondary uppercase tracking-widest">CONVEYOR</span>
+        <span class="text-lg font-bold text-mine-dark">C-01 <span class="text-mine-green ml-1">● ACTIVE</span></span>
+      </div>
+
+      <!-- Right: Connection Status -->
+      <div class="flex flex-col items-end gap-1 text-xs">
+        <div class="flex items-center gap-4 font-medium">
+          <div class="flex items-center gap-1.5"><div class="size-2 rounded-full bg-mine-green" id="status-esp"></div> ESP32 / Edge Device</div>
+          <div class="flex items-center gap-1.5"><div class="size-2 rounded-full bg-mine-green" id="status-supa"></div> Supabase</div>
+        </div>
+        <div class="text-[10px] text-mine-secondary mt-1">Last telemetry: <span id="last-telem-time" class="font-semibold">Live</span></div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[1600px] w-full mx-auto px-4 lg:px-6 py-6 space-y-6">
+
+    <!-- 5. TOP SUMMARY CARDS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+      
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-status">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Conveyor Status</span>
+        <div class="mt-2"><span class="text-2xl font-bold text-mine-dark" id="val-status">RUNNING</span></div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-green"><i data-lucide="check-circle" class="size-3"></i> Nominal</div>
+      </div>
+
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-temp">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Temperature</span>
+        <div class="mt-2 flex items-baseline gap-1">
+          <span class="text-2xl font-bold text-mine-dark" id="val-temp">--</span>
+          <span class="text-sm font-medium text-mine-secondary">°C</span>
+        </div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-secondary" id="trend-temp"><i data-lucide="minus" class="size-3"></i> Stable</div>
+      </div>
+
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-vib">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Vibration</span>
+        <div class="mt-2 flex items-baseline gap-1">
+          <span class="text-2xl font-bold text-mine-dark" id="val-vib">--</span>
+          <span class="text-sm font-medium text-mine-secondary">mm/s</span>
+        </div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-secondary" id="trend-vib"><i data-lucide="minus" class="size-3"></i> Stable</div>
+      </div>
+
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-curr">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Motor Current</span>
+        <div class="mt-2 flex items-baseline gap-1">
+          <span class="text-2xl font-bold text-mine-dark" id="val-curr">--</span>
+          <span class="text-sm font-medium text-mine-secondary">A</span>
+        </div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-secondary" id="trend-curr"><i data-lucide="minus" class="size-3"></i> Stable</div>
+      </div>
+
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-speed">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Belt Speed</span>
+        <div class="mt-2 flex items-baseline gap-1">
+          <span class="text-2xl font-bold text-mine-dark" id="val-speed">--</span>
+          <span class="text-sm font-medium text-mine-secondary">m/s</span>
+        </div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-secondary" id="trend-speed"><i data-lucide="minus" class="size-3"></i> Stable</div>
+      </div>
+
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-slip">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Belt Slip</span>
+        <div class="mt-2 flex items-baseline gap-1">
+          <span class="text-2xl font-bold text-mine-dark" id="val-slip">--</span>
+          <span class="text-sm font-medium text-mine-secondary">%</span>
+        </div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-secondary" id="trend-slip"><i data-lucide="minus" class="size-3"></i> Stable</div>
+      </div>
+
+      <div class="bg-mine-panel p-4 rounded border border-mine-border shadow-sm flex flex-col justify-between" id="card-thick">
+        <span class="text-[11px] font-semibold text-mine-secondary uppercase">Belt Thickness</span>
+        <div class="mt-2 flex items-baseline gap-1">
+          <span class="text-2xl font-bold text-mine-dark" id="val-thick">--</span>
+          <span class="text-sm font-medium text-mine-secondary">mm</span>
+        </div>
+        <div class="mt-2 flex items-center gap-1 text-[10px] font-semibold text-mine-secondary" id="trend-thick"><i data-lucide="minus" class="size-3"></i> Stable</div>
+      </div>
+
+    </div>
+
+    <!-- 8. CONVEYOR HEALTH PANEL -->
+    <div class="bg-mine-panel p-5 rounded border border-mine-border shadow-sm">
+      <h2 class="text-[11px] font-bold text-mine-secondary uppercase tracking-widest mb-4">CONVEYOR HEALTH</h2>
+      <div class="flex items-center justify-between text-xs font-semibold text-mine-dark max-w-4xl mx-auto px-4 py-6 bg-mine-bg rounded border border-mine-border relative">
+        <!-- Connecting Line -->
+        <div class="absolute top-1/2 left-10 right-10 h-1 bg-mine-border -translate-y-1/2 z-0"></div>
+        
+        <div class="flex flex-col items-center gap-2 z-10 bg-mine-bg px-2">
+          <div class="size-4 rounded-full bg-mine-normal ring-4 ring-mine-green/20" id="health-motor"></div>
+          <span>DRIVE MOTOR</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 z-10 bg-mine-bg px-2">
+          <div class="size-4 rounded-full bg-mine-normal ring-4 ring-mine-green/20" id="health-head"></div>
+          <span>HEAD PULLEY</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 z-10 bg-mine-bg px-2">
+          <div class="size-4 rounded-full bg-mine-normal ring-4 ring-mine-green/20" id="health-belt"></div>
+          <span>BELT (CRITICAL ZONE)</span>
+        </div>
+        <div class="flex flex-col items-center gap-2 z-10 bg-mine-bg px-2">
+          <div class="size-4 rounded-full bg-mine-normal ring-4 ring-mine-green/20" id="health-tail"></div>
+          <span>TAIL PULLEY</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      
+      <!-- 7. REAL-TIME TELEMETRY SECTION -->
+      <div class="lg:col-span-8 bg-mine-panel p-5 rounded border border-mine-border shadow-sm flex flex-col">
+        <div class="flex justify-between items-start mb-6">
+          <div>
+            <h2 class="text-sm font-bold text-mine-dark uppercase tracking-wide">REAL-TIME TELEMETRY</h2>
+            <p class="text-xs text-mine-secondary mt-1">Live conveyor operating parameters</p>
+          </div>
+          <div class="flex bg-mine-bg p-1 rounded border border-mine-border gap-1">
+            <button class="chart-tab px-3 py-1 rounded bg-white shadow-sm text-xs font-bold text-mine-dark border border-mine-border" data-chart="temp">Temperature</button>
+            <button class="chart-tab px-3 py-1 rounded text-xs font-medium text-mine-secondary hover:bg-white/50" data-chart="vib">Vibration</button>
+            <button class="chart-tab px-3 py-1 rounded text-xs font-medium text-mine-secondary hover:bg-white/50" data-chart="curr">Motor Current</button>
+            <button class="chart-tab px-3 py-1 rounded text-xs font-medium text-mine-secondary hover:bg-white/50" data-chart="speed">Belt Speed</button>
+          </div>
+        </div>
+        <div class="flex-1 w-full min-h-[250px]">
+          <canvas id="telemetryChart"></canvas>
+        </div>
+      </div>
+
+      <!-- 14. OPERATOR CONTROL & 15. ALERTS -->
+      <div class="lg:col-span-4 flex flex-col gap-6">
+        
+        <div class="bg-mine-panel p-5 rounded border border-mine-border shadow-sm">
+          <h2 class="text-[11px] font-bold text-mine-secondary uppercase tracking-widest mb-4">OPERATOR CONTROL PANEL</h2>
+          
+          <div class="flex justify-between items-center mb-4 pb-4 border-b border-mine-border">
+            <div class="text-xs">
+              <span class="block text-mine-secondary font-medium mb-1">SYSTEM MODE</span>
+              <span class="font-bold text-mine-dark flex items-center gap-2"><div class="size-2 rounded-full bg-mine-info"></div> Monitoring</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold text-mine-secondary">
+              DEMO MODE
+              <label class="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" id="toggle-demo" class="sr-only peer">
+                <div class="w-9 h-5 bg-mine-border peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-mine-info"></div>
+              </label>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-2 gap-3 mb-3">
+            <button class="bg-mine-green hover:bg-mine-green-light text-white text-xs font-bold py-2.5 rounded transition-colors" id="btn-start">START MONITORING</button>
+            <button class="bg-mine-bg hover:bg-mine-border text-mine-dark border border-mine-border text-xs font-bold py-2.5 rounded transition-colors" id="btn-stop">STOP MONITORING</button>
+          </div>
+          <button class="w-full bg-mine-red hover:bg-[#A93232] text-white text-xs font-bold py-2.5 rounded transition-colors flex justify-center items-center gap-2" id="btn-estop">
+            <i data-lucide="alert-triangle" class="size-4"></i> EMERGENCY STOP
+          </button>
+        </div>
+
+        <div class="bg-mine-panel p-5 rounded border border-mine-border shadow-sm flex-1 flex flex-col">
+          <h2 class="text-[11px] font-bold text-mine-secondary uppercase tracking-widest mb-4">SAFETY ALERTS</h2>
+          <div id="alerts-container" class="flex-1 flex flex-col gap-2">
+            <!-- Active alerts or 'No active alerts' injected here -->
+            <div class="bg-mine-normal/10 border border-mine-green/20 rounded p-3 flex items-start gap-3">
+              <i data-lucide="check-circle" class="size-4 text-mine-normal shrink-0 mt-0.5"></i>
+              <div>
+                <div class="text-xs font-bold text-mine-normal">No active safety alerts</div>
+                <div class="text-[11px] text-mine-secondary mt-0.5">System operating within monitored limits.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- 9. MINING SITE VISUAL & 10. AI BELT INSPECTION -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      
+      <div class="bg-mine-panel p-5 rounded border border-mine-border shadow-sm">
+        <h2 class="text-sm font-bold text-mine-dark uppercase tracking-wide mb-1">FIELD MONITORING</h2>
+        <p class="text-xs text-mine-secondary mb-4">Conveyor C-01 • Critical Monitoring Zone</p>
+        
+        <div class="w-full aspect-video rounded overflow-hidden relative border border-mine-border group">
+          <img src="/static/assets/mining/open_pit_conveyor.jpg" alt="Conveyor Site" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-black/10"></div>
+          <div class="absolute bottom-3 left-3 bg-white/90 backdrop-blur px-2 py-1 rounded text-[10px] font-bold text-mine-dark border border-white">
+            CAM-01 • LIVE
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-mine-panel p-5 rounded border border-mine-border shadow-sm flex flex-col">
+        <h2 class="text-sm font-bold text-mine-dark uppercase tracking-wide mb-1">BELT CONDITION INSPECTION</h2>
+        <p class="text-xs text-mine-secondary mb-4">AI Vision Model testing and analysis</p>
+        
+        <div class="flex gap-4 mb-4">
+          <div class="w-2/3 aspect-video bg-mine-bg rounded overflow-hidden relative border border-mine-border flex items-center justify-center">
+            
+            <video id="inspection-video" autoplay playsinline class="w-full h-full object-cover hidden"></video>
+            <img id="upload-preview" class="w-full h-full object-contain hidden" />
+            
+            <div id="camera-placeholder" class="text-center">
+              <i data-lucide="camera" class="size-8 text-mine-secondary/50 mx-auto mb-2"></i>
+              <span class="text-xs text-mine-secondary font-medium block">Awaiting Image Source</span>
+            </div>
+            
+            <canvas id="ai-canvas" class="absolute inset-0 w-full h-full pointer-events-none hidden"></canvas>
+            
+            <!-- Result Overlay -->
+            <div id="result-overlay" class="absolute bottom-2 inset-x-2 bg-white/95 backdrop-blur border border-mine-border p-3 rounded shadow-sm hidden">
+              <div class="text-[10px] font-bold text-mine-secondary uppercase mb-1">BELT INSPECTION RESULT</div>
+              <div class="flex justify-between items-end">
+                <div>
+                  <div class="text-sm font-bold text-mine-dark" id="res-condition">NORMAL BELT</div>
+                  <div class="text-[11px] text-mine-secondary mt-0.5" id="res-rec">Continue normal operation</div>
+                </div>
+                <div class="text-right">
+                  <div class="text-[10px] text-mine-secondary uppercase font-semibold">Confidence</div>
+                  <div class="text-sm font-bold text-mine-green" id="res-conf">96.4%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-1/3 flex flex-col gap-2">
+            <button id="btn-open-cam" class="bg-mine-bg hover:bg-mine-border text-mine-dark border border-mine-border text-xs font-bold py-2 rounded transition-colors flex items-center justify-center gap-1.5"><i data-lucide="camera" class="size-3.5"></i> OPEN CAMERA</button>
+            <button id="btn-stop-cam" class="bg-mine-bg hover:bg-mine-border text-mine-dark border border-mine-border text-xs font-bold py-2 rounded transition-colors flex items-center justify-center gap-1.5 hidden"><i data-lucide="camera-off" class="size-3.5"></i> STOP CAMERA</button>
+            <label class="bg-mine-bg hover:bg-mine-border text-mine-dark border border-mine-border text-xs font-bold py-2 rounded transition-colors flex items-center justify-center gap-1.5 cursor-pointer">
+              <i data-lucide="upload" class="size-3.5"></i> UPLOAD IMAGE
+              <input type="file" id="input-upload" class="hidden" accept="image/*">
+            </label>
+            <button id="btn-capture-inspect" class="bg-mine-green hover:bg-mine-green-light text-white text-xs font-bold py-2 rounded transition-colors mt-auto flex items-center justify-center gap-1.5 shadow-sm hidden"><i data-lucide="scan" class="size-3.5"></i> CAPTURE & INSPECT</button>
+            
+            <!-- Sample Images -->
+            <div class="mt-2 pt-2 border-t border-mine-border">
+              <span class="text-[10px] font-bold text-mine-secondary uppercase mb-2 block">SAMPLE IMAGES</span>
+              <div class="grid grid-cols-2 gap-1.5">
+                <button class="bg-mine-bg border border-mine-border text-[10px] py-1 rounded hover:bg-mine-border transition-colors sample-btn" data-type="normal">Normal</button>
+                <button class="bg-mine-bg border border-mine-border text-[10px] py-1 rounded hover:bg-mine-border transition-colors sample-btn" data-type="scratch">Scratch</button>
+                <button class="bg-mine-bg border border-mine-border text-[10px] py-1 rounded hover:bg-mine-border transition-colors sample-btn" data-type="tear">Tear</button>
+                <button class="bg-mine-bg border border-mine-border text-[10px] py-1 rounded hover:bg-mine-border transition-colors sample-btn" data-type="splice">Splice</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 16. EVENT TIMELINE -->
+    <div class="bg-mine-panel p-5 rounded border border-mine-border shadow-sm">
+      <h2 class="text-sm font-bold text-mine-dark uppercase tracking-wide mb-4">LIVE EVENT LOG</h2>
+      <div id="event-timeline" class="space-y-1 h-32 overflow-y-auto pr-4 text-xs">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

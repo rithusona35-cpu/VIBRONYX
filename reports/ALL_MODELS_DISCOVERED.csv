@@ -1,0 +1,5 @@
+path,size,arch,sha256,status
+models/final_sih_model.pt,18.67 MB,YOLO11s,2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3,LOCKED_PRODUCTION
+models/final_sih_model.onnx,36.8 MB,YOLO11s ONNX,verified_matching,PRODUCTION_ONNX
+runs/detect/train/weights/best.pt,18.67 MB,YOLO11s (640),561494ae...,EARLIER_RUN
+13 belt_output/train/weights/best.pt,18.67 MB,YOLO11s (640),e4bca992...,EARLIER_RUN

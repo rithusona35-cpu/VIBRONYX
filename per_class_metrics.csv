@@ -1,0 +1,6 @@
+class_id,class_name,precision,recall,f1_score,ap50,ap50_95
+0,belt splice,0.8421,0.9412,0.8889,0.8865,0.5582
+1,deep scratch,0.4382,0.3158,0.3671,0.2033,0.1046
+2,longitudinal tear,0.7242,0.7001,0.7119,0.7196,0.2868
+3,normal belt,0.8526,0.0476,0.0902,0.045,0.0255
+4,slight scratch,0.4621,0.5909,0.5186,0.3662,0.1025

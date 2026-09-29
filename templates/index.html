@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conveyor Guard AI | Real-time Conveyor Belt Defect Inspection</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Top Navigation Bar -->
+        <header class="navbar">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <i class="fa-solid fa-conveyor-belt fa-spin-pulse" style="--fa-animation-duration: 4s;"></i>
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <div class="brand-text">
+                    <h1>CONVEYOR<span>GUARD</span> AI</h1>
+                    <p>YOLO11 Powered Real-Time Defect Detection</p>
+                </div>
+            </div>
+
+            <div class="nav-status">
+                <div class="status-pill warning" id="simulationModePill" style="background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fbbf24; font-weight: 700; margin-right: 8px;">
+                    <span class="status-dot" style="background: #fbbf24;"></span>
+                    <span id="simulationModeText">SIMULATION MODE</span>
+                </div>
+                <div class="status-pill healthy" id="systemStatusPill">
+                    <span class="status-dot"></span>
+                    <span id="systemStatusText">SYSTEM OPERATIONAL</span>
+                </div>
+                <div class="time-display" id="clockDisplay">16:45:00</div>
+            </div>
+        </header>
+
+        <!-- Prominent Critical Defect Emergency Alert Banner -->
+        <div class="critical-emergency-banner hidden" id="criticalEmergencyBanner">
+            <div class="emergency-content">
+                <i class="fa-solid fa-triangle-exclamation emergency-icon"></i>
+                <div class="emergency-text">
+                    <h2 id="emergencyHeadline">CRITICAL DEFECT DETECTED: LONGITUDINAL TEAR (Confidence: 87%)</h2>
+                    <p id="emergencySub">CONVEYOR EMERGENCY STOP SIGNAL DISPATCHED TO STM32 CONTROLLER [ACTION: STOP_CONVEYOR]</p>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="emergency-badge">EMERGENCY SHUTDOWN</div>
+                <button class="btn btn-sm" id="emergencyResetBtn" onclick="executeOperatorReset()" style="background: #ffffff; color: #b91c1c; font-weight: 700; border: none; border-radius: 4px; padding: 6px 12px; cursor: pointer;">
+                    <i class="fa-solid fa-rotate-left"></i> OPERATOR RESET
+                </button>
+            </div>
+        </div>
+
+        <!-- Metrics Overview Section -->
+        <section class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-icon blue"><i class="fa-solid fa-eye"></i></div>
+                <div class="metric-info">
+                    <span class="metric-label">Total Inspection Frames</span>
+                    <h3 id="statTotalScanned">1,482</h3>
+                    <span style="font-size: 0.72rem; color: #64748b;">1,482 Baseline + Session</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="metric-info">
+                    <span class="metric-label">Session Critical Defects</span>
+                    <h3 id="statCriticalDefects">0</h3>
+                    <span style="font-size: 0.72rem; color: #64748b;">Real-time Detected</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon emerald"><i class="fa-solid fa-heart-pulse"></i></div>
+                <div class="metric-info">
+                    <span class="metric-label">Belt Health Index (Live)</span>
+                    <h3 id="statHealthIndex">100.0%</h3>
+                    <span style="font-size: 0.72rem; color: #64748b;">Deterministic Penalty Model</span>
+                </div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-icon purple"><i class="fa-solid fa-bolt"></i></div>
+                <div class="metric-info">
+                    <span class="metric-label">Model Inference Latency</span>
+                    <h3 id="statInferenceTime">-- ms</h3>
+                    <span id="statE2ELatency" style="font-size: 0.72rem; color: #64748b;">E2E: -- ms</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Workspace -->
+        <main class="workspace-grid">
+            <!-- Left Side: Source Selector Controls -->
+            <aside class="panel controls-panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-sliders"></i> Inspection Control</h2>
+                </div>
+
+                <div class="tab-selectors">
+                    <button class="tab-btn active" id="tabUploadBtn" onclick="switchInputMode('upload')">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> Upload
+                    </button>
+                    <button class="tab-btn" id="tabSampleBtn" onclick="switchInputMode('sample')">
+                        <i class="fa-solid fa-images"></i> Dataset
+                    </button>
+                    <button class="tab-btn" id="tabDemoBtn" onclick="switchInputMode('demo')">
+                        <i class="fa-solid fa-play-circle"></i> SIH Demo
+                    </button>
+                    <button class="tab-btn" id="tabStreamBtn" onclick="switchInputMode('stream')">
+                        <i class="fa-solid fa-video"></i> Live Sim
+                    </button>
+                    <button class="tab-btn" id="tabLaptopBtn" onclick="switchInputMode('laptop')">
+                        <i class="fa-solid fa-laptop-code"></i> Laptop Test
+                    </button>
+                </div>
+
+                <!-- Mode 1: Drag & Drop Upload -->
+                <div class="mode-content" id="modeUpload">
+                    <div class="upload-dropzone" id="dropzone" onclick="document.getElementById('fileInput').click()">
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="handleFileUpload(event)">
+                        <i class="fa-solid fa-file-arrow-up upload-icon"></i>
+                        <h3>Drop Conveyor Image Here</h3>
+                        <p>Supports PNG, JPG, JPEG (Max 15MB)</p>
+                        <button class="btn btn-primary"><i class="fa-solid fa-folder-open"></i> Browse Files</button>
+                    </div>
+                </div>
+
+                <!-- Mode 2: Sample Dataset Grid -->
+                <div class="mode-content hidden" id="modeSample">
+                    <div class="sample-instruction">Select a test image from dataset repository:</div>
+                    <div class="sample-grid" id="sampleGrid">
+                        <!-- Dynamically populated -->
+                        <div class="sample-loading"><i class="fa-solid fa-spinner fa-spin"></i> Loading test dataset samples...</div>
+                    </div>
+                </div>
+
+                <!-- Mode 3: SIH Deterministic 6-Step Demonstration -->
+                <div class="mode-content hidden" id="modeDemo">
+                    <div style="padding: 0.85rem; background: rgba(15, 23, 42, 0.7); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.08);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+                            <strong style="color: #38bdf8; font-size: 0.82rem;"><i class="fa-solid fa-microchip"></i> SIH 6-Step Test Suite</strong>
+                            <button class="btn btn-primary btn-sm" onclick="runAutoDemoSequence()" id="autoDemoBtn" style="padding: 4px 8px; font-size: 0.75rem;"><i class="fa-solid fa-forward"></i> Auto Run (6s)</button>
+                        </div>
+                        <p style="font-size: 0.72rem; color: #94a3b8; margin-bottom: 0.6rem;">Deterministic test sequence using locked production model:</p>
+                        <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                            <button class="btn btn-secondary btn-sm demo-step-btn" id="demoStep1" style="text-align: left; font-size: 0.75rem; justify-content: flex-start;" onclick="executeDemoStepInUI(1)">1. Clean Belt (0 False Alarms)</button>
+                            <button class="btn btn-secondary btn-sm demo-step-btn" id="demoStep2" style="text-align: left; font-size: 0.75rem; justify-content: flex-start;" onclick="executeDemoStepInUI(2)">2. Belt Splice (Critical)</button>
+                            <button class="btn btn-secondary btn-sm demo-step-btn" id="demoStep3" style="text-align: left; font-size: 0.75rem; justify-content: flex-start;" onclick="executeDemoStepInUI(3)">3. Deep Scratch (Major)</button>
+                            <button class="btn btn-secondary btn-sm demo-step-btn" id="demoStep4" style="text-align: left; font-size: 0.75rem; justify-content: flex-start;" onclick="executeDemoStepInUI(4)">4. Longitudinal Tear (Critical)</button>
+                            <button class="btn btn-secondary btn-sm demo-step-btn" id="demoStep5" style="text-align: left; font-size: 0.75rem; justify-content: flex-start;" onclick="executeDemoStepInUI(5)">5. Slight Scratch (Minor)</button>
+                            <button class="btn btn-secondary btn-sm demo-step-btn" id="demoStep6" style="text-align: left; font-size: 0.75rem; justify-content: flex-start;" onclick="executeDemoStepInUI(6)">6. Clean Belt Again (Healthy)</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mode 4: Live Stream Simulation -->
+                <div class="mode-content hidden" id="modeStream">
+                    <div class="stream-box">
+                        <div class="stream-overlay">
+                            <span class="live-tag"><i class="fa-solid fa-circle"></i> SIMULATION (Live Feed Simulation Mode)</span>
+                            <span class="fps-tag">30.0 FPS</span>
+                        </div>
+                        <p class="stream-desc">Simulates continuous camera capture on motor-driven belt conveyor system.</p>
+                        <div class="stream-controls">
+                            <button class="btn btn-success" id="startStreamBtn" onclick="toggleLiveStream()"><i class="fa-solid fa-play"></i> Start Inspection Stream</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mode 5: Laptop Validation (SIH Rule 27) -->
+                <div class="mode-content hidden" id="modeLaptop">
+                    <div style="padding: 0.85rem; background: rgba(15, 23, 42, 0.8); border-radius: 8px; border: 1px solid rgba(56, 189, 248, 0.25);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.6rem;">
+                            <strong style="color: #38bdf8; font-size: 0.85rem;"><i class="fa-solid fa-laptop-code"></i> LAPTOP VALIDATION</strong>
+                            <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; font-size: 0.7rem; border: 1px solid #10b981;">ACTIVE</span>
+                        </div>
+                        <div style="font-family: monospace; font-size: 0.72rem; color: #94a3b8; background: #0b1329; padding: 6px 8px; border-radius: 4px; margin-bottom: 0.7rem; line-height: 1.4;">
+                            <div>MODEL: <span style="color: #38bdf8;">final_sih_model.pt</span></div>
+                            <div>SHA256: <span style="color: #10b981;" id="laptopModelSha">VERIFIED (2620a198...)</span></div>
+                            <div>FAST PATH: <span id="valFastPath" style="color: #10b981;">PASS</span></div>
+                            <div>ORIENTATION: <span id="valOrientation" style="color: #10b981;">PASS</span></div>
+                            <div>DEFECT DETECTION: <span id="valDefects" style="color: #10b981;">PASS</span></div>
+                            <div>CLEAN BELT SAFETY: <span id="valCleanSafety" style="color: #10b981;">PASS</span></div>
+                            <div>API: <span id="valApi" style="color: #10b981;">PASS</span></div>
+                            <div>HARDWARE SIMULATION: <span id="valHwSim" style="color: #10b981;">PASS</span></div>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.35rem;">
+                            <button class="btn btn-secondary btn-sm" onclick="runLaptopValidationUI('clean_belt')" style="text-align: left; font-size: 0.75rem;"><i class="fa-solid fa-shield-halved"></i> TEST CLEAN BELT</button>
+                            <button class="btn btn-secondary btn-sm" onclick="runLaptopValidationUI('defect')" style="text-align: left; font-size: 0.75rem;"><i class="fa-solid fa-triangle-exclamation"></i> TEST DEFECT</button>
+                            <button class="btn btn-secondary btn-sm" onclick="runLaptopValidationUI('portrait')" style="text-align: left; font-size: 0.75rem;"><i class="fa-solid fa-mobile-screen"></i> TEST PORTRAIT FAILURE</button>
+                            <button class="btn btn-secondary btn-sm" onclick="runLaptopValidationUI('orientation')" style="text-align: left; font-size: 0.75rem;"><i class="fa-solid fa-rotate"></i> TEST ORIENTATION</button>
+                            <button class="btn btn-secondary btn-sm" onclick="runLaptopValidationUI('api')" style="text-align: left; font-size: 0.75rem;"><i class="fa-solid fa-network-wired"></i> TEST API</button>
+                            <button class="btn btn-secondary btn-sm" onclick="runLaptopValidationUI('hardware')" style="text-align: left; font-size: 0.75rem;"><i class="fa-solid fa-microchip"></i> TEST HARDWARE SIMULATION</button>
+                            <button class="btn btn-primary btn-sm" style="margin-top: 4px; font-size: 0.78rem;" onclick="runLaptopValidationUI('full_test')"><i class="fa-solid fa-vial-circle-check"></i> RUN FULL TEST</button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <!-- Confidence Sensitivity Control -->
+                <div class="threshold-card" style="margin-top: 1rem; margin-bottom: 1rem; padding: 0.85rem 1rem; background: rgba(30, 41, 59, 0.7); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: #94a3b8;"><i class="fa-solid fa-sliders"></i> Minimum Detection Confidence</span>
+                        <strong id="confValDisplay" style="font-size: 0.85rem; color: #38bdf8; font-family: var(--font-mono);">0.25 (25%)</strong>
+                    </div>
+                    <input type="range" id="confSlider" min="0.10" max="0.75" step="0.05" value="0.25" style="width: 100%; accent-color: #38bdf8; cursor: pointer;" oninput="onConfidenceChange(this.value)">
+                    <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: #64748b; margin-top: 4px;">
+                        <span>0.10 (High Recall)</span>
+                        <span>0.25 (Balanced Default)</span>
+                        <span>0.75 (High Precision)</span>
+                    </div>
+                </div>
+
+                <!-- Class Legend Card -->
+                <div class="legend-card">
+                    <h4>Target Defect Classes</h4>
+                    <div class="legend-list">
+                        <div class="legend-item"><span class="dot" style="background:#ef4444;"></span> <strong>Belt Splice</strong> <span class="badge critical">Critical</span></div>
+                        <div class="legend-item"><span class="dot" style="background:#f43f5e;"></span> <strong>Longitudinal Tear</strong> <span class="badge critical">Critical</span></div>
+                        <div class="legend-item"><span class="dot" style="background:#f59e0b;"></span> <strong>Deep Scratch</strong> <span class="badge warning">Warning</span></div>
+                        <div class="legend-item"><span class="dot" style="background:#06b6d4;"></span> <strong>Slight Scratch</strong> <span class="badge info">Minor</span></div>
+                        <div class="legend-item"><span class="dot" style="background:#10b981;"></span> <strong>Normal Belt</strong> <span class="badge healthy">Healthy</span></div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Center Panel: Visualizer Canvas -->
+            <section class="panel visualizer-panel">
+                <div class="panel-header flex-between">
+                    <h2><i class="fa-solid fa-crosshairs"></i> Defect Overlay Visualizer</h2>
+                    <div class="visualizer-actions">
+                        <button class="btn-icon" onclick="resetInspection()" title="Reset Inspection Standby"><i class="fa-solid fa-rotate-left"></i></button>
+                        <span class="badge-tag" id="resolutionTag">640x640 px</span>
+                    </div>
+                </div>
+
+                <div class="canvas-wrapper" id="canvasContainer">
+                    <div class="placeholder-view" id="placeholderView">
+                        <i class="fa-solid fa-conveyor-belt"></i>
+                        <p>Select or upload a conveyor belt frame to begin automated defect analysis</p>
+                    </div>
+                    <canvas id="detectionCanvas"></canvas>
+                    <div class="canvas-loader hidden" id="canvasLoader">
+                        <i class="fa-solid fa-microchip fa-spin"></i>
+                        <p>Executing YOLO11 Tensor Inference...</p>
+                    </div>
+                </div>
+
+                <!-- Realtime Detection Summary Bar -->
+                <div class="detection-bar">
+                    <div class="det-count"><i class="fa-solid fa-layer-group"></i> Detections Found: <strong id="detectionCount">0</strong></div>
+                    <div class="det-status" id="detStatusBadge"><i class="fa-solid fa-shield-check"></i> READY</div>
+                    <div class="det-time"><i class="fa-solid fa-stopwatch"></i> Processing: <span id="detLatency">0 ms</span></div>
+                </div>
+            </section>
+
+            <!-- Right Panel: Inspection Breakdown & Action Center -->
+            <aside class="panel audit-panel">
+                <div class="panel-header">
+                    <h2><i class="fa-solid fa-chart-pie"></i> Frame Analysis</h2>
+                </div>
+
+                <div class="analysis-card" id="analysisCard">
+                    <div class="severity-box healthy" id="severityBanner">
+                        <i class="fa-solid fa-check-circle" id="severityIcon"></i>
+                        <div class="severity-text">
+                            <h3 id="severityTitle">NO ANOMALIES DETECTED</h3>
+                            <p id="severityDesc">Conveyor surface integrity is optimal.</p>
+                        </div>
+                    </div>
+
+                    <div class="detection-breakdown">
+                        <h4>Detected Defects Breakdown</h4>
+                        <div class="breakdown-list" id="breakdownList">
+                            <div class="empty-list-msg">No active detections selected.</div>
+                        </div>
+                    </div>
+
+                    <div class="action-recommendation" id="actionRecommendation">
+                        <h4><i class="fa-solid fa-triangle-exclamation"></i> Recommended Protocol</h4>
+                        <p id="actionText">System operating normally. Continue scheduled monitoring.</p>
+                    </div>
+
+                    <div class="hardware-response-card" style="margin-top: 10px; padding: 12px 14px; background: rgba(15, 23, 42, 0.7); border-radius: 8px; border: 1px solid rgba(255, 255, 255, 0.08);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                            <span style="font-size: 0.8rem; color: #38bdf8; font-weight: 700;"><i class="fa-solid fa-microchip"></i> Physical Hardware & Telemetry Matrix</span>
+                            <span class="badge" id="hwActionBadge" style="background: #10b981; color: #fff; font-size: 0.7rem; font-weight: 700;">CONTINUE</span>
+                        </div>
+
+                        <!-- 11 Key Telemetry Points Grid -->
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; font-size: 0.72rem; margin-bottom: 8px;">
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">SYSTEM STATUS:</span>
+                                <strong id="telemSystemStatus" style="color: #10b981;">SYSTEM_READY</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">CAMERA STATUS:</span>
+                                <strong id="telemCameraStatus" style="color: #38bdf8;">ONLINE (VALIDATED)</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">BELT STATUS:</span>
+                                <strong id="telemBeltStatus" style="color: #10b981;">RUNNING</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">BELT SPEED:</span>
+                                <strong id="telemBeltSpeed" style="color: #cbd5e1;">-- m/s (NOT CONNECTED)</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">AI STATUS:</span>
+                                <strong id="telemAiStatus" style="color: #a855f7;">READY (YOLO11s-800px)</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">CURRENT DEFECT:</span>
+                                <strong id="telemCurrentDefect" style="color: #cbd5e1;">NONE</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">CONFIDENCE:</span>
+                                <strong id="telemConfidence" style="color: #cbd5e1;">--</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">CONTROL ACTION:</span>
+                                <strong id="telemControlAction" style="color: #10b981;">CONTINUE</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">STM32 STATUS:</span>
+                                <strong id="telemStm32Status" style="color: #f59e0b;">SIMULATED LOOPBACK</strong>
+                            </div>
+                            <div style="background: rgba(0,0,0,0.3); padding: 4px 6px; border-radius: 4px;">
+                                <span style="color: #94a3b8; display: block;">MOTOR STATUS:</span>
+                                <strong id="telemMotorStatus" style="color: #10b981;">RUNNING (24V)</strong>
+                            </div>
+                        </div>
+
+                        <div style="background: rgba(0,0,0,0.3); padding: 6px; border-radius: 4px; font-size: 0.70rem; margin-bottom: 8px;">
+                            <span style="color: #94a3b8; display: block; margin-bottom: 2px;">SENSOR STATUS (9 PERIPHERALS):</span>
+                            <div style="color: #cbd5e1; font-family: var(--font-mono); line-height: 1.3;" id="telemSensorStatus">
+                                • Optical Camera: VALIDATED & ACTIVE<br>
+                                • MPU6050, ACS712, DS18B20, IR, Load Cell, VL53L0X, MLX90614, Encoder: <span style="color: #f59e0b; font-weight: 600;">NOT PHYSICALLY VERIFIED</span>
+                            </div>
+                        </div>
+
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <div style="font-family: var(--font-mono); font-size: 0.70rem; color: #cbd5e1;" id="hwSignalText">
+                                SIGNAL: RUN (24V) | RELAY: OPEN | MOTOR: ACTIVE
+                            </div>
+                            <button class="btn btn-outline btn-sm" id="btnHwReset" onclick="executeOperatorReset()" style="font-size: 0.70rem; padding: 3px 8px;" title="Acknowledge defect and clear latch">
+                                <i class="fa-solid fa-rotate-left"></i> Reset
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="export-actions">
+                        <button class="btn btn-secondary full-width" onclick="exportAnalysisJSON()"><i class="fa-solid fa-download"></i> Export Inspection Report (JSON)</button>
+                    </div>
+                </div>
+
+                <!-- Dataset Summary Breakdown Card -->
+                <div class="dataset-stats-card">
+                    <h4><i class="fa-solid fa-chart-pie"></i> Dataset Defect Distribution (Offline Benchmark)</h4>
+                    <span style="font-size: 0.72rem; color: #64748b; display: block; margin-bottom: 8px;">Cumulative training & validation distribution across 1,556 frames</span>
+                    <div class="stat-bar-group" id="datasetStatBars">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Audit History Log Section -->
+        <section class="panel history-panel">
+            <div class="panel-header flex-between">
+                <h2><i class="fa-solid fa-clock-rotate-left"></i> Real-time Inspection Audit Log</h2>
+                <button class="btn btn-outline" onclick="clearAuditLog()"><i class="fa-solid fa-trash"></i> Clear Log</button>
+            </div>
+
+            <div class="table-responsive">
+                <table class="audit-table">
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Frame Source</th>
+                            <th>Status</th>
+                            <th>Anomalies Found</th>
+                            <th>Primary Defect</th>
+                            <th>Max Confidence</th>
+                            <th>Latency</th>
+                        </tr>
+                    </thead>
+                    <tbody id="auditTableBody">
+                        <!-- Audit rows inserted dynamically -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>ConveyorGuard AI • YOLO11 PyTorch Inspection Platform • SIH Industrial Automated Monitoring</p>
+        </footer>
+    </div>
+
+    <!-- Main JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

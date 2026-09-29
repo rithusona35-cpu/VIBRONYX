@@ -1,0 +1,457 @@
+[
+  {
+    "sample_num": 1,
+    "filename": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+    "width": 800,
+    "height": 800,
+    "standalone": {
+      "total_detections": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6643,
+          "bbox": [
+            87.1,
+            68.6,
+            711.3,
+            232.5
+          ]
+        }
+      ]
+    },
+    "flask_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 793.4,
+      "total_detections": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.664,
+          "bbox": [
+            87,
+            69,
+            711,
+            233
+          ]
+        }
+      ]
+    },
+    "fastapi_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 6907.4,
+      "total_detections": 1,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.664,
+          "bbox": [
+            87,
+            69,
+            711,
+            233
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sample_num": 2,
+    "filename": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+    "width": 800,
+    "height": 800,
+    "standalone": {
+      "total_detections": 1,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.6045,
+          "bbox": [
+            248.7,
+            66.0,
+            532.0,
+            238.0
+          ]
+        }
+      ]
+    },
+    "flask_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 638.2,
+      "total_detections": 1,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.604,
+          "bbox": [
+            249,
+            66,
+            532,
+            238
+          ]
+        }
+      ]
+    },
+    "fastapi_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 713.0,
+      "total_detections": 1,
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.604,
+          "bbox": [
+            249,
+            66,
+            532,
+            238
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sample_num": 3,
+    "filename": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+    "width": 800,
+    "height": 800,
+    "standalone": {
+      "total_detections": 3,
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.674,
+          "bbox": [
+            318.0,
+            449.2,
+            679.0,
+            529.1
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5205,
+          "bbox": [
+            306.9,
+            38.3,
+            462.3,
+            159.8
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.4441,
+          "bbox": [
+            426.3,
+            236.0,
+            566.8,
+            317.3
+          ]
+        }
+      ]
+    },
+    "flask_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 956.9,
+      "total_detections": 3,
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.674,
+          "bbox": [
+            318,
+            449,
+            679,
+            529
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.521,
+          "bbox": [
+            307,
+            38,
+            462,
+            160
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.444,
+          "bbox": [
+            426,
+            236,
+            567,
+            317
+          ]
+        }
+      ]
+    },
+    "fastapi_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 649.1,
+      "total_detections": 3,
+      "detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.674,
+          "bbox": [
+            318,
+            449,
+            679,
+            529
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.521,
+          "bbox": [
+            307,
+            38,
+            462,
+            160
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.444,
+          "bbox": [
+            426,
+            236,
+            567,
+            317
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sample_num": 4,
+    "filename": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+    "width": 800,
+    "height": 800,
+    "standalone": {
+      "total_detections": 3,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6289,
+          "bbox": [
+            21.3,
+            372.4,
+            611.3,
+            488.6
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3667,
+          "bbox": [
+            142.5,
+            1.9,
+            280.8,
+            93.0
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.3316,
+          "bbox": [
+            299.5,
+            568.9,
+            447.7,
+            701.9
+          ]
+        }
+      ]
+    },
+    "flask_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 682.2,
+      "total_detections": 3,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.629,
+          "bbox": [
+            21,
+            372,
+            611,
+            489
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.367,
+          "bbox": [
+            142,
+            2,
+            281,
+            93
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.332,
+          "bbox": [
+            300,
+            569,
+            448,
+            702
+          ]
+        }
+      ]
+    },
+    "fastapi_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 699.4,
+      "total_detections": 3,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.629,
+          "bbox": [
+            21,
+            372,
+            611,
+            489
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.367,
+          "bbox": [
+            142,
+            2,
+            281,
+            93
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.332,
+          "bbox": [
+            300,
+            569,
+            448,
+            702
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "sample_num": 5,
+    "filename": "frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg",
+    "width": 800,
+    "height": 800,
+    "standalone": {
+      "total_detections": 2,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6934,
+          "bbox": [
+            131.9,
+            639.7,
+            668.1,
+            768.8
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5258,
+          "bbox": [
+            251.7,
+            291.8,
+            377.2,
+            380.6
+          ]
+        }
+      ]
+    },
+    "flask_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 1200.9,
+      "total_detections": 2,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.693,
+          "bbox": [
+            132,
+            640,
+            668,
+            769
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.526,
+          "bbox": [
+            252,
+            292,
+            377,
+            381
+          ]
+        }
+      ]
+    },
+    "fastapi_api": {
+      "status": "ALERT: CRITICAL DEFECT DETECTED",
+      "latency_ms": 251.9,
+      "total_detections": 2,
+      "detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.693,
+          "bbox": [
+            132,
+            640,
+            668,
+            769
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.526,
+          "bbox": [
+            252,
+            292,
+            377,
+            381
+          ]
+        }
+      ]
+    }
+  }
+]

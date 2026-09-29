@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mine-bg: #F7F8F5;
+  --color-mine-panel: #FFFFFF;
+  --color-mine-panel-sub: #F9FAFB;
+  --color-mine-panel-elevated: #F3F4F6;
+  --color-mine-border: #E5E7EB;
+  --color-mine-border-strong: #D1D5DB;
+  --color-mine-border-glow: #A7F3D0;
+  
+  --color-mine-dark: #111827;
+  --color-mine-secondary: #4B5563;
+  --color-mine-muted: #6B7280;
+  
+  --color-mine-accent: #087F5B;
+  --color-mine-accent-dark: #065F46;
+  --color-mine-accent-glow: #10B981;
+  --color-mine-accent-subtle: #ECFDF5;
+  
+  --color-mine-amber: #D97706;
+  --color-mine-warning: #D97706;
+  --color-mine-warning-bg: #FFFBEB;
+  --color-mine-warning-border: #FDE68A;
+  
+  --color-mine-critical: #DC2626;
+  --color-mine-critical-bg: #FEF2F2;
+  --color-mine-critical-border: #FECACA;
+
+  --color-mine-info: #2563EB;
+  --color-mine-info-bg: #EFF6FF;
+  --color-mine-info-border: #BFDBFE;
+  
+  --color-mine-grid: #E5E7EB;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--color-mine-bg);
+    color: var(--color-mine-dark);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: 
+      radial-gradient(rgba(209, 213, 219, 0.45) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
+
+/* Industrial custom scrollbars for Light Theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+/* Conveyor belt smooth animation */
+@keyframes conveyorRoll {
+  0% { background-position: 0 0; }
+  100% { background-position: 36px 0; }
+}
+
+.animate-conveyor-slow {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(8, 127, 91, 0.25) 0px,
+    rgba(8, 127, 91, 0.25) 4px,
+    transparent 4px,
+    transparent 18px
+  );
+  animation: conveyorRoll 2.2s linear infinite;
+}
+
+.conveyor-rubber-track {
+  background: repeating-linear-gradient(
+    90deg,
+    #374151 0px,
+    #374151 14px,
+    #1F2937 14px,
+    #1F2937 28px
+  );
+}
+
+/* Scanning laser line */
+@keyframes scanLaser {
+  0% { top: 4%; opacity: 0.8; }
+  50% { top: 94%; opacity: 1; }
+  100% { top: 4%; opacity: 0.8; }
+}
+
+.animate-scan-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent 0%, #059669 25%, #10B981 50%, #34D399 75%, transparent 100%);
+  box-shadow: 0 0 12px #10B981, 0 0 4px #059669;
+  animation: scanLaser 1.8s ease-in-out infinite;
+}
+
+/* Industrial radar/pulse glow */
+@keyframes scadaPulse {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+.animate-scada-pulse {
+  animation: scadaPulse 2s ease-in-out infinite;
+}
+
+.tech-mono {
+  font-family: var(--font-mono);
+}
+
+/* Light theme card elevation and glows */
+.industrial-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+}
+
+.industrial-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+.industrial-card-hover:hover {
+  border-color: #087F5B;
+  box-shadow: 0 4px 6px -1px rgba(8, 127, 91, 0.08), 0 2px 4px -2px rgba(8, 127, 91, 0.08);
+}
+
+.glow-accent {
+  box-shadow: 0 0 8px rgba(8, 127, 91, 0.15);
+}
+.glow-amber {
+  box-shadow: 0 0 8px rgba(217, 119, 6, 0.2);
+}
+.glow-critical {
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.25);
+}
+
+/* Print-friendly styling */
+@media print {
+  body {
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #111827 !important;
+  }
+  
+  header, nav, .no-print, button, input, textarea {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+  }
+
+  .print-card {
+    border: 1px solid #D1D5DB !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+    margin: 0 auto;
+    width: 100% !important;
+    background: #FFFFFF !important;
+    color: #111827 !important;
+  }
+}

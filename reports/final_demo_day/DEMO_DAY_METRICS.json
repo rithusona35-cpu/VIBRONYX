@@ -1,0 +1,66 @@
+{
+  "project_title": "SIH 26008: MineGuard AI — Industrial Conveyor Belt Defect Detection and Monitoring System",
+  "demo_day_evaluation_timestamp": "2026-09-22 09:00:00",
+  "model_path": "models/final_sih_model.pt",
+  "model_sha256": "2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3",
+  "model_immutable_verified": true,
+  "system_architecture": {
+    "model_type": "YOLO11s (9,429,727 parameters)",
+    "input_resolution": "800x800",
+    "classes": [
+      "belt splice",
+      "deep scratch",
+      "longitudinal tear",
+      "normal belt",
+      "slight scratch"
+    ],
+    "orientation_handling": "SmartOrientationRouter (Fast Path: single forward pass at 0 deg; Fallback Path: multi-view fusion at [0, 90, 270] deg with affine inverse transform)",
+    "hardware_state_machine": "Deterministic 9-state FSM with persistent safety stop latch",
+    "hardware_mode": "SIMULATION (Safe demonstration profile: physical 24V contactors de-energized)"
+  },
+  "startup_metrics": {
+    "backend_init_time_sec": 1.85,
+    "port_5000_status": "ONLINE",
+    "camera_index_0_status": "DIRECTSHOW_DISCOVERED"
+  },
+  "performance_benchmarks": {
+    "device_platform": "LAPTOP CPU PERFORMANCE (Intel Core 12th Gen, 8 PyTorch threads)",
+    "cold_start_latency_ms": 4152.17,
+    "fast_path_latency_p50_ms": 150.97,
+    "fast_path_latency_p95_ms": 158.95,
+    "fallback_path_latency_p50_ms": 152.44,
+    "fallback_path_latency_p95_ms": 154.77,
+    "camera_capture_avg_ms": 0.35,
+    "camera_live_stream_fps": 1.55,
+    "api_roundtrip_latency_p50_ms": 865.71,
+    "frontend_page_response_avg_ms": 10.02,
+    "memory_rss_before_mb": 207.18,
+    "memory_rss_after_mb": 442.48,
+    "memory_leak_detected": false
+  },
+  "regression_results": {
+    "total_tests": 63,
+    "passed_tests": 63,
+    "failed_tests": 0,
+    "execution_duration_sec": 10.652,
+    "status": "PASS"
+  },
+  "demo_day_judge_sequence": {
+    "total_steps": 14,
+    "passed_steps": 14,
+    "failed_steps": 0,
+    "status": "14/14 PASS"
+  },
+  "failure_recovery_suite": {
+    "total_tests": 8,
+    "passed_tests": 8,
+    "failed_tests": 0,
+    "status": "8/8 PASS"
+  },
+  "sih_demo_readiness_verdict": "READY_WITH_LIMITATIONS",
+  "known_limitations": [
+    "Hardware mode is strictly SIMULATION (physical 24V contactors isolated for electrical safety in lab/hackathon room).",
+    "CPU inference latency on laptop is ~150-165ms (6-8 FPS dedicated, ~1.5 FPS during concurrent screen capture/browser); target industrial deployment on NVIDIA Jetson Orin Nano with TensorRT INT8 yields >30 FPS.",
+    "Dataset class balance: slight scratch and belt splice have fewer samples than longitudinal tear and normal belt."
+  ]
+}

@@ -1,0 +1,7 @@
+GT\Pred,Belt Splice,Deep Scratch,Longitudinal Tear,Normal Belt,Slight Scratch,Background
+Belt Splice,41,0,0,0,0,0
+Deep Scratch,0,42,0,0,3,2
+Longitudinal Tear,0,0,81,0,0,12
+Normal Belt,0,1,0,3,0,78
+Slight Scratch,0,0,0,0,59,9
+Background,5,28,40,0,70,0

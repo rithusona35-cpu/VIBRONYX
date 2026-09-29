@@ -1,0 +1,26 @@
+image,predicted_class,confidence,bbox,category,root_cause
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193.jpg,Longitudinal Tear,0.335,"[286.8, 724.2, 454.0, 799.6]",belt_edge,Conveyor belt skirt boundary
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_contrast_1.jpg,Longitudinal Tear,0.333,"[286.7, 724.3, 453.9, 799.5]",belt_edge,Conveyor belt skirt boundary
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_hflip_0.jpg,Longitudinal Tear,0.403,"[357.8, 719.4, 509.3, 800.0]",belt_edge,Conveyor belt skirt boundary
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30.jpg,Deep Scratch,0.672,"[319.1, 650.3, 684.8, 722.1]",shadow,High-contrast shadow border mistaken for deep groove
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30.jpg,Slight Scratch,0.484,"[430.4, 420.3, 571.2, 506.1]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30_aug_contrast_1.jpg,Deep Scratch,0.666,"[318.5, 650.7, 681.4, 721.8]",shadow,High-contrast shadow border mistaken for deep groove
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30_aug_contrast_1.jpg,Slight Scratch,0.479,"[430.3, 420.3, 570.3, 505.9]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30_aug_hflip_0.jpg,Deep Scratch,0.589,"[115.6, 651.0, 476.8, 721.0]",shadow,High-contrast shadow border mistaken for deep groove
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30_aug_hflip_0.jpg,Slight Scratch,0.496,"[212.9, 420.8, 359.2, 505.7]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00023_jpg.rf.6725c6671d203cea73b8d2e94ab4a8de.jpg,Longitudinal Tear,0.268,"[164.3, 684.0, 431.0, 800.0]",belt_edge,Conveyor belt skirt boundary
+frame_00034_jpg.rf.d102de3ba2cca0071c696c1d804ec954_aug_hvflip_2.jpg,Belt Splice,0.297,"[125.8, 0.0, 717.6, 39.1]",surface_texture,Texture variation on rubber
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8.jpg,Slight Scratch,0.328,"[391.3, 235.9, 501.9, 290.9]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8_aug_contrast_3.jpg,Slight Scratch,0.332,"[391.2, 235.6, 501.3, 291.3]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8_aug_vflip_1.jpg,Slight Scratch,0.292,"[392.3, 501.8, 507.5, 566.0]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,Longitudinal Tear,0.395,"[307.8, 745.2, 446.7, 800.0]",belt_edge,Conveyor belt skirt boundary
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,Slight Scratch,0.338,"[517.3, 96.4, 646.3, 220.8]",scratch_like_texture,Surface gloss/streak mistaken for faint scratch
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,Longitudinal Tear,0.291,"[293.0, 727.7, 457.3, 800.0]",belt_edge,Conveyor belt skirt boundary
+frame_00040_jpg.rf.d6731b0082e1189ac7557863e628f3de.jpg,Longitudinal Tear,0.275,"[283.8, 0.0, 467.7, 101.5]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.1ee9df6fd5f198f4e37ccf814dc9801b.jpg,Longitudinal Tear,0.407,"[302.5, 20.4, 587.4, 181.1]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.1ee9df6fd5f198f4e37ccf814dc9801b.jpg,Longitudinal Tear,0.341,"[348.7, 58.7, 543.1, 173.4]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109.jpg,Longitudinal Tear,0.566,"[216.9, 549.7, 354.9, 653.0]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109.jpg,Longitudinal Tear,0.265,"[366.6, 147.3, 405.4, 390.0]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109_aug_contrast_1.jpg,Longitudinal Tear,0.573,"[217.4, 550.0, 355.3, 653.0]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109_aug_contrast_1.jpg,Longitudinal Tear,0.275,"[368.1, 143.8, 405.7, 379.1]",belt_edge,Conveyor belt skirt boundary
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109_aug_hflip_0.jpg,Longitudinal Tear,0.470,"[438.8, 551.7, 579.7, 652.4]",belt_edge,Conveyor belt skirt boundary

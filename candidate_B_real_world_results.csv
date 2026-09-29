@@ -1,0 +1,13 @@
+filename,expected,predictions,defect_count,status
+frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,DEFECT,Longitudinal Tear(0.66); Belt Splice(0.59),2,CORRECT
+frame_00003_jpg.rf.49968cb55095c8b650a32b4de9b866a4.jpg,DEFECT,Longitudinal Tear(0.63); Belt Splice(0.51),2,CORRECT
+frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg,DEFECT,Belt Splice(0.53); Longitudinal Tear(0.48); Slight Scratch(0.41); Slight Scratch(0.27),4,CORRECT
+frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,DEFECT,Longitudinal Tear(0.42); Longitudinal Tear(0.28),2,CORRECT
+frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg,DEFECT,Belt Splice(0.56); Slight Scratch(0.33),2,CORRECT
+frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg,DEFECT,Belt Splice(0.55),1,CORRECT
+frame_00019_jpg.rf.c9d90cbe0a1e82afbccd085d19bd1cae.jpg,DEFECT,Longitudinal Tear(0.68); Belt Splice(0.54),2,CORRECT
+frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,HEALTHY,Longitudinal Tear(0.34),1,FALSE_ALARM
+frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,DEFECT,Deep Scratch(0.71); Longitudinal Tear(0.65); Slight Scratch(0.53),3,CORRECT
+frame_00035_jpg.rf.cfcbd4ea3415701965f8fedda293fb50.jpg,DEFECT,Belt Splice(0.57),1,CORRECT
+frame_00043_jpg.rf.18a2450e12175f4369c1a958dc52304b.jpg,DEFECT,Longitudinal Tear(0.58),1,CORRECT
+frame_00045_jpg.rf.1ad7ac3267692d24b90701ef60772951.jpg,DEFECT,Longitudinal Tear(0.43); Longitudinal Tear(0.43),2,CORRECT

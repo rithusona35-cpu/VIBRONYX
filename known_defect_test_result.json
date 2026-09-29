@@ -1,0 +1,67 @@
+{
+  "image": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+  "dimensions": [
+    800,
+    800
+  ],
+  "ground_truth": "Longitudinal Tear",
+  "standalone": [
+    {
+      "class_id": 2,
+      "class_name": "longitudinal tear",
+      "confidence": 0.6045,
+      "bbox": [
+        249,
+        66,
+        532,
+        238
+      ]
+    }
+  ],
+  "flask": {
+    "status": "ALERT: CRITICAL DEFECT DETECTED",
+    "health_state": "DEFECT_DETECTED",
+    "total_detections": 1,
+    "detections": [
+      {
+        "bbox": [
+          249,
+          66,
+          532,
+          238
+        ],
+        "class_id": 2,
+        "class_name": "longitudinal tear",
+        "color": "#f43f5e",
+        "confidence": 0.604,
+        "display_name": "Longitudinal Tear",
+        "severity": "CRITICAL"
+      }
+    ]
+  },
+  "fastapi": {
+    "status": "ALERT: CRITICAL DEFECT DETECTED",
+    "health_state": "DEFECT_DETECTED",
+    "total_detections": 1,
+    "detections": [
+      {
+        "class_id": 2,
+        "class_name": "longitudinal tear",
+        "display_name": "Longitudinal Tear",
+        "confidence": 0.604,
+        "bbox": [
+          249,
+          66,
+          532,
+          238
+        ],
+        "color": "#f43f5e",
+        "severity": "CRITICAL"
+      }
+    ]
+  },
+  "website": {
+    "title": "CRITICAL ANOMALY ALERT",
+    "class": "critical"
+  }
+}

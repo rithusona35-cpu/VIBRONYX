@@ -1,0 +1,76 @@
+{
+  "models": [
+    {
+      "model_id": "final_sih_model_v1",
+      "architecture": "YOLO11s",
+      "input_size": [
+        800,
+        800
+      ],
+      "training_dataset": "datasets/dataset_v2_5class",
+      "training_config": "epochs=100, imgsz=800, batch=16, optimizer=SGD, lr0=0.01",
+      "checkpoint_path": "models/final_sih_model.pt",
+      "precision": 0.7731,
+      "recall": 0.7419,
+      "F1": 0.7572,
+      "mAP50": 0.6815,
+      "mAP50_95": 0.3715,
+      "critical_defect_recall": {
+        "belt_splice": 1.0,
+        "longitudinal_tear": 0.9462
+      },
+      "real_world_recall": 1.0,
+      "false_positive_count": 71,
+      "latency_ms_cpu": 168.2,
+      "status": "PRODUCTION"
+    },
+    {
+      "model_id": "candidate_B_v3",
+      "architecture": "YOLO11s",
+      "input_size": [
+        800,
+        800
+      ],
+      "training_dataset": "datasets/dataset_v3_clean_background",
+      "training_config": "finetuning, freeze=10, epochs=2, batch=8, imgsz=512",
+      "checkpoint_path": "models/candidates/candidate_B_v3.pt",
+      "precision": 0.8148,
+      "recall": 0.6581,
+      "F1": 0.7281,
+      "mAP50": 0.6514,
+      "mAP50_95": 0.333,
+      "critical_defect_recall": {
+        "belt_splice": 0.9512,
+        "longitudinal_tear": 0.7691
+      },
+      "real_world_recall": 1.0,
+      "false_positive_count": 52,
+      "latency_ms_cpu": 175.4,
+      "status": "REJECTED"
+    },
+    {
+      "model_id": "original_baseline_model",
+      "architecture": "YOLO11s",
+      "input_size": [
+        800,
+        800
+      ],
+      "training_dataset": "legacy uncurated dataset",
+      "training_config": "detect/train/args.yaml",
+      "checkpoint_path": "models/archive/original_baseline_v1.pt",
+      "precision": 0.7568,
+      "recall": 0.7161,
+      "F1": 0.7359,
+      "mAP50": 0.617,
+      "mAP50_95": 0.3487,
+      "critical_defect_recall": {
+        "belt_splice": 1.0,
+        "longitudinal_tear": 0.9462
+      },
+      "real_world_recall": 1.0,
+      "false_positive_count": 76,
+      "latency_ms_cpu": 122.0,
+      "status": "ARCHIVED"
+    }
+  ]
+}

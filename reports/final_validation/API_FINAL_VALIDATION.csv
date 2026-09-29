@@ -1,0 +1,8 @@
+endpoint,method,status_code,latency_ms,response_keys,status
+/api/model_info,GET,200,9.9,"['classes', 'conf_threshold', 'device', 'imgsz', 'iou_threshold', 'model_version', 'status', 'weights_path']",PASS
+/api/modes,GET,200,8.5,"['engine', 'modes', 'sha256', 'status', 'unified_inference']",PASS
+/api/camera/status,GET,200,10.3,"['camera_index', 'ingestion_fps', 'init_time_ms', 'is_active', 'policy', 'total_captured_frames']",PASS
+/api/hardware_status,GET,200,15.2,"['camera_optical_specs', 'connection_mode', 'critical_stop_latched', 'estop_relay_status', 'hardware_mode', 'hardware_state', 'last_action', 'last_health_state', 'latch_reason', 'motor_driver_signal', 'physical_hardware_verified', 'physical_stm32_connected', 'sensor_inventory', 'subsystem', 'telemetry', 'verification_status']",PASS
+/api/control_signal,GET,200,5.4,"['action', 'ai_health_state', 'belt_speed', 'buzzer_active', 'camera_status', 'confidence', 'control_action', 'critical_stop_latched', 'current_frame_state', 'defect_class', 'distance', 'emergency_relay_active', 'encoder_position', 'frame_id', 'hardware_mode', 'hardware_state', 'health_state', 'motor_current', 'motor_state', 'physical_hardware_verified', 'safety_latch_state', 'severity', 'temperature', 'timestamp', 'watchdog_ok']",PASS
+/api/detect,POST,404,24.5,"['error', 'error_code', 'hardware_control', 'health_state', 'status']",FAIL
+/api/hardware/reset,POST,200,4.1,"['critical_stop_latched', 'hardware_state', 'message', 'status']",PASS

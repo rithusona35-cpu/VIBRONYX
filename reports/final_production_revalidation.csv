@@ -1,0 +1,6 @@
+dataset_suite,total_images,total_gt_instances,precision,recall,f1,map50,map50_95,splice_recall,deep_scratch_recall,longitudinal_tear_recall,slight_scratch_recall,normal_belt_recall,false_positives,false_negatives,defect_detection_rate,clean_false_alarm_rate,avg_latency_ms
+Validation (Sequence-Isolated),191,331,0.7731,0.7419,0.7572,0.6815,0.3715,1.0,0.8936,0.9462,0.7353,0.1341,71,86,N/A,N/A,168.9
+Test (Sequence-Isolated),190,281,0.7741,0.6395,0.7004,0.6049,0.3665,1.0,0.878,0.703,0.544,0.0725,59,101,N/A,N/A,152.4
+Known Defect Tests,25,25,0.88,1.0,0.936,0.892,0.541,1.0,1.0,1.0,1.0,0.8,3,0,25/25 (100%),0/0,162.1
+Real-World Holdout Suite,12,14,0.913,1.0,0.954,0.941,0.582,1.0,1.0,1.0,1.0,N/A,0,0,11/11 (100%),0/1 (0.0%),158.5
+Hard Negatives (Clean Textures & Shadows),6,0,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,1,0,N/A,1/6 (16.7%),155.0

@@ -1,0 +1,9 @@
+{
+  "image": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+  "ground_truth": "NORMAL",
+  "prediction": "DEFECT",
+  "classes_pred": [
+    "Longitudinal Tear"
+  ],
+  "model": "YOLO11m-800-Medium (belt_defect_yolo11m)"
+}

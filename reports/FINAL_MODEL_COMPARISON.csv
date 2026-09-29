@@ -1,0 +1,5 @@
+Model,Precision,Recall,F1,mAP50,mAP50-95,Belt_Splice_Recall,Deep_Scratch_Recall,Longitudinal_Tear_Recall,Slight_Scratch_Recall,False_Positive_Rate,Real_world_defect_recall,Clean_belt_false_alarms,Latency,Gate_Verdict
+Production (final_sih_model.pt),0.7731,0.7419,0.7572,0.6815,0.3715,1.0,0.8936,0.9462,0.7353,0.2269,1.0,0,168.2 ms (CPU) / 138.3 ms (ONNX),RETAINED_IN_PRODUCTION
+Candidate B (candidate_B_v3.pt),0.8148,0.6581,0.7281,0.6514,0.333,0.9512,0.8936,0.7691,0.6765,0.1852,1.0,0,175.4 ms (CPU),REJECTED (Tear recall regressed -17.7%)
+Candidate C (controlled_aug),0.7019,0.6621,0.6814,0.6005,0.3331,1.0,0.617,0.8925,0.6912,0.2981,1.0,1,170.1 ms (CPU),REJECTED (Deep scratch recall fell to 61.7%)
+Original Baseline (detect/train/weights/best.pt),0.7568,0.7161,0.7359,0.617,0.3487,1.0,0.8723,0.9462,0.6765,0.2432,1.0,1,122.0 ms (CPU),ARCHIVED (Clean belt false alarm; lower mAP50)

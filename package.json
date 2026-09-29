@@ -1,0 +1,26 @@
+{
+  "name": "mineguard-ai",
+  "version": "2.4.0",
+  "description": "MineGuard AI — Industrial Conveyor Condition Monitoring & Predictive Safety Platform (SIH 26008)",
+  "main": "app.py",
+  "scripts": {
+    "dev": "npm --prefix mineguard-dashboard run dev",
+    "dev:backend": "python app.py",
+    "start": "python app.py",
+    "build": "npm --prefix mineguard-dashboard run build && node -e \"const fs = require('fs'); fs.cpSync('mineguard-dashboard/dist', 'dist', { recursive: true }); console.log('✓ Production build assets compiled to dist/');\"",
+    "build:vanilla": "node -e \"const fs = require('fs'); if (!fs.existsSync('dist')) fs.mkdirSync('dist', { recursive: true }); fs.copyFileSync('code.html', 'dist/index.html'); fs.copyFileSync('config.js', 'dist/config.js'); fs.copyFileSync('dashboard.js', 'dist/dashboard.js'); fs.copyFileSync('telemetryConfig.js', 'dist/telemetryConfig.js'); console.log('✓ Vanilla build assets compiled to dist/');\"",
+    "test": "python run_all_unit_tests.py",
+    "test:ai": "python validate_models.py"
+  },
+  "keywords": [
+    "mining",
+    "conveyor-monitoring",
+    "predictive-maintenance",
+    "iot-telemetry",
+    "industrial-safety",
+    "yolo11",
+    "supabase"
+  ],
+  "author": "MineGuard Engineering Team (SIH 26008)",
+  "license": "UNLICENSED"
+}

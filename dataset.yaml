@@ -1,0 +1,12 @@
+path: D:/SIH/anband told/belt predutor
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 5
+names:
+  0: belt splice
+  1: deep scratch
+  2: longitudinal tear
+  3: normal belt
+  4: slight scratch

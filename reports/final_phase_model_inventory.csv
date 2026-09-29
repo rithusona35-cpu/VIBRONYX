@@ -1,0 +1,44 @@
+model_path,filename,architecture,size_mb,md5,last_modified,role
+best.pt,best.pt,YOLO11s,18.29,1ec35c649f440342e21549c2cd2a8aef,2026-09-04 10:40:38,Candidate / Checkpoint
+final_sih_model.pt,final_sih_model.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-14 18:47:34,PRIMARY_PRODUCTION_MODEL
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\best.pt,best.pt,YOLO11s,18.28,6ab2eca740c7e9c9b12b35debf49c582,2026-09-13 17:07:37,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch0.pt,epoch0.pt,YOLO11s,36.36,09d8db4263352030a19edd90d25f4132,2026-09-13 17:07:39,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch10.pt,epoch10.pt,YOLO11s,36.36,a638c8782f29f5d456f5c15d5ce1f3f5,2026-09-13 17:07:40,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch20.pt,epoch20.pt,YOLO11s,36.36,86084a6860681a93cb56eb34a34e3170,2026-09-13 17:07:40,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch30.pt,epoch30.pt,YOLO11s,36.36,e58fd1481bea5007cbcf976f42bbe1b8,2026-09-13 17:07:39,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch40.pt,epoch40.pt,YOLO11s,36.36,e350cfb84d79a8919174824b33ae1279,2026-09-13 17:07:39,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch50.pt,epoch50.pt,YOLO11s,36.36,2d3b93917fc43496bde7ff6e871262b4,2026-09-13 17:07:41,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch60.pt,epoch60.pt,YOLO11s,36.37,146e0fafdc5648b447de41d64d7f4bad,2026-09-13 17:07:40,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch70.pt,epoch70.pt,YOLO11s,36.37,e0c8530ed5b8ff5579a9f5065b9eed87,2026-09-13 17:07:38,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch80.pt,epoch80.pt,YOLO11s,36.37,2d680d8d83f70c0194b709ac7d7d8d04,2026-09-13 17:07:38,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\epoch90.pt,epoch90.pt,YOLO11s,36.37,fcfd640bdbfc19ac53fabee743d5bfa6,2026-09-13 17:07:38,Candidate / Checkpoint
+13 belt_output\detect\belt_defect_yolo11s\run_512_optimized\weights\last.pt,last.pt,YOLO11s,18.28,4638e03d93d7ed3b9edaa29bc08c45fe,2026-09-13 17:07:41,Candidate / Checkpoint
+belt_defect_yolo11m\run_800_medium-2\weights\best.pt,best.pt,YOLO11m,38.68,74bbecbe08b72b349df47b9fbf4a189f,2026-09-14 11:38:49,Candidate / Checkpoint
+belt_defect_yolo11m\run_800_medium-2\weights\last.pt,last.pt,YOLO11m,38.68,341757c71cd114da2dbd22e9ed16d104,2026-09-14 11:38:49,Candidate / Checkpoint
+belt_defect_yolo11s\run_v3_balanced\weights\best.pt,best.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-13 21:54:32,Candidate / Checkpoint
+belt_defect_yolo11s\run_v3_balanced\weights\last.pt,last.pt,YOLO11s,18.32,bf8b1b4fa7603338b7800ad9ae5161ae,2026-09-13 21:54:32,Candidate / Checkpoint
+belt_output\detect\belt_defect_yolo11s\run_v3_balanced\weights\best.pt,best.pt,YOLO11s,18.28,e2c039fed5542746232c756fefe63847,2026-09-13 20:03:34,Candidate / Checkpoint
+belt_output\detect\belt_defect_yolo11s\run_v3_balanced\weights\last.pt,last.pt,YOLO11s,18.28,30ae5ec2d288e1f1dbce84c07552b9f8,2026-09-13 20:03:34,Candidate / Checkpoint
+detect\train\weights\best.pt,best.pt,YOLO11s,18.29,1ec35c649f440342e21549c2cd2a8aef,2026-09-04 10:40:38,Candidate / Checkpoint
+detect\train\weights\last.pt,last.pt,YOLO11s,18.29,231e68ad8986ac20a976422218a956b9,2026-09-04 10:40:38,Candidate / Checkpoint
+experiments\experiment_B_clean_dataset\best.pt,best.pt,YOLO11s,18.27,cc0ffb31b84779766172de896c7f24d7,2026-09-18 21:28:15,EXPERIMENT_B_CLEAN_DATA
+experiments\experiment_C_hard_cases\best.pt,best.pt,YOLO11s,18.27,a2f1af4f7eeb8fb32a8e476fb00ea1d5,2026-09-18 21:31:34,EXPERIMENT_C_HARD_CASES
+models\best_model.pt,best_model.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-13 21:54:32,Candidate / Checkpoint
+models\final_sih_model.onnx,final_sih_model.onnx,YOLO11s (ONNX),36.27,de89667e3ce38792e1ce09a2e9795a9f,2026-09-18 21:36:56,PRODUCTION_ONNX_EXPORT
+models\final_sih_model.pt,final_sih_model.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-14 18:47:34,Candidate / Checkpoint
+models\final_sih_model_v1.pt,final_sih_model_v1.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-14 18:47:34,ARCHIVE_PRODUCTION_V1
+models\final_sih_model_v2.pt,final_sih_model_v2.pt,YOLO11s,18.27,a2f1af4f7eeb8fb32a8e476fb00ea1d5,2026-09-18 21:31:34,ARCHIVE_CANDIDATE_V2
+models\archive\final_sih_model_v1.pt,final_sih_model_v1.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-14 18:47:34,ARCHIVE_PRODUCTION_V1
+models\archive\original_baseline_v1.pt,original_baseline_v1.pt,YOLO11s,18.29,1ec35c649f440342e21549c2cd2a8aef,2026-09-04 10:40:38,ORIGINAL_BASELINE
+models\baseline\original_baseline_model.pt,original_baseline_model.pt,YOLO11s,18.29,1ec35c649f440342e21549c2cd2a8aef,2026-09-04 10:40:38,ORIGINAL_BASELINE
+models\best\final_sih_model.pt,final_sih_model.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-14 18:47:34,Candidate / Checkpoint
+models\candidate\yolo11m_800_medium.pt,yolo11m_800_medium.pt,YOLO11m,38.68,74bbecbe08b72b349df47b9fbf4a189f,2026-09-14 11:38:49,Candidate / Checkpoint
+models\candidate\yolo11s_512_run1.pt,yolo11s_512_run1.pt,YOLO11s,18.28,6ab2eca740c7e9c9b12b35debf49c582,2026-09-13 17:07:37,Candidate / Checkpoint
+models\candidate\yolo11s_512_v3.pt,yolo11s_512_v3.pt,YOLO11s,18.27,cf7118c4d1d589f2fdb2d413b3b75ac4,2026-09-13 17:54:17,Candidate / Checkpoint
+models\candidate\yolo11s_800_v3.pt,yolo11s_800_v3.pt,YOLO11s,18.32,ee136ef272f5c1c883db322697e93e1a,2026-09-13 21:54:32,Candidate / Checkpoint
+runs\detect\experiments\experiment_B_clean_dataset\weights\best.pt,best.pt,YOLO11s,18.27,cc0ffb31b84779766172de896c7f24d7,2026-09-18 21:28:15,EXPERIMENT_B_CLEAN_DATA
+runs\detect\experiments\experiment_B_clean_dataset\weights\last.pt,last.pt,YOLO11s,18.27,7c9eaa6c8560df6fc452e4ef1db8c0be,2026-09-18 21:28:15,EXPERIMENT_B_CLEAN_DATA
+runs\detect\experiments\experiment_C_hard_cases\weights\best.pt,best.pt,YOLO11s,18.27,a2f1af4f7eeb8fb32a8e476fb00ea1d5,2026-09-18 21:31:34,EXPERIMENT_C_HARD_CASES
+runs\detect\experiments\experiment_C_hard_cases\weights\last.pt,last.pt,YOLO11s,18.27,45ddee404cdcbdef6ccc7881fff96916,2026-09-18 21:31:34,EXPERIMENT_C_HARD_CASES
+run_v3_balanced\weights\best.pt,best.pt,YOLO11s,18.27,cf7118c4d1d589f2fdb2d413b3b75ac4,2026-09-13 17:54:17,Candidate / Checkpoint
+run_v3_balanced\weights\last.pt,last.pt,YOLO11s,18.27,28260266828f61086a5c0fb5a40343e5,2026-09-13 17:54:17,Candidate / Checkpoint

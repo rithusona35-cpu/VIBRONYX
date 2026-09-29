@@ -1,0 +1,5 @@
+model_path,format,file_size,architecture,input_size,classes_count,sha256,status
+models/final_sih_model.pt,PyTorch (.pt),18.67 MB,YOLO11s,800x800,5,2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3,PRODUCTION_LOCKED
+models/final_sih_model.onnx,ONNX (.onnx),36.8 MB,YOLO11s ONNX,800x800,5,verified_matching,PRODUCTION_ONNX_EXPORT
+runs/detect/train/weights/best.pt,PyTorch (.pt),18.67 MB,YOLO11s,640x640,5,561494ae...,LEGACY_CHECKPOINT_EVALUATED
+13 belt_output/train/weights/best.pt,PyTorch (.pt),18.67 MB,YOLO11s,640x640,5,e4bca992...,LEGACY_CHECKPOINT_EVALUATED

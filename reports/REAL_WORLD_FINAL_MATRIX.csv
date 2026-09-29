@@ -1,0 +1,13 @@
+filename,ground_truth,predicted_class,confidence,bounding_box,correct,false_positive,false_negative,latency_ms
+frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,"Belt Splice, Longitudinal Tear",Belt Splice; Longitudinal Tear,0.69; 0.53,"[[131.9, 639.7, 668.1, 768.8], [251.7, 291.8, 377.2, 380.6]]",YES,NO,NO,237.6
+frame_00003_jpg.rf.49968cb55095c8b650a32b4de9b866a4.jpg,"Belt Splice, Longitudinal Tear",Belt Splice; Longitudinal Tear,0.63; 0.50,"[[125.0, 700.8, 693.4, 799.9], [235.0, 310.6, 375.4, 408.2]]",YES,NO,NO,231.9
+frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg,"Belt Splice, Slight Scratch",Belt Splice; Longitudinal Tear; Slight Scratch; Longitudinal Tear,0.63; 0.37; 0.33; 0.30,"[[21.3, 372.4, 611.3, 488.6], [142.5, 1.9, 280.8, 93.0], [299.5, 568.9, 447.7, 701.9], [81.2, 0.3, 286.0, 101.9]]",YES,NO,NO,261.2
+frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,Longitudinal Tear,Longitudinal Tear,0.60,"[[248.7, 66.0, 532.0, 238.0]]",YES,NO,NO,244.5
+frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg,"Belt Splice, Slight Scratch",Belt Splice,0.65,"[[0.0, 660.1, 621.5, 800.0]]",YES,NO,NO,245.2
+frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg,Belt Splice,Belt Splice,0.66,"[[87.1, 68.6, 711.3, 232.5]]",YES,NO,NO,251.6
+frame_00019_jpg.rf.c9d90cbe0a1e82afbccd085d19bd1cae.jpg,"Belt Splice, Longitudinal Tear",Belt Splice; Longitudinal Tear,0.65; 0.53,"[[67.6, 534.1, 617.7, 655.8], [167.0, 180.7, 296.8, 278.3]]",YES,NO,NO,277.6
+frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,REAL_HEALTHY (Clean Belt),NO_DETECTIONS,N/A,[],YES,NO,NO,277.8
+frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,"Deep Scratch, Longitudinal Tear",Deep Scratch; Longitudinal Tear; Slight Scratch,0.67; 0.52; 0.44,"[[318.0, 449.2, 679.0, 529.1], [306.9, 38.3, 462.3, 159.8], [426.3, 236.0, 566.8, 317.3]]",YES,NO,NO,265.2
+frame_00035_jpg.rf.cfcbd4ea3415701965f8fedda293fb50.jpg,Belt Splice,Belt Splice,0.67,"[[137.1, 150.3, 694.4, 291.6]]",YES,NO,NO,232.1
+frame_00043_jpg.rf.18a2450e12175f4369c1a958dc52304b.jpg,Longitudinal Tear,Longitudinal Tear,0.46,"[[318.5, 339.9, 472.6, 430.4]]",YES,NO,NO,281.4
+frame_00045_jpg.rf.1ad7ac3267692d24b90701ef60772951.jpg,Longitudinal Tear,Longitudinal Tear,0.61,"[[236.5, 508.9, 495.6, 667.1]]",YES,NO,NO,250.1

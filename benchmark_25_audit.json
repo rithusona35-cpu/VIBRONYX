@@ -1,0 +1,314 @@
+[
+  {
+    "image": "frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg",
+    "ground_truth": "Belt Splice",
+    "model_detections": [
+      "Belt Splice",
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Belt Splice",
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00003_jpg.rf.49968cb55095c8b650a32b4de9b866a4.jpg",
+    "ground_truth": "Belt Splice",
+    "model_detections": [
+      "Belt Splice",
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Belt Splice",
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+    "ground_truth": "Belt Splice",
+    "model_detections": [
+      "Belt Splice",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Belt Splice",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg",
+    "ground_truth": "Belt Splice",
+    "model_detections": [
+      "Belt Splice"
+    ],
+    "api_detections": [
+      "Belt Splice"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+    "ground_truth": "Belt Splice",
+    "model_detections": [
+      "Belt Splice"
+    ],
+    "api_detections": [
+      "Belt Splice"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+    "ground_truth": "Longitudinal Tear",
+    "model_detections": [
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00019_jpg.rf.c9d90cbe0a1e82afbccd085d19bd1cae.jpg",
+    "ground_truth": "Longitudinal Tear",
+    "model_detections": [
+      "Belt Splice",
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Belt Splice",
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+    "ground_truth": "Longitudinal Tear",
+    "model_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00043_jpg.rf.18a2450e12175f4369c1a958dc52304b.jpg",
+    "ground_truth": "Longitudinal Tear",
+    "model_detections": [
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00045_jpg.rf.1ad7ac3267692d24b90701ef60772951.jpg",
+    "ground_truth": "Longitudinal Tear",
+    "model_detections": [
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+    "ground_truth": "Deep Scratch",
+    "model_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00052_jpg.rf.28706526d8f19576dc058ac9629bc90a.jpg",
+    "ground_truth": "Deep Scratch",
+    "model_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00055_jpg.rf.21c7dbe8fddf9f4b645d945f63c435b2.jpg",
+    "ground_truth": "Deep Scratch",
+    "model_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Deep Scratch",
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00068_jpg.rf.7da2953212e752b7957050e8ee29e21a.jpg",
+    "ground_truth": "Deep Scratch",
+    "model_detections": [
+      "Deep Scratch",
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Deep Scratch",
+      "Slight Scratch"
+    ],
+    "ui_display": "DEFECT DETECTED",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00121_jpg.rf.35938fe6d80f1299c994e9cb2adbac77.jpg",
+    "ground_truth": "Deep Scratch",
+    "model_detections": [
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Longitudinal Tear",
+      "Slight Scratch"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "MISSED"
+  },
+  {
+    "image": "frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg",
+    "ground_truth": "Slight Scratch",
+    "model_detections": [
+      "Belt Splice"
+    ],
+    "api_detections": [
+      "Belt Splice"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "MISSED"
+  },
+  {
+    "image": "frame_00046_jpg.rf.9075689b3baa501f6d8d9f1d91930a32.jpg",
+    "ground_truth": "Slight Scratch",
+    "model_detections": [
+      "Longitudinal Tear",
+      "Slight Scratch",
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Longitudinal Tear",
+      "Slight Scratch",
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00129_jpg.rf.7719d1d835cab947ea466cdf7469001a.jpg",
+    "ground_truth": "Slight Scratch",
+    "model_detections": [
+      "Slight Scratch"
+    ],
+    "api_detections": [
+      "Slight Scratch"
+    ],
+    "ui_display": "DEFECT DETECTED",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00056_jpg.rf.7154a70d40a859c07c4f74152c8ad5f8.jpg",
+    "ground_truth": "Slight Scratch",
+    "model_detections": [
+      "Belt Splice"
+    ],
+    "api_detections": [
+      "Belt Splice"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "MISSED"
+  },
+  {
+    "image": "frame_00064_jpg.rf.388be8135d2ae5802f530028dd44d209.jpg",
+    "ground_truth": "Slight Scratch",
+    "model_detections": [
+      "Longitudinal Tear"
+    ],
+    "api_detections": [
+      "Longitudinal Tear"
+    ],
+    "ui_display": "CRITICAL ANOMALY ALERT",
+    "match": "MISSED"
+  },
+  {
+    "image": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+    "ground_truth": "Normal Belt",
+    "model_detections": [],
+    "api_detections": [],
+    "ui_display": "BELT INTEGRITY HEALTHY",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00121_jpg.rf.e676092e667ba16cc8dbaea2e3f6e68e.jpg",
+    "ground_truth": "Normal Belt",
+    "model_detections": [],
+    "api_detections": [],
+    "ui_display": "BELT INTEGRITY HEALTHY",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_00122_jpg.rf.ef82374d953643dc00d5b2e740175659.jpg",
+    "ground_truth": "Normal Belt",
+    "model_detections": [],
+    "api_detections": [],
+    "ui_display": "BELT INTEGRITY HEALTHY",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_20260504_001606_073276_jpg.rf.4548423d7cd1e025f133c156c2ba2c5b.jpg",
+    "ground_truth": "Normal Belt",
+    "model_detections": [],
+    "api_detections": [],
+    "ui_display": "BELT INTEGRITY HEALTHY",
+    "match": "PASS"
+  },
+  {
+    "image": "frame_20260504_003223_261865_jpg.rf.c57cb6c90f2306caa729815a699c3894.jpg",
+    "ground_truth": "Normal Belt",
+    "model_detections": [],
+    "api_detections": [],
+    "ui_display": "BELT INTEGRITY HEALTHY",
+    "match": "PASS"
+  }
+]

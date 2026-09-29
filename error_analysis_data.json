@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "TP": 144,
+    "FP": 71,
+    "FN": 35,
+    "WrongClass": 0
+  },
+  "scratch_confusion": {
+    "deep_as_deep": 24,
+    "deep_as_slight": 0,
+    "deep_missed": 2,
+    "slight_as_slight": 37,
+    "slight_as_deep": 0,
+    "slight_missed": 24,
+    "normal_as_damage": 0,
+    "normal_ignored": 52
+  }
+}

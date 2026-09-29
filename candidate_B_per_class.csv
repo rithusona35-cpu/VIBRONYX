@@ -1,0 +1,6 @@
+class_id,class_name,precision,recall,f1,tp,fp,fn,gt_count
+0,Belt Splice,0.8913,1.0,0.9425,41,5,0,41
+1,Deep Scratch,0.5915,0.9545,0.7304,42,29,2,47
+2,Longitudinal Tear,0.6694,0.871,0.757,81,40,12,93
+3,Normal Belt,1.0,0.037,0.0714,3,0,78,82
+4,Slight Scratch,0.447,0.8676,0.59,59,73,9,68

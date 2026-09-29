@@ -1,0 +1,6 @@
+category,description,count,primary_class,mitigation
+surface_texture,Vulcanized belt grain and micro-abrasion streaks,22,Slight Scratch,Directional lighting
+lighting_gradient,High-angle specular reflection lines from overhead factory lamps,18,Slight Scratch,Polarizing camera lens filters
+shadow,High-contrast edge shadow cast by side skirtboards and chutes,14,Deep Scratch,Masking fixed conveyor edges
+splice_like_texture,Longitudinal factory vulcanization seams,10,Longitudinal Tear,Confidence calibration at 0.25
+annotation_issue,Legacy Normal Belt predicted on unannotated clean rubber,7,Normal Belt,Treatment of clean rubber as negative background

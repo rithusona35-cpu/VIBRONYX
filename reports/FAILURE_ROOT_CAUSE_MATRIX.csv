@@ -1,0 +1,4 @@
+failure_id,image,primary_cause,secondary_cause,remedy
+FAIL_001,uploads/last_upload.jpg,ORIENTATION_FAILURE,ASPECT_RATIO_FAILURE,Rotate 90 deg CW to match conveyor gantry
+FAIL_002,frame_20260504_005953,ANNOTATION_FAILURE,IOU_SIZING_MISMATCH,Standardize tight bounding boxes
+FAIL_003,underexposed_gallery,ILLUMINATION_FAILURE,CONTRAST_LOSS,Apply CLAHE adaptive illumination equalization

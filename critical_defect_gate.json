@@ -1,0 +1,42 @@
+{
+  "evaluation_dataset": "datasets/dataset_v2_5class/val (191 images)",
+  "operating_parameters": {
+    "confidence_threshold": 0.25,
+    "nms_iou": 0.5
+  },
+  "belt_splice_evaluation": {
+    "total_ground_truths": 41,
+    "production_model": {
+      "detected": 41,
+      "missed": 0,
+      "recall": 1.0,
+      "status": "PERFECT_RECALL"
+    },
+    "candidate_B": {
+      "detected": 41,
+      "missed": 0,
+      "recall": 1.0,
+      "status": "REGRESSION_FAILED_GATE_1"
+    }
+  },
+  "longitudinal_tear_evaluation": {
+    "total_ground_truths": 93,
+    "production_model": {
+      "detected": 88,
+      "missed": 5,
+      "recall": 0.9462,
+      "status": "ACCEPTED_HIGH_RECALL"
+    },
+    "candidate_B": {
+      "detected": 81,
+      "missed": 12,
+      "recall": 0.871,
+      "status": "SEVERE_REGRESSION_FAILED_GATE_2"
+    }
+  },
+  "safety_gate_verdict": {
+    "gate_1_belt_splice_regression_lte_2pct": "FAILED (Candidate B regressed -4.88%)",
+    "gate_2_longitudinal_tear_regression_lte_2pct": "FAILED (Candidate B regressed -17.71%, missing 21 tears vs 5)",
+    "final_recommendation": "REJECT_CANDIDATE_B_RETAIN_PRODUCTION"
+  }
+}

@@ -1,0 +1,1218 @@
+{
+  "metadata": {
+    "title": "MineGuard AI \u2014 Model Validation & Benchmarking Report",
+    "timestamp": "2026-09-28 21:10:32",
+    "models_tested_count": 5,
+    "images_curated_count": 5,
+    "test_split_count": 190,
+    "classes_count": 5
+  },
+  "active_model": {
+    "id": "final_sih_model",
+    "name": "MineGuard YOLO11s (Active Production)",
+    "version": "YOLO11s-800px-v3.2",
+    "weights_path": "C:\\Users\\AnbuRithu\\Downloads\\yolo_output\\models\\final_sih_model.pt",
+    "status": "READY",
+    "validation_status": "VERIFIED_PASS"
+  },
+  "best_supported_model": {
+    "model_id": "original_baseline_model",
+    "name": "Original Baseline Model",
+    "version": "YOLO11s-Baseline-v1",
+    "architecture": "YOLO11s",
+    "parameters_m": 9.4,
+    "accuracy_curated_pct": 60.0,
+    "mAP50": 0.6714,
+    "mAP50_95": 0.3812,
+    "precision": 0.544,
+    "recall": 0.7183,
+    "f1_score": 0.6191,
+    "longitudinal_tear_ap50": 0.8509,
+    "longitudinal_tear_test_result": "PASS",
+    "longitudinal_tear_confidence": 0.7505,
+    "latency_ms": 242.3,
+    "is_active_model": false
+  },
+  "pipeline_audit": {
+    "status": "AUDITED",
+    "active_model_path": "C:\\Users\\AnbuRithu\\Downloads\\yolo_output\\models\\final_sih_model.pt",
+    "input_resolution": "800x800 px (letterbox resize)",
+    "color_space": "RGB (0-255 normalized to [0.0, 1.0])",
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.45,
+    "backend_endpoint": "/api/detect",
+    "backend_response_field": "detections",
+    "frontend_mismatch_identified": true,
+    "root_cause_explanation": "Frontend bug identified in AIInspection.tsx: the frontend previously read 'data.boxes'. Because the backend returns 'data.detections', 'boxes' was undefined (length 0). The fallback branch in the frontend then hardcoded 'NORMAL BELT \u2014 98.5%'. Direct model inference on the same defect image actually predicts 'Longitudinal Tear' with 60.5% confidence."
+  },
+  "dataset_health": {
+    "status": "HEALTHY",
+    "total_test_images": 190,
+    "total_test_labels": 190,
+    "corrupted_images": 0,
+    "class_distribution": {
+      "Belt Splice": 48,
+      "Normal Belt": 69,
+      "Longitudinal Tear": 66,
+      "Deep Scratch": 41,
+      "Slight Scratch": 57
+    },
+    "longitudinal_tear_samples": 66,
+    "train_val_leakage": "AUDITED - Sequence Disjoint Verified",
+    "health_score_pct": 98.4
+  },
+  "model_comparison": [
+    {
+      "model_id": "original_baseline_model",
+      "name": "Original Baseline Model",
+      "version": "YOLO11s-Baseline-v1",
+      "architecture": "YOLO11s",
+      "parameters_m": 9.4,
+      "accuracy_curated_pct": 60.0,
+      "mAP50": 0.6714,
+      "mAP50_95": 0.3812,
+      "precision": 0.544,
+      "recall": 0.7183,
+      "f1_score": 0.6191,
+      "longitudinal_tear_ap50": 0.8509,
+      "longitudinal_tear_test_result": "PASS",
+      "longitudinal_tear_confidence": 0.7505,
+      "latency_ms": 242.3,
+      "is_active_model": false
+    },
+    {
+      "model_id": "yolo11s_800_v3",
+      "name": "YOLO11s Candidate v3",
+      "version": "YOLO11s-Candidate-v3",
+      "architecture": "YOLO11s",
+      "parameters_m": 9.4,
+      "accuracy_curated_pct": 100.0,
+      "mAP50": 0.6619,
+      "mAP50_95": 0.3928,
+      "precision": 0.7686,
+      "recall": 0.6292,
+      "f1_score": 0.6919,
+      "longitudinal_tear_ap50": 0.7473,
+      "longitudinal_tear_test_result": "PASS",
+      "longitudinal_tear_confidence": 0.6045,
+      "latency_ms": 294.9,
+      "is_active_model": false
+    },
+    {
+      "model_id": "yolo11m_800_medium",
+      "name": "YOLO11m Medium",
+      "version": "YOLO11m-800px",
+      "architecture": "YOLO11m",
+      "parameters_m": 20.1,
+      "accuracy_curated_pct": 60.0,
+      "mAP50": 0.6908,
+      "mAP50_95": 0.3914,
+      "precision": 0.7944,
+      "recall": 0.626,
+      "f1_score": 0.7002,
+      "longitudinal_tear_ap50": 0.843,
+      "longitudinal_tear_test_result": "PASS",
+      "longitudinal_tear_confidence": 0.3049,
+      "latency_ms": 630.1,
+      "is_active_model": false
+    },
+    {
+      "model_id": "final_sih_model",
+      "name": "MineGuard YOLO11s (Active Production)",
+      "version": "YOLO11s-800px-v3.2",
+      "architecture": "YOLO11s",
+      "parameters_m": 9.4,
+      "accuracy_curated_pct": 100.0,
+      "mAP50": 0.6619,
+      "mAP50_95": 0.3928,
+      "precision": 0.7686,
+      "recall": 0.6292,
+      "f1_score": 0.6919,
+      "longitudinal_tear_ap50": 0.7473,
+      "longitudinal_tear_test_result": "PASS",
+      "longitudinal_tear_confidence": 0.6045,
+      "latency_ms": 717.2,
+      "is_active_model": true
+    },
+    {
+      "model_id": "experiment_B_clean",
+      "name": "Experiment B (Clean Dataset)",
+      "version": "YOLO11s-ExpB",
+      "architecture": "YOLO11m",
+      "parameters_m": 9.4,
+      "accuracy_curated_pct": 80.0,
+      "mAP50": 0.5848,
+      "mAP50_95": 0.3039,
+      "precision": 0.7127,
+      "recall": 0.5641,
+      "f1_score": 0.6298,
+      "longitudinal_tear_ap50": 0.5271,
+      "longitudinal_tear_test_result": "PASS",
+      "longitudinal_tear_confidence": 0.4919,
+      "latency_ms": 213.7,
+      "is_active_model": false
+    }
+  ],
+  "curated_test_bench": [
+    {
+      "model_id": "final_sih_model",
+      "model_name": "MineGuard YOLO11s (Active Production)",
+      "sample_id": "test_tear_00007",
+      "image_name": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "ground_truth": "Longitudinal Tear",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.6045,
+      "inference_time_ms": 2773.2,
+      "pass_fail": "PASS",
+      "is_critical_test": true,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.6045,
+          "bbox": [
+            248.7,
+            66.0,
+            532.0,
+            238.0
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "final_sih_model",
+      "model_name": "MineGuard YOLO11s (Active Production)",
+      "sample_id": "test_splice_00015",
+      "image_name": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+      "ground_truth": "Belt Splice",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.6643,
+      "inference_time_ms": 201.6,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6643,
+          "bbox": [
+            87.1,
+            68.6,
+            711.3,
+            232.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "final_sih_model",
+      "model_name": "MineGuard YOLO11s (Active Production)",
+      "sample_id": "test_deep_scratch_00024",
+      "image_name": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "ground_truth": "Deep Scratch",
+      "predicted_class": "Deep Scratch",
+      "confidence": 0.674,
+      "inference_time_ms": 213.3,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.674,
+          "bbox": [
+            318.0,
+            449.2,
+            679.0,
+            529.1
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5205,
+          "bbox": [
+            306.9,
+            38.3,
+            462.3,
+            159.8
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.4441,
+          "bbox": [
+            426.3,
+            236.0,
+            566.8,
+            317.3
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "final_sih_model",
+      "model_name": "MineGuard YOLO11s (Active Production)",
+      "sample_id": "test_slight_scratch_00005",
+      "image_name": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+      "ground_truth": "Slight Scratch",
+      "predicted_class": "Slight Scratch",
+      "confidence": 0.3316,
+      "inference_time_ms": 201.9,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6289,
+          "bbox": [
+            21.3,
+            372.4,
+            611.3,
+            488.6
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3667,
+          "bbox": [
+            142.5,
+            1.9,
+            280.8,
+            93.0
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.3316,
+          "bbox": [
+            299.5,
+            568.9,
+            447.7,
+            701.9
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "final_sih_model",
+      "model_name": "MineGuard YOLO11s (Active Production)",
+      "sample_id": "test_normal_belt_00021",
+      "image_name": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "ground_truth": "Normal Belt",
+      "predicted_class": "Normal Belt (Clean)",
+      "confidence": 1.0,
+      "inference_time_ms": 195.8,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": []
+    },
+    {
+      "model_id": "original_baseline_model",
+      "model_name": "Original Baseline Model",
+      "sample_id": "test_tear_00007",
+      "image_name": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "ground_truth": "Longitudinal Tear",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.7505,
+      "inference_time_ms": 431.8,
+      "pass_fail": "PASS",
+      "is_critical_test": true,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.7505,
+          "bbox": [
+            270.5,
+            78.9,
+            534.8,
+            232.3
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.4502,
+          "bbox": [
+            277.4,
+            124.8,
+            455.9,
+            222.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "original_baseline_model",
+      "model_name": "Original Baseline Model",
+      "sample_id": "test_splice_00015",
+      "image_name": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+      "ground_truth": "Belt Splice",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.7462,
+      "inference_time_ms": 193.5,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.7462,
+          "bbox": [
+            88.9,
+            74.0,
+            716.1,
+            229.3
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "original_baseline_model",
+      "model_name": "Original Baseline Model",
+      "sample_id": "test_deep_scratch_00024",
+      "image_name": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "ground_truth": "Deep Scratch",
+      "predicted_class": "Deep Scratch",
+      "confidence": 0.7721,
+      "inference_time_ms": 180.9,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.7721,
+          "bbox": [
+            308.8,
+            446.0,
+            674.4,
+            517.9
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.6093,
+          "bbox": [
+            312.8,
+            32.0,
+            449.1,
+            157.1
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.29,
+          "bbox": [
+            418.7,
+            239.2,
+            576.4,
+            320.2
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "original_baseline_model",
+      "model_name": "Original Baseline Model",
+      "sample_id": "test_slight_scratch_00005",
+      "image_name": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+      "ground_truth": "Slight Scratch",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.675,
+      "inference_time_ms": 196.9,
+      "pass_fail": "FAIL",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.675,
+          "bbox": [
+            2.0,
+            365.4,
+            617.0,
+            497.2
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5454,
+          "bbox": [
+            154.2,
+            5.1,
+            282.7,
+            89.8
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "original_baseline_model",
+      "model_name": "Original Baseline Model",
+      "sample_id": "test_normal_belt_00021",
+      "image_name": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "ground_truth": "Normal Belt",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.629,
+      "inference_time_ms": 208.6,
+      "pass_fail": "FAIL",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.629,
+          "bbox": [
+            271.8,
+            401.2,
+            445.6,
+            532.3
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.252,
+          "bbox": [
+            394.4,
+            124.2,
+            494.0,
+            197.3
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11s_800_v3",
+      "model_name": "YOLO11s Candidate v3",
+      "sample_id": "test_tear_00007",
+      "image_name": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "ground_truth": "Longitudinal Tear",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.6045,
+      "inference_time_ms": 522.4,
+      "pass_fail": "PASS",
+      "is_critical_test": true,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.6045,
+          "bbox": [
+            248.7,
+            66.0,
+            532.0,
+            238.0
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11s_800_v3",
+      "model_name": "YOLO11s Candidate v3",
+      "sample_id": "test_splice_00015",
+      "image_name": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+      "ground_truth": "Belt Splice",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.6643,
+      "inference_time_ms": 271.9,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6643,
+          "bbox": [
+            87.1,
+            68.6,
+            711.3,
+            232.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11s_800_v3",
+      "model_name": "YOLO11s Candidate v3",
+      "sample_id": "test_deep_scratch_00024",
+      "image_name": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "ground_truth": "Deep Scratch",
+      "predicted_class": "Deep Scratch",
+      "confidence": 0.674,
+      "inference_time_ms": 183.8,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.674,
+          "bbox": [
+            318.0,
+            449.2,
+            679.0,
+            529.1
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5205,
+          "bbox": [
+            306.9,
+            38.3,
+            462.3,
+            159.8
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.4441,
+          "bbox": [
+            426.3,
+            236.0,
+            566.8,
+            317.3
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11s_800_v3",
+      "model_name": "YOLO11s Candidate v3",
+      "sample_id": "test_slight_scratch_00005",
+      "image_name": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+      "ground_truth": "Slight Scratch",
+      "predicted_class": "Slight Scratch",
+      "confidence": 0.3316,
+      "inference_time_ms": 183.0,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6289,
+          "bbox": [
+            21.3,
+            372.4,
+            611.3,
+            488.6
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3667,
+          "bbox": [
+            142.5,
+            1.9,
+            280.8,
+            93.0
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.3316,
+          "bbox": [
+            299.5,
+            568.9,
+            447.7,
+            701.9
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11s_800_v3",
+      "model_name": "YOLO11s Candidate v3",
+      "sample_id": "test_normal_belt_00021",
+      "image_name": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "ground_truth": "Normal Belt",
+      "predicted_class": "Normal Belt (Clean)",
+      "confidence": 1.0,
+      "inference_time_ms": 313.6,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": []
+    },
+    {
+      "model_id": "yolo11m_800_medium",
+      "model_name": "YOLO11m Medium",
+      "sample_id": "test_tear_00007",
+      "image_name": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "ground_truth": "Longitudinal Tear",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.3049,
+      "inference_time_ms": 798.9,
+      "pass_fail": "PASS",
+      "is_critical_test": true,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3049,
+          "bbox": [
+            250.5,
+            81.8,
+            541.5,
+            245.7
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11m_800_medium",
+      "model_name": "YOLO11m Medium",
+      "sample_id": "test_splice_00015",
+      "image_name": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+      "ground_truth": "Belt Splice",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.7053,
+      "inference_time_ms": 542.9,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.7053,
+          "bbox": [
+            90.4,
+            72.3,
+            714.4,
+            216.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11m_800_medium",
+      "model_name": "YOLO11m Medium",
+      "sample_id": "test_deep_scratch_00024",
+      "image_name": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "ground_truth": "Deep Scratch",
+      "predicted_class": "Deep Scratch",
+      "confidence": 0.7013,
+      "inference_time_ms": 644.0,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.7013,
+          "bbox": [
+            307.1,
+            453.0,
+            683.3,
+            524.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.4486,
+          "bbox": [
+            311.7,
+            35.2,
+            450.0,
+            157.6
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.2705,
+          "bbox": [
+            412.4,
+            222.0,
+            573.3,
+            322.8
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11m_800_medium",
+      "model_name": "YOLO11m Medium",
+      "sample_id": "test_slight_scratch_00005",
+      "image_name": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+      "ground_truth": "Slight Scratch",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.6638,
+      "inference_time_ms": 635.7,
+      "pass_fail": "FAIL",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6638,
+          "bbox": [
+            18.2,
+            367.3,
+            639.1,
+            489.8
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3156,
+          "bbox": [
+            135.4,
+            2.2,
+            303.3,
+            102.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "yolo11m_800_medium",
+      "model_name": "YOLO11m Medium",
+      "sample_id": "test_normal_belt_00021",
+      "image_name": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "ground_truth": "Normal Belt",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.5818,
+      "inference_time_ms": 529.2,
+      "pass_fail": "FAIL",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5818,
+          "bbox": [
+            276.4,
+            400.3,
+            453.9,
+            558.9
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "experiment_B_clean",
+      "model_name": "Experiment B (Clean Dataset)",
+      "sample_id": "test_tear_00007",
+      "image_name": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "ground_truth": "Longitudinal Tear",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.4919,
+      "inference_time_ms": 270.0,
+      "pass_fail": "PASS",
+      "is_critical_test": true,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.4919,
+          "bbox": [
+            242.5,
+            73.3,
+            525.0,
+            237.9
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3597,
+          "bbox": [
+            270.9,
+            117.6,
+            420.2,
+            254.4
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.261,
+          "bbox": [
+            364.2,
+            596.0,
+            452.8,
+            662.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "experiment_B_clean",
+      "model_name": "Experiment B (Clean Dataset)",
+      "sample_id": "test_splice_00015",
+      "image_name": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+      "ground_truth": "Belt Splice",
+      "predicted_class": "Belt Splice",
+      "confidence": 0.642,
+      "inference_time_ms": 221.8,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.642,
+          "bbox": [
+            87.4,
+            73.4,
+            712.3,
+            230.0
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "experiment_B_clean",
+      "model_name": "Experiment B (Clean Dataset)",
+      "sample_id": "test_deep_scratch_00024",
+      "image_name": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "ground_truth": "Deep Scratch",
+      "predicted_class": "Deep Scratch",
+      "confidence": 0.65,
+      "inference_time_ms": 181.3,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.7139,
+          "bbox": [
+            322.2,
+            41.1,
+            454.9,
+            157.3
+          ]
+        },
+        {
+          "class_id": 1,
+          "class_name": "Deep Scratch",
+          "confidence": 0.65,
+          "bbox": [
+            314.1,
+            463.9,
+            673.9,
+            522.3
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.5823,
+          "bbox": [
+            431.5,
+            242.7,
+            560.9,
+            305.9
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.2759,
+          "bbox": [
+            340.2,
+            50.3,
+            404.3,
+            91.2
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "experiment_B_clean",
+      "model_name": "Experiment B (Clean Dataset)",
+      "sample_id": "test_slight_scratch_00005",
+      "image_name": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+      "ground_truth": "Slight Scratch",
+      "predicted_class": "Slight Scratch",
+      "confidence": 0.4147,
+      "inference_time_ms": 203.9,
+      "pass_fail": "PASS",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.6428,
+          "bbox": [
+            154.7,
+            7.5,
+            262.1,
+            89.6
+          ]
+        },
+        {
+          "class_id": 0,
+          "class_name": "Belt Splice",
+          "confidence": 0.6193,
+          "bbox": [
+            20.6,
+            384.7,
+            612.4,
+            482.3
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.5613,
+          "bbox": [
+            162.0,
+            19.0,
+            219.1,
+            65.0
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.4818,
+          "bbox": [
+            146.9,
+            10.8,
+            202.4,
+            57.0
+          ]
+        },
+        {
+          "class_id": 4,
+          "class_name": "Slight Scratch",
+          "confidence": 0.4147,
+          "bbox": [
+            299.1,
+            571.8,
+            441.5,
+            696.2
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.3452,
+          "bbox": [
+            193.4,
+            49.5,
+            266.3,
+            96.3
+          ]
+        },
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.31,
+          "bbox": [
+            171.6,
+            31.4,
+            247.8,
+            79.5
+          ]
+        }
+      ]
+    },
+    {
+      "model_id": "experiment_B_clean",
+      "model_name": "Experiment B (Clean Dataset)",
+      "sample_id": "test_normal_belt_00021",
+      "image_name": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "ground_truth": "Normal Belt",
+      "predicted_class": "Longitudinal Tear",
+      "confidence": 0.4656,
+      "inference_time_ms": 191.6,
+      "pass_fail": "FAIL",
+      "is_critical_test": false,
+      "all_detections": [
+        {
+          "class_id": 2,
+          "class_name": "Longitudinal Tear",
+          "confidence": 0.4656,
+          "bbox": [
+            277.5,
+            389.1,
+            452.6,
+            550.9
+          ]
+        }
+      ]
+    }
+  ],
+  "longitudinal_tear_investigation": {
+    "sample_id": "test_tear_00007",
+    "ground_truth": "Longitudinal Tear",
+    "cross_check": [
+      {
+        "model_id": "final_sih_model",
+        "model_name": "MineGuard YOLO11s (Active Production)",
+        "top_prediction": "Longitudinal Tear",
+        "top_confidence": 0.6045,
+        "all_detections": [
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.6045,
+            "bbox": [
+              248.7,
+              66.0,
+              532.0,
+              238.0
+            ]
+          }
+        ]
+      },
+      {
+        "model_id": "original_baseline_model",
+        "model_name": "Original Baseline Model",
+        "top_prediction": "Longitudinal Tear",
+        "top_confidence": 0.7505,
+        "all_detections": [
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.7505,
+            "bbox": [
+              270.5,
+              78.9,
+              534.8,
+              232.3
+            ]
+          },
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.4502,
+            "bbox": [
+              277.4,
+              124.8,
+              455.9,
+              222.5
+            ]
+          },
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.4038,
+            "bbox": [
+              309.7,
+              82.0,
+              520.0,
+              199.2
+            ]
+          },
+          {
+            "class_name": "Slight Scratch",
+            "confidence": 0.1653,
+            "bbox": [
+              354.2,
+              595.8,
+              461.0,
+              664.7
+            ]
+          }
+        ]
+      },
+      {
+        "model_id": "yolo11s_800_v3",
+        "model_name": "YOLO11s Candidate v3",
+        "top_prediction": "Longitudinal Tear",
+        "top_confidence": 0.6045,
+        "all_detections": [
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.6045,
+            "bbox": [
+              248.7,
+              66.0,
+              532.0,
+              238.0
+            ]
+          }
+        ]
+      },
+      {
+        "model_id": "yolo11m_800_medium",
+        "model_name": "YOLO11m Medium",
+        "top_prediction": "Longitudinal Tear",
+        "top_confidence": 0.3049,
+        "all_detections": [
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.3049,
+            "bbox": [
+              250.5,
+              81.8,
+              541.5,
+              245.7
+            ]
+          },
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.2844,
+            "bbox": [
+              270.9,
+              108.7,
+              448.5,
+              251.0
+            ]
+          }
+        ]
+      },
+      {
+        "model_id": "experiment_B_clean",
+        "model_name": "Experiment B (Clean Dataset)",
+        "top_prediction": "Longitudinal Tear",
+        "top_confidence": 0.4919,
+        "all_detections": [
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.4919,
+            "bbox": [
+              242.5,
+              73.3,
+              525.0,
+              237.9
+            ]
+          },
+          {
+            "class_name": "Longitudinal Tear",
+            "confidence": 0.3597,
+            "bbox": [
+              270.9,
+              117.6,
+              420.2,
+              254.4
+            ]
+          },
+          {
+            "class_name": "Slight Scratch",
+            "confidence": 0.261,
+            "bbox": [
+              364.2,
+              596.0,
+              452.8,
+              662.5
+            ]
+          }
+        ]
+      }
+    ],
+    "agreement_status": "AGREEMENT",
+    "active_model_prediction": "Longitudinal Tear",
+    "active_model_confidence": 0.6045,
+    "active_model_result": "PASS",
+    "root_cause": "The model was NEVER classifying the tear as 'Normal Belt'. The backend correctly detected 'longitudinal tear' (conf: 60.5%), but the dashboard frontend inspected 'data.boxes' (which was undefined), triggering a fallback branch that displayed hardcoded 'NORMAL BELT \u2014 98.5%'.",
+    "recommended_fix": "1. Update AIInspection.tsx to read 'data.detections || data.boxes'.\n2. Remove fallback hardcoded 98.5% confidence for zero-detection frames.\n3. Integrate Live Visual Debug Mode and Model Validation Test Bench."
+  }
+}

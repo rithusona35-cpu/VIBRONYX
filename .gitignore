@@ -1,0 +1,162 @@
+# ==============================================================================
+# MINEGUARD AI — PRODUCTION GITIGNORE
+# Smart India Hackathon (SIH 26008)
+# Industrial Conveyor Belt Defect Detection & Predictive Safety System
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. ENVIRONMENT VARIABLES & SECRETS (CRITICAL: NEVER COMMIT)
+# ------------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+credentials.json
+service_account.json
+token.json
+
+# ------------------------------------------------------------------------------
+# 2. DEPENDENCY DIRECTORIES
+# ------------------------------------------------------------------------------
+node_modules/
+*/node_modules/
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 3. BUILD ARTIFACTS & COMPILATION OUTPUT
+# ------------------------------------------------------------------------------
+dist/
+dist-ssr/
+build/
+out/
+.output/
+.vite/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# ------------------------------------------------------------------------------
+# 4. PYTHON BYTECODE & CACHES
+# ------------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+nosetests.xml
+coverage.xml
+
+# ------------------------------------------------------------------------------
+# 5. SERVER RUNTIME, LOGS & TEMPORARY UPLOADS
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+uploads/*
+!uploads/.gitkeep
+scratch/
+tmp/
+temp/
+*.tmp
+*.bak
+*.bak_*
+
+# ------------------------------------------------------------------------------
+# 6. CLOUD DEPLOYMENT & CLI CACHES
+# ------------------------------------------------------------------------------
+.netlify/
+.vercel/
+.serverless/
+.terraform/
+
+# ------------------------------------------------------------------------------
+# 7. LOCAL STAGING REPOSITORIES & BACKUPS
+# ------------------------------------------------------------------------------
+git_staging_*/
+backup/
+*.orig
+
+# ------------------------------------------------------------------------------
+# 8. HEAVY ARCHIVES & COMPRESSED BUNDLES (>25MB)
+# ------------------------------------------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+
+# ------------------------------------------------------------------------------
+# 9. MACHINE LEARNING: TRAINING RUNS, DATASETS & HEAVY WEIGHTS
+# ------------------------------------------------------------------------------
+runs/
+experiments/
+wandb/
+*.pt
+belt_defect_yolo11*/
+run_v3_balanced/
+# Exclude raw training datasets if kept outside release
+# Allow quantized ONNX model for deployment:
+!models/final_sih_model_int8.onnx
+!models/final_sih_model.onnx
+
+# ------------------------------------------------------------------------------
+# 10. OPERATING SYSTEM & IDE ARTIFACTS
+# ------------------------------------------------------------------------------
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Visual Studio Code / Cursor / JetBrains
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo

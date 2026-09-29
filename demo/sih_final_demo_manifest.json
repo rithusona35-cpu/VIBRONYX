@@ -1,0 +1,119 @@
+{
+  "project_name": "SIH 26008 — MineGuard AI: AI-Based Industrial Conveyor Belt Defect Detection and Monitoring System",
+  "problem_statement": "Autonomous real-time detection, orientation-invariant localization, severity classification, and failsafe motor interlock control for conveyor belts in heavy mining environments.",
+  "production_model": "models/final_sih_model.pt",
+  "production_model_sha256": "2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3",
+  "model_architecture": "YOLO11s (9,429,727 parameters, Small checkpoint, PyTorch)",
+  "input_resolution": "800x800",
+  "class_names": [
+    "belt splice",
+    "deep scratch",
+    "longitudinal tear",
+    "normal belt",
+    "slight scratch"
+  ],
+  "inference_pipeline": "Unified Preprocessing (EXIF normalization, BGR conversion, RGB PIL rendering) -> SmartOrientationRouter -> Ultralytics YOLO11s (800x800) -> Inverse Bounding-Box Coordinate Transformation & IoU Fusion -> Hardware Safety Controller FSM",
+  "orientation_router": "SmartOrientationRouter: Evaluates aspect ratio (W/H). Standard landscape (W/H >= 0.8) executes Fast Path (angle 0 deg). Portrait / anomalous ratio (W/H < 0.75 or 0 detections on portrait) activates Fallback Multi-View Path (angles 0, 90, 270 deg) with geometric inverse transformation and duplicate suppression.",
+  "fast_path": "Single-pass forward inference at 0 deg orientation for landscape frames. Verified latency: P50 = 163.85ms, P95 = 221.82ms.",
+  "fallback_path": "Multi-angle evaluation ([0, 90, 270] degrees) with coordinate inverse affine mapping and IoU fusion (threshold 0.45). Verified latency: P50 = 156.44ms, P95 = 162.80ms.",
+  "safety_state_machine": "9-State Deterministic FSM: SYSTEM_INIT, SYSTEM_READY, BELT_RUNNING, DEFECT_DETECTED, BELT_STOPPED, NO_DETECTIONS, ANALYSIS_ERROR, EMERGENCY_STOP, HARDWARE_FAULT. Critical defects (Longitudinal Tear, Belt Splice) trip STOP_CONVEYOR and engage a latch. Latch is persistent across clean frames until authorized operator reset.",
+  "api_endpoints": [
+    "GET /",
+    "GET /api/stats",
+    "GET /api/samples",
+    "GET /api/sample_image/<filename>",
+    "GET /api/model_info",
+    "POST /api/detect",
+    "GET /api/control_signal",
+    "GET /api/hardware_status",
+    "GET /api/telemetry",
+    "POST /api/operator_reset",
+    "POST /api/hardware/reset",
+    "GET /api/demo_manifest",
+    "GET /api/demo/manifest",
+    "GET /api/demo_step/<int:step_id>",
+    "GET /api/laptop_validation/<action>",
+    "POST /api/laptop_validation/<action>",
+    "GET /api/modes",
+    "POST /api/camera/start",
+    "POST /api/camera/stop",
+    "GET /api/camera/status",
+    "POST /api/camera/detect"
+  ],
+  "camera_configuration": "Index 0, DirectShow API (Windows backend), CV_CAP_PROP_BUFFERSIZE=1, Asynchronous Threaded LatestFrameCapture (Latest-Frame-Wins ring buffer, zero queue lag), raw capture ~40 FPS, decoupled inference ~7.56 FPS (112ms per frame).",
+  "hardware_mode": "SIMULATION (Safe demonstration profile: PHYSICAL_HARDWARE_VERIFIED=False, relay output simulated, 24V contactors de-energized for lab safety).",
+  "demo_images": {
+    "clean": "demo/final_demo_images/01_clean/clean_conveyor_frame.jpg",
+    "slight_scratch": "demo/final_demo_images/02_slight_scratch/slight_scratch_sample.jpg",
+    "deep_scratch": "demo/final_demo_images/03_deep_scratch/deep_scratch_sample.jpg",
+    "longitudinal_tear": "demo/final_demo_images/04_longitudinal_tear/longitudinal_tear_sample.jpg",
+    "belt_splice": "demo/final_demo_images/05_belt_splice/belt_splice_sample.jpg",
+    "portrait_recovery": "demo/final_demo_images/06_portrait_recovery/portrait_tear_recovery.jpg"
+  },
+  "expected_outputs": {
+    "clean": {
+      "detection_count": 0,
+      "state": "NORMAL",
+      "hardware_action": "CONTINUE",
+      "router_path": "FAST_PATH_STANDARD"
+    },
+    "slight_scratch": {
+      "detection_count": 1,
+      "class_name": "slight scratch",
+      "state": "WARNING",
+      "hardware_action": "CONTINUE",
+      "router_path": "FAST_PATH_LANDSCAPE"
+    },
+    "deep_scratch": {
+      "detection_count": 1,
+      "class_name": "deep scratch",
+      "state": "WARNING",
+      "hardware_action": "CONTINUE",
+      "router_path": "FAST_PATH_LANDSCAPE"
+    },
+    "longitudinal_tear": {
+      "detection_count": 1,
+      "class_name": "longitudinal tear",
+      "state": "CRITICAL",
+      "hardware_action": "STOP_CONVEYOR",
+      "router_path": "FAST_PATH_LANDSCAPE",
+      "safety_latch": true
+    },
+    "belt_splice": {
+      "detection_count": 1,
+      "class_name": "belt splice",
+      "state": "CRITICAL",
+      "hardware_action": "STOP_CONVEYOR",
+      "router_path": "FAST_PATH_LANDSCAPE",
+      "safety_latch": true
+    },
+    "portrait_recovery": {
+      "baseline_detections": 0,
+      "router_recovered_detections": 1,
+      "class_name": "longitudinal tear",
+      "state": "CRITICAL",
+      "hardware_action": "STOP_CONVEYOR",
+      "router_path": "FALLBACK_ROUTER_ACTIVATED",
+      "inverse_bbox_parity": true
+    }
+  },
+  "reset_procedure": "1. Physically inspect conveyor belt. 2. Verify all maintenance clearances. 3. Dispatch authorized operator reset token via POST /api/operator_reset or web dashboard 'Reset Safety Latch' button. 4. Verify latch is cleared in /api/hardware_status. 5. State transitions from BELT_STOPPED to SYSTEM_READY. 6. Actuator command transitions from STOP_CONVEYOR to CONTINUE.",
+  "known_limitations": [
+    "Hardware control operates in SIMULATION mode; physical 24V contactor and STM32 UART relay boards require optoisolated field wiring before industrial live energization.",
+    "Webcam DirectShow frame rate on CPU laptop is ~7.56 FPS decoupled inference (112-163ms latency); target edge deployment on NVIDIA Jetson Orin Nano with TensorRT INT8/FP16 yields >30 FPS industrial line-rate.",
+    "Dataset class imbalance: slight scratch and belt splice have fewer real mining site samples than longitudinal tear and normal belt."
+  ],
+  "software_versions": {
+    "python": "3.10.8",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "ultralytics": "8.4.138",
+    "opencv_python": "5.0.0.93",
+    "flask": "3.1.3",
+    "numpy": "2.2.6",
+    "pillow": "12.3.0"
+  },
+  "python_version": "3.10.8",
+  "test_count": 63,
+  "test_pass_count": 63
+}

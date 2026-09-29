@@ -1,0 +1,82 @@
+{
+  "model_name": "MineGuard-YOLO11s-Industrial-Conveyor",
+  "model_version": "v3.2-SIH-Final",
+  "architecture": "YOLO11s",
+  "parameters": 9414735,
+  "model_size_mb": 18.32,
+  "class_names": [
+    "Belt Splice",
+    "Deep Scratch",
+    "Longitudinal Tear",
+    "Normal Belt",
+    "Slight Scratch"
+  ],
+  "class_ids": {
+    "Belt Splice": 0,
+    "Deep Scratch": 1,
+    "Longitudinal Tear": 2,
+    "Normal Belt": 3,
+    "Slight Scratch": 4
+  },
+  "input_size": 800,
+  "optional_high_res_size": 960,
+  "confidence_threshold": 0.25,
+  "nms_iou": 0.45,
+  "training_dataset": "Roboflow Conveyor Belt Defect Dataset (1,556 frames, 2,474 annotations)",
+  "training_date": "2026-09-13",
+  "validation_dataset": "d:/SIH/anband told/leakage_free_dataset/valid (239 frames)",
+  "test_dataset": "d:/SIH/anband told/leakage_free_dataset/test (158 frames, sequence-disjoint)",
+  "real_world_test_dataset": "d:/SIH/anband told/real_world_test (12 unseen frames)",
+  "metrics_leakage_free_benchmark": {
+    "mAP50_composite_all_5_classes": 0.6235,
+    "mAP50_real_damage_4_classes": 0.7794,
+    "mAP50_95": 0.3689,
+    "precision": 0.6472,
+    "recall": 0.6272,
+    "f1_score": 0.637
+  },
+  "per_class_metrics": {
+    "Belt Splice": {
+      "recall": 1.0,
+      "ap50": 0.9887,
+      "severity": "MEDIUM",
+      "action": "SCHEDULED_INSPECTION"
+    },
+    "Deep Scratch": {
+      "recall": 0.9231,
+      "ap50": 0.895,
+      "severity": "HIGH",
+      "action": "REPAIR_REQUIRED"
+    },
+    "Longitudinal Tear": {
+      "recall": 0.7131,
+      "ap50": 0.7692,
+      "severity": "CRITICAL",
+      "action": "EMERGENCY_STOP_INTERLOCK"
+    },
+    "Normal Belt": {
+      "recall": 0.0,
+      "ap50": 0.0,
+      "severity": "NOMINAL",
+      "action": "CONTINUOUS_MONITORING"
+    },
+    "Slight Scratch": {
+      "recall": 0.5,
+      "ap50": 0.4648,
+      "severity": "LOW",
+      "action": "TREND_LOGGING"
+    }
+  },
+  "latency": {
+    "cpu_latency_ms": 149.8,
+    "fps_cpu": 6.7,
+    "high_res_960_latency_ms": 218.4,
+    "fps_cpu_960": 4.6
+  },
+  "hardware_used": "Intel Core i5-12450HX CPU (8 cores, 12 threads), 16GB RAM",
+  "limitations": [
+    "Normal Belt is an empty surface condition rather than a localized object; treated as global status NOMINAL when zero defect boxes are found.",
+    "Slight scratches under severe shadow (< 50 lux) can exhibit reduced confidence.",
+    "Extreme diagonal tears may be segmented into 2 disjoint bounding boxes without temporal tracking."
+  ]
+}

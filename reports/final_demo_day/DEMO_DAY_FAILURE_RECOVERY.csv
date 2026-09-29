@@ -1,0 +1,9 @@
+test_id,failure_scenario,trigger,expected_behavior,actual_behavior,system_resilience,status
+TEST_A,Port 5000 already occupied,Attempt socket bind on 0.0.0.0:5000 while server running,Detection of port conflict with clear error/recovery path,Captured OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted. Documented in RECOVERY_BEFORE_SIH.md Section 4,STABLE,PASS
+TEST_B,Camera temporarily unavailable / status query,Query /api/camera/status during background operations,Return JSON status without crashing server,Camera status endpoint responded gracefully: OK,STABLE,PASS
+TEST_C,Browser rapid refresh / reload burst,10 consecutive GET requests to /,Backend handles refresh without connection drops,Handled 10/10 requests (HTTP 200),STABLE,PASS
+TEST_D,Upload invalid / corrupt non-image file,POST corrupt plain-text payload to /api/detect,"Graceful validation error (ANALYSIS_ERROR), zero crash","HTTP 400, Health: ANALYSIS_ERROR, Code: IMAGE_DECODE_FAILED",STABLE,PASS
+TEST_E,Upload extremely large image (4000x3000),POST 12-Megapixel synthetic frame to /api/detect,Auto-rescaled & evaluated without out-of-memory crash,"HTTP 200, Detections: 0, Latency: 866.9ms",STABLE,PASS
+TEST_F,Temporary API failure / non-existent route,GET /api/invalid_nonexistent_endpoint,Standard HTTP 404 handled gracefully,HTTP 404 returned on invalid route,STABLE,PASS
+TEST_G,Backend restart & model weight immutability,Re-verify model binary checksum against frozen baseline,Model weights verified byte-for-byte identical,SHA256 verified identical: 2620a198ed5729d2...,STABLE,PASS
+TEST_H,Camera disconnect / release and re-open,DirectShow capture release followed by immediate re-open,Camera re-enumerates successfully without laptop reboot,"Camera cycle: open1=True, open2=True without host restart",STABLE,PASS

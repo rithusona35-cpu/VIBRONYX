@@ -1,0 +1,12 @@
+inference_run,latency_ms
+cold_start,1672.66
+warm_inference_1,193.41
+warm_inference_2,179.05
+warm_inference_3,170.35
+warm_inference_4,164.07
+warm_inference_5,153.85
+warm_inference_6,153.66
+warm_inference_7,152.74
+warm_inference_8,156.53
+warm_inference_9,158.24
+warm_inference_10,156.26

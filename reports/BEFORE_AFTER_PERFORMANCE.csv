@@ -1,0 +1,7 @@
+metric,before_optimization_ms,after_optimization_ms,speedup_factor,status
+Fast_Path_P50,1399.39,149.05,9.39x,PASS
+Fast_Path_P95,2119.74,153.35,13.82x,PASS
+Fallback_Path_P50,2329.76,300.54,7.75x,PASS
+Fallback_Path_P95,4828.79,306.72,15.74x,PASS
+Live_Camera_P50,2031.3,112.7,18.02x,PASS
+Camera_Inference_FPS,0.49,7.56,15.43x,PASS

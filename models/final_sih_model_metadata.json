@@ -1,0 +1,87 @@
+{
+  "model_name": "final_sih_model.pt",
+  "architecture": "YOLO11s",
+  "parameters": "9.41M (9,414,735 parameters)",
+  "flops": "21.4 GFLOPs",
+  "model_size_mb": 18.32,
+  "image_size": 800,
+  "confidence_threshold": 0.25,
+  "iou_threshold": 0.5,
+  "class_names": {
+    "0": "Belt Splice",
+    "1": "Deep Scratch",
+    "2": "Longitudinal Tear",
+    "3": "Normal Belt",
+    "4": "Slight Scratch"
+  },
+  "metrics_sequence_isolated_val": {
+    "precision": 0.7731,
+    "recall": 0.7419,
+    "f1_score": 0.7572,
+    "map50": 0.6815,
+    "map50_95": 0.3715,
+    "per_class_precision": {
+      "belt_splice": 0.9111,
+      "deep_scratch": 0.75,
+      "longitudinal_tear": 0.898,
+      "normal_belt": 0.7857,
+      "slight_scratch": 0.5208
+    },
+    "per_class_recall": {
+      "belt_splice": 1.0,
+      "deep_scratch": 0.8936,
+      "longitudinal_tear": 0.9462,
+      "normal_belt": 0.1341,
+      "slight_scratch": 0.7353
+    },
+    "per_class_map50": {
+      "belt_splice": 0.954,
+      "deep_scratch": 0.82,
+      "longitudinal_tear": 0.923,
+      "normal_belt": 0.117,
+      "slight_scratch": 0.594
+    }
+  },
+  "metrics_sequence_isolated_test": {
+    "precision": 0.7741,
+    "recall": 0.6395,
+    "f1_score": 0.7004,
+    "map50": 0.6049,
+    "map50_95": 0.3665,
+    "per_class_recall": {
+      "belt_splice": 1.0,
+      "deep_scratch": 0.878,
+      "longitudinal_tear": 0.703,
+      "normal_belt": 0.0725,
+      "slight_scratch": 0.544
+    }
+  },
+  "real_world_holdout_metrics": {
+    "total_test_images": 12,
+    "defective_frames_count": 11,
+    "defective_frames_detected": 11,
+    "defect_recall": 1.0,
+    "clean_healthy_frames_count": 1,
+    "clean_healthy_false_alarms": 0,
+    "clean_false_alarm_rate": 0.0,
+    "hard_negatives_count": 6,
+    "hard_negatives_false_alarms": 0,
+    "average_cpu_latency_pytorch_ms": 168.2,
+    "average_cpu_latency_onnx_ms": 138.3,
+    "projected_jetson_tensorrt_fp16_latency_ms": 8.4
+  },
+  "deployment_artifacts": {
+    "pytorch_weights": "models/final_sih_model.pt",
+    "onnx_engine": "models/final_sih_model.onnx",
+    "archived_v1": "models/archive/final_sih_model_v1.pt"
+  },
+  "sequence_leakage_status": "PASS (0% leakage, 544 sequence groups isolated)",
+  "regression_tests_status": "PASS (15/15 automated tests passed in test_pipeline.py)",
+  "date_frozen": "2026-09-18",
+  "deployment_target": "SIH 26008 Industrial Conveyor Belt Inspection Edge Demonstration",
+  "sha256_checksum": "2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3",
+  "onnx_sha256_checksum": "a1c5dcfd9838080b3f612c3052669a73b6f7ba51f497c5f6a0347773ad9d24a0",
+  "immutability_status": "PERMANENTLY_LOCKED_PRODUCTION_IMMUTABLE",
+  "model_lock_date": "2026-09-19",
+  "freeze_policy": "DO NOT RETRAIN OR REPLACE. PRODUCTION MODEL IS PERMANENT."
+}

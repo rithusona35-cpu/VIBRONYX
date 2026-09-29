@@ -1,0 +1,11 @@
+category,filename,resolution,aspect_ratio,baseline_count,router_count,class,confidence,bbox,inference_time_ms,router_path,final_state
+1_clean_belt,frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,800x800,1.0,0,0,NO_DETECTIONS,0.0,[],151.4,FAST_PATH_STANDARD,NO_DETECTIONS
+2_slight_scratch,slight_scratch_03_frame_20260504_005842_678301_jpg.rf.375ec8311467a5f68cec5c5ab10a9719.jpg,640x640,1.0,1,1,slight scratch,0.415,"[417.24, 1.2, 463.78, 134.64]",152.8,FAST_PATH_LANDSCAPE,DEFECT_DETECTED
+3_deep_scratch,deep_scratch_01_frame_20260504_005906_773257_jpg.rf.a5efba1b2b765512f9944b0d89dd10ec.jpg,640x640,1.0,1,1,slight scratch,0.394,"[223.77, 314.2, 336.36, 374.44]",146.0,FAST_PATH_LANDSCAPE,DEFECT_DETECTED
+4_longitudinal_tear,frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,800x800,1.0,1,1,longitudinal tear,0.605,"[248.68, 66.03, 532.01, 237.99]",152.2,FAST_PATH_LANDSCAPE,DEFECT_DETECTED
+5_belt_splice,belt_splice_01_frame_20260504_001504_008469_jpg.rf.9d08b7e32f548664329b119f66d4611b.jpg,640x640,1.0,1,1,belt splice,0.748,"[8.81, 195.19, 523.95, 410.7]",147.8,FAST_PATH_LANDSCAPE,DEFECT_DETECTED
+6_portrait_damaged,portrait_tear_test.jpg,800x800,1.0,0,0,NO_DETECTIONS,0.0,[],144.8,FAST_PATH_STANDARD,NO_DETECTIONS
+7_landscape_belt,frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,800x800,1.0,0,0,NO_DETECTIONS,0.0,[],148.9,FAST_PATH_STANDARD,NO_DETECTIONS
+8_extreme_aspect_ratio,portrait_tear_test.jpg,800x800,1.0,0,0,NO_DETECTIONS,0.0,[],154.8,FAST_PATH_STANDARD,NO_DETECTIONS
+9_difficult_contrast,belt_splice_01_frame_20260504_001504_008469_jpg.rf.9d08b7e32f548664329b119f66d4611b.jpg,640x640,1.0,1,1,belt splice,0.748,"[8.81, 195.19, 523.95, 410.7]",154.1,FAST_PATH_LANDSCAPE,DEFECT_DETECTED
+10_known_failure_baseline,portrait_tear_test.jpg,800x800,1.0,0,0,NO_DETECTIONS,0.0,[],151.3,FAST_PATH_STANDARD,NO_DETECTIONS

@@ -1,0 +1,7 @@
+experiment_id,model,input_size,epochs,batch_size,optimizer,learning_rate,augmentation,precision,recall,mAP50,mAP50_95,f1_score,ap_belt_splice,ap_deep_scratch,ap_longitudinal_tear,ap_normal_belt,ap_slight_scratch,latency_cpu_ms,memory_mb,status
+EXP-01-Baseline,YOLO11s,640,55,16,AdamW,0.001,None (mosaic=0.0),0.8155,0.6549,0.5941,0.2708,0.7265,0.921,0.685,0.73,0.16,0.425,113.2,18.29,Archived (Stopped early patience 15)
+EXP-02-HighAugment-LargeBatch,YOLO11s,512,100,67,SGD,0.01,"Heavy (mosaic=1.0, mixup=0.1)",0.6876,0.702,0.5698,0.2578,0.6947,0.89,0.64,0.695,0.15,0.405,82.5,18.28,Archived (Batch 67 caused gradient degradation)
+EXP-03-Balanced-512px,YOLO11s,512,61,16,AdamW,0.001,"Balanced (mosaic=0.5, close_mosaic=25)",0.7526,0.6824,0.5943,0.2743,0.7158,0.915,0.68,0.725,0.161,0.428,84.1,18.27,Archived (512px resolution bottleneck for fine scratches)
+EXP-04-BeltOutput-512px,YOLO11s,512,72,16,AdamW,0.001,"Balanced (mosaic=0.5, close_mosaic=25)",0.8191,0.6845,0.5987,0.2779,0.7458,0.918,0.682,0.728,0.162,0.43,83.8,18.28,Archived (512px)
+EXP-05-Production-YOLO11s-800px,YOLO11s,800,67,16,AdamW,0.001,"Balanced (mosaic=0.5, scale=0.3, close_mosaic=25)",0.7008,0.6586,0.5975,0.2892,0.6791,0.8865,0.2033,0.7196,0.045,0.3662,113.2,18.32,"PRODUCTION CANDIDATE (Best mAP50-95, 8.8 FPS on CPU)"
+EXP-06-Medium-YOLO11m-800px,YOLO11m,800,97,8,AdamW,0.001,"Balanced (mosaic=0.5, cls_weight=1.2)",0.7118,0.6686,0.6015,0.2884,0.6895,0.923,0.689,0.735,0.162,0.428,423.7,38.68,"GPU OPTIONAL (60.15% peak mAP50, but 3.7x slower on CPU)"

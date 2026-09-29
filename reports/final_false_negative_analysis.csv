@@ -1,0 +1,14 @@
+image,missed_class,gt_bbox,category,root_cause
+frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg,Slight Scratch,"[285.4, 556.2, 422.9, 658.3]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251.jpg,Slight Scratch,"[302.1, 160.4, 383.3, 266.7]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_contrast_2.jpg,Slight Scratch,"[302.1, 160.4, 383.3, 266.7]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_hflip_0.jpg,Slight Scratch,"[416.7, 160.4, 497.9, 266.7]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_vflip_1.jpg,Slight Scratch,"[302.1, 533.3, 383.3, 639.6]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193.jpg,Slight Scratch,"[287.5, 83.3, 443.7, 162.5]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193.jpg,Slight Scratch,"[420.8, 452.1, 464.6, 485.4]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_contrast_1.jpg,Slight Scratch,"[287.5, 83.3, 443.7, 162.5]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_contrast_1.jpg,Slight Scratch,"[420.8, 452.1, 464.6, 485.4]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_hflip_0.jpg,Slight Scratch,"[356.3, 83.3, 512.5, 162.5]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_hflip_0.jpg,Slight Scratch,"[335.4, 452.1, 379.2, 485.4]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,Slight Scratch,"[418.7, 458.3, 502.1, 502.1]",slight_scratch_fine_width,Sub-pixel scratch feature smoothed during letterboxing
+frame_00043_jpg.rf.18a2450e12175f4369c1a958dc52304b.jpg,Longitudinal Tear,"[181.3, 668.8, 335.4, 706.2]",truncated_edge_tear,Tear occurs partially off camera margin

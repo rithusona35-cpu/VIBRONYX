@@ -1,0 +1,7 @@
+image,orientation,detections_count,top_class,top_confidence,failure_classified
+uploads/last_upload.jpg,ORIGINAL,3,belt splice,0.693,MISSED_OR_CONF_LOW
+uploads/last_upload.jpg,ROTATE_90_CW,4,belt splice,0.682,ORIENTATION_PREPROCESSING_FAILURE
+uploads/last_upload.jpg,ROTATE_90_CCW,3,belt splice,0.676,MISSED_OR_CONF_LOW
+uploads/last_upload.jpg,ROTATE_180,4,belt splice,0.676,MISSED_OR_CONF_LOW
+uploads/last_upload.jpg,HORIZONTAL_FLIP,3,belt splice,0.699,MISSED_OR_CONF_LOW
+uploads/last_upload.jpg,VERTICAL_FLIP,4,belt splice,0.665,MISSED_OR_CONF_LOW

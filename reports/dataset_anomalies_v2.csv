@@ -1,0 +1,9 @@
+split,image,issue_type,class_id,bbox,details,action
+train,frame_00004_jpg.rf.546dffb44a5a15aa36b2bd90899ca9c9.jpg,MICRO_BBOX,2,"[0.592453125,0.592453125,0.0026093749999999997,0.028640624999999996]",Area is 0.0075% of canvas,Filter noise
+train,frame_00004_jpg.rf.546dffb44a5a15aa36b2bd90899ca9c9_aug_contrast_1.jpg,MICRO_BBOX,2,"[0.592453,0.592453,0.002609,0.028641]",Area is 0.0075% of canvas,Filter noise
+train,frame_00004_jpg.rf.546dffb44a5a15aa36b2bd90899ca9c9_aug_hflip_0.jpg,MICRO_BBOX,2,"[0.407547,0.592453,0.002609,0.028641]",Area is 0.0075% of canvas,Filter noise
+train,frame_00047_jpg.rf.1ee9df6fd5f198f4e37ccf814dc9801b.jpg,MICRO_BBOX,3,"[0.138015625,0.7265625,0.005203125,0.015625]",Area is 0.0081% of canvas,Filter noise
+train,frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b.jpg,MICRO_BBOX,4,"[0.31640625,0.6796875,0.0026093749999999997,0.010421875]",Area is 0.0027% of canvas,Filter noise
+train,frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b_aug_contrast_1.jpg,MICRO_BBOX,4,"[0.316406,0.679688,0.002609,0.010422]",Area is 0.0027% of canvas,Filter noise
+train,frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b_aug_hflip_0.jpg,MICRO_BBOX,4,"[0.683594,0.679688,0.002609,0.010422]",Area is 0.0027% of canvas,Filter noise
+valid,frame_20260504_010352_906660_jpg.rf.b63c8898f86df0a09260efc803d15247.jpg,MICRO_BBOX,1,"[0.5424062500000001,0.2976111111111111,0.040177083333333335,0.002648148148148148]",Area is 0.0106% of canvas,Filter noise

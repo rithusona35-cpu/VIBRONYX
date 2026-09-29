@@ -1,0 +1,8 @@
+image,false_positive_count,false_alarm_classes,max_confidence,avg_confidence,evaluation_result
+clean_real_world_frame_00021.jpg,0,NONE,0.0,0.0,CLEAN_PASS
+hard_neg_normal_texture_1.jpg,0,NONE,0.0,0.0,CLEAN_PASS
+hard_neg_normal_texture_2.jpg,1,Deep Scratch,0.3676,0.3676,FALSE_ALARM
+hard_neg_normal_texture_3.jpg,0,NONE,0.0,0.0,CLEAN_PASS
+hard_neg_normal_texture_4.jpg,0,NONE,0.0,0.0,CLEAN_PASS
+hard_neg_normal_texture_5.jpg,0,NONE,0.0,0.0,CLEAN_PASS
+hard_neg_normal_texture_6.jpg,0,NONE,0.0,0.0,CLEAN_PASS

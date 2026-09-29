@@ -1,0 +1,158 @@
+{
+  "Initial best.pt (Downloads root)": {
+    "file_path": "c:/Users/AnbuRithu/Downloads/yolo_output/best.pt",
+    "file_size_mb": 18.29,
+    "task": "detect",
+    "classes": {
+      "0": "belt splice",
+      "1": "deep scratch",
+      "2": "longitudinal tear",
+      "3": "normal belt",
+      "4": "slight scratch"
+    },
+    "num_classes": 5,
+    "epoch_saved": -1,
+    "train_args": {
+      "model": "yolo11s.pt",
+      "imgsz": 640,
+      "epochs": 300,
+      "batch": 16,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "mosaic": 0.0,
+      "close_mosaic": 10,
+      "data": "/kaggle/input/datasets/rithuson/blet-predector-from-roboflow/belt predutor/data.yaml"
+    }
+  },
+  "YOLO11s Run 5 (belt_defect_yolo11s 800px)": {
+    "file_path": "c:/Users/AnbuRithu/Downloads/yolo_output/belt_defect_yolo11s/run_v3_balanced/weights/best.pt",
+    "file_size_mb": 18.32,
+    "task": "detect",
+    "classes": {
+      "0": "belt splice",
+      "1": "deep scratch",
+      "2": "longitudinal tear",
+      "3": "normal belt",
+      "4": "slight scratch"
+    },
+    "num_classes": 5,
+    "epoch_saved": -1,
+    "train_args": {
+      "model": "yolo11s.pt",
+      "imgsz": 800,
+      "epochs": 150,
+      "batch": 16,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "mosaic": 0.5,
+      "close_mosaic": 25,
+      "data": "/kaggle/input/datasets/rithuson/800x800/800x800 dataset/data.yaml"
+    }
+  },
+  "YOLO11m Run 6 (belt_defect_yolo11m 800px)": {
+    "file_path": "c:/Users/AnbuRithu/Downloads/yolo_output/belt_defect_yolo11m/run_800_medium-2/weights/best.pt",
+    "file_size_mb": 38.68,
+    "task": "detect",
+    "classes": {
+      "0": "belt splice",
+      "1": "deep scratch",
+      "2": "longitudinal tear",
+      "3": "normal belt",
+      "4": "slight scratch"
+    },
+    "num_classes": 5,
+    "epoch_saved": -1,
+    "train_args": {
+      "model": "yolo11m.pt",
+      "imgsz": 800,
+      "epochs": 150,
+      "batch": 8,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "mosaic": 0.5,
+      "close_mosaic": 20,
+      "data": "/kaggle/input/datasets/rithuson/800x800-rr/800x800 dataset/data.yaml"
+    }
+  },
+  "YOLO11s Run 3 (run_v3_balanced 512px)": {
+    "file_path": "c:/Users/AnbuRithu/Downloads/yolo_output/run_v3_balanced/weights/best.pt",
+    "file_size_mb": 18.27,
+    "task": "detect",
+    "classes": {
+      "0": "belt splice",
+      "1": "deep scratch",
+      "2": "longitudinal tear",
+      "3": "normal belt",
+      "4": "slight scratch"
+    },
+    "num_classes": 5,
+    "epoch_saved": -1,
+    "train_args": {
+      "model": "yolo11s.pt",
+      "imgsz": 512,
+      "epochs": 150,
+      "batch": 16,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "mosaic": 0.5,
+      "close_mosaic": 25,
+      "data": "/kaggle/input/datasets/rithuson/blet-predector-from-roboflow/belt predutor/data.yaml"
+    }
+  },
+  "YOLO11s Run 2 (13 belt_output 512px)": {
+    "file_path": "c:/Users/AnbuRithu/Downloads/yolo_output/13 belt_output/detect/belt_defect_yolo11s/run_512_optimized/weights/best.pt",
+    "file_size_mb": 18.28,
+    "task": "detect",
+    "classes": {
+      "0": "belt splice",
+      "1": "deep scratch",
+      "2": "longitudinal tear",
+      "3": "normal belt",
+      "4": "slight scratch"
+    },
+    "num_classes": 5,
+    "epoch_saved": -1,
+    "train_args": {
+      "model": "yolo11s.pt",
+      "imgsz": 512,
+      "epochs": 200,
+      "batch": 67,
+      "optimizer": "SGD",
+      "lr0": 0.01,
+      "lrf": 0.01,
+      "mosaic": 1.0,
+      "close_mosaic": 15,
+      "data": "/kaggle/input/datasets/rithuson/blet-predector-from-roboflow/belt predutor/data.yaml"
+    }
+  },
+  "YOLO11s Run 4 (belt_output 512px)": {
+    "file_path": "c:/Users/AnbuRithu/Downloads/yolo_output/belt_output/detect/belt_defect_yolo11s/run_v3_balanced/weights/best.pt",
+    "file_size_mb": 18.28,
+    "task": "detect",
+    "classes": {
+      "0": "belt splice",
+      "1": "deep scratch",
+      "2": "longitudinal tear",
+      "3": "normal belt",
+      "4": "slight scratch"
+    },
+    "num_classes": 5,
+    "epoch_saved": -1,
+    "train_args": {
+      "model": "yolo11s.pt",
+      "imgsz": 512,
+      "epochs": 150,
+      "batch": 16,
+      "optimizer": "AdamW",
+      "lr0": 0.001,
+      "lrf": 0.01,
+      "mosaic": 0.5,
+      "close_mosaic": 25,
+      "data": "/kaggle/input/datasets/rithuson/800x800/800x800 dataset/data.yaml"
+    }
+  }
+}

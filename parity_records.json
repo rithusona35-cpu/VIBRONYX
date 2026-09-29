@@ -1,0 +1,462 @@
+[
+  {
+    "sample_id": 1,
+    "filename": "frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg",
+    "standalone_detections": 2,
+    "backend_detections": 2,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.693,
+        "bbox": [
+          132,
+          640,
+          668,
+          769
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.526,
+        "bbox": [
+          252,
+          292,
+          377,
+          381
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.693,
+        "bbox": [
+          132,
+          640,
+          668,
+          769
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.526,
+        "bbox": [
+          252,
+          292,
+          377,
+          381
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 2,
+    "filename": "frame_00003_jpg.rf.49968cb55095c8b650a32b4de9b866a4.jpg",
+    "standalone_detections": 2,
+    "backend_detections": 2,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.626,
+        "bbox": [
+          125,
+          701,
+          693,
+          800
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.498,
+        "bbox": [
+          235,
+          311,
+          375,
+          408
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.626,
+        "bbox": [
+          125,
+          701,
+          693,
+          800
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.498,
+        "bbox": [
+          235,
+          311,
+          375,
+          408
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 3,
+    "filename": "frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg",
+    "standalone_detections": 3,
+    "backend_detections": 3,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.629,
+        "bbox": [
+          21,
+          372,
+          611,
+          489
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.367,
+        "bbox": [
+          142,
+          2,
+          281,
+          93
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "Slight Scratch",
+        "confidence": 0.332,
+        "bbox": [
+          300,
+          569,
+          448,
+          702
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.629,
+        "bbox": [
+          21,
+          372,
+          611,
+          489
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.367,
+        "bbox": [
+          142,
+          2,
+          281,
+          93
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "Slight Scratch",
+        "confidence": 0.332,
+        "bbox": [
+          300,
+          569,
+          448,
+          702
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 4,
+    "filename": "frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+    "standalone_detections": 1,
+    "backend_detections": 1,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.604,
+        "bbox": [
+          249,
+          66,
+          532,
+          238
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.604,
+        "bbox": [
+          249,
+          66,
+          532,
+          238
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 5,
+    "filename": "frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg",
+    "standalone_detections": 1,
+    "backend_detections": 1,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.653,
+        "bbox": [
+          0,
+          660,
+          622,
+          800
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.653,
+        "bbox": [
+          0,
+          660,
+          622,
+          800
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 6,
+    "filename": "frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg",
+    "standalone_detections": 1,
+    "backend_detections": 1,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.664,
+        "bbox": [
+          87,
+          69,
+          711,
+          233
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.664,
+        "bbox": [
+          87,
+          69,
+          711,
+          233
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 7,
+    "filename": "frame_00019_jpg.rf.c9d90cbe0a1e82afbccd085d19bd1cae.jpg",
+    "standalone_detections": 2,
+    "backend_detections": 2,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.65,
+        "bbox": [
+          68,
+          534,
+          618,
+          656
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.528,
+        "bbox": [
+          167,
+          181,
+          297,
+          278
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.65,
+        "bbox": [
+          68,
+          534,
+          618,
+          656
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.528,
+        "bbox": [
+          167,
+          181,
+          297,
+          278
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 8,
+    "filename": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+    "standalone_detections": 0,
+    "backend_detections": 0,
+    "parity_match": true,
+    "standalone_details": [],
+    "backend_details": []
+  },
+  {
+    "sample_id": 9,
+    "filename": "frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+    "standalone_detections": 3,
+    "backend_detections": 3,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 1,
+        "class_name": "Deep Scratch",
+        "confidence": 0.674,
+        "bbox": [
+          318,
+          449,
+          679,
+          529
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.521,
+        "bbox": [
+          307,
+          38,
+          462,
+          160
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "Slight Scratch",
+        "confidence": 0.444,
+        "bbox": [
+          426,
+          236,
+          567,
+          317
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 1,
+        "class_name": "Deep Scratch",
+        "confidence": 0.674,
+        "bbox": [
+          318,
+          449,
+          679,
+          529
+        ]
+      },
+      {
+        "class_id": 2,
+        "class_name": "Longitudinal Tear",
+        "confidence": 0.521,
+        "bbox": [
+          307,
+          38,
+          462,
+          160
+        ]
+      },
+      {
+        "class_id": 4,
+        "class_name": "Slight Scratch",
+        "confidence": 0.444,
+        "bbox": [
+          426,
+          236,
+          567,
+          317
+        ]
+      }
+    ]
+  },
+  {
+    "sample_id": 10,
+    "filename": "frame_00035_jpg.rf.cfcbd4ea3415701965f8fedda293fb50.jpg",
+    "standalone_detections": 1,
+    "backend_detections": 1,
+    "parity_match": true,
+    "standalone_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.674,
+        "bbox": [
+          137,
+          150,
+          694,
+          292
+        ]
+      }
+    ],
+    "backend_details": [
+      {
+        "class_id": 0,
+        "class_name": "Belt Splice",
+        "confidence": 0.674,
+        "bbox": [
+          137,
+          150,
+          694,
+          292
+        ]
+      }
+    ]
+  }
+]

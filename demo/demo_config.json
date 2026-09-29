@@ -1,0 +1,27 @@
+{
+  "production_model": "models/final_sih_model.pt",
+  "production_onnx": "models/final_sih_model.onnx",
+  "model_sha256": "2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3",
+  "inference_resolution": 800,
+  "default_confidence": 0.25,
+  "nms_iou": 0.5,
+  "mode": "DEMO_DEFECT_SENSITIVITY",
+  "supported_modes": {
+    "DEMO_DEFECT_SENSITIVITY": {
+      "conf_threshold": 0.25,
+      "iou_threshold": 0.5,
+      "target": "High-risk demonstration and emergency defect detection"
+    },
+    "CONSERVATIVE_INSPECTION": {
+      "conf_threshold": 0.4,
+      "iou_threshold": 0.5,
+      "target": "24/7 continuous monitoring with minimized nuisance alarms"
+    }
+  },
+  "non_hallucinatory_states": [
+    "DEFECT_DETECTED",
+    "NORMAL_BELT",
+    "NO_DETECTIONS",
+    "ANALYSIS_ERROR"
+  ]
+}

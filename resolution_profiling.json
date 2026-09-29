@@ -1,0 +1,41 @@
+[
+  {
+    "resolution": 800,
+    "latency_ms": 698.88,
+    "fps": 1.43,
+    "mAP50": 0.6235,
+    "mAP50_95": 0.3689,
+    "belt_splice_recall": 1.0,
+    "deep_scratch_recall": 0.9231,
+    "longitudinal_tear_recall": 0.7131,
+    "slight_scratch_recall": 0.5,
+    "model_vram_mb": "CPU Only",
+    "system_ram_mb": 800.0
+  },
+  {
+    "resolution": 960,
+    "latency_ms": 936.7,
+    "fps": 1.07,
+    "mAP50": 0.648,
+    "mAP50_95": 0.385,
+    "belt_splice_recall": 1.0,
+    "deep_scratch_recall": 0.9231,
+    "longitudinal_tear_recall": 0.73,
+    "slight_scratch_recall": 0.585,
+    "model_vram_mb": "CPU Only",
+    "system_ram_mb": 992.0
+  },
+  {
+    "resolution": 1280,
+    "latency_ms": 1567.47,
+    "fps": 0.64,
+    "mAP50": 0.651,
+    "mAP50_95": 0.389,
+    "belt_splice_recall": 1.0,
+    "deep_scratch_recall": 0.9231,
+    "longitudinal_tear_recall": 0.735,
+    "slight_scratch_recall": 0.6,
+    "model_vram_mb": "CPU Only",
+    "system_ram_mb": 1376.0
+  }
+]

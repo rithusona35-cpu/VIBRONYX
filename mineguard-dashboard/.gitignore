@@ -1,0 +1,50 @@
+# ==============================================================================
+# MINEGUARD AI DASHBOARD — FRONTEND GITIGNORE
+# Smart India Hackathon (SIH 26008)
+# ==============================================================================
+
+# 1. Environment Secrets & Local Overrides (CRITICAL: NEVER COMMIT)
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+!.env.example
+
+# 2. Dependencies
+node_modules/
+
+# 3. Production Build Artifacts
+dist/
+dist-ssr/
+build/
+.output/
+.vite/
+.cache/
+
+# 4. Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 5. Cloud Hosting CLI Caches
+.netlify/
+.vercel/
+
+# 6. IDEs & Operating System Artifacts
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

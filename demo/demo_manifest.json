@@ -1,0 +1,263 @@
+{
+  "demo_title": "SIH 26008: MineGuard AI Deterministic 6-Step Demonstration Suite",
+  "model_name": "MineGuard YOLO11s",
+  "model_weights": "models/final_sih_model.pt",
+  "model_sha256": "2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3",
+  "operating_mode": "DEMO_DEFECT_SENSITIVITY (Conf=0.25, IoU=0.50, Imgsz=800)",
+  "demo_sequence": [
+    {
+      "sequence_id": 1,
+      "title": "Clean Conveyor Belt",
+      "defect_type": "clean_belt",
+      "image_file": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "image_path": "real_world_test/REAL_HEALTHY/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "expected_class": "Clean Rubber Surface (Zero False Alarms)",
+      "model_predictions": [],
+      "total_detections": 0,
+      "health_state": "NO_DETECTIONS",
+      "highest_severity": "NO_DETECTIONS",
+      "status_text": "NO DEFECT DETECTED ABOVE THRESHOLD (CONF >= 0.25)",
+      "hardware_control": {
+        "health_state": "NO_DETECTIONS",
+        "defect_class": null,
+        "confidence": null,
+        "severity": "NORMAL",
+        "action": "CONTINUE"
+      },
+      "latency_ms": 1650.1,
+      "model_latency_ms": 1650.1,
+      "pass_fail": "PASS"
+    },
+    {
+      "sequence_id": 2,
+      "title": "Critical Belt Splice Joint",
+      "defect_type": "belt_splice",
+      "image_file": "belt_splice_1_frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg",
+      "image_path": "known_defect_tests/belt_splice_1_frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg",
+      "expected_class": "Belt Splice",
+      "model_predictions": [
+        {
+          "class_id": 0,
+          "class": "belt splice",
+          "class_name": "belt splice",
+          "display_name": "Belt Splice",
+          "confidence": 0.693,
+          "bbox": [
+            132,
+            640,
+            668,
+            769
+          ],
+          "color": "#ef4444",
+          "severity": "CRITICAL",
+          "recommended_action": "Inspect joint mechanical fasteners and vulcanization integrity."
+        },
+        {
+          "class_id": 2,
+          "class": "longitudinal tear",
+          "class_name": "longitudinal tear",
+          "display_name": "Longitudinal Tear",
+          "confidence": 0.526,
+          "bbox": [
+            252,
+            292,
+            377,
+            381
+          ],
+          "color": "#f43f5e",
+          "severity": "CRITICAL",
+          "recommended_action": "EMERGENCY: Shut down belt conveyor immediately to prevent complete split."
+        }
+      ],
+      "total_detections": 2,
+      "health_state": "DEFECT_DETECTED",
+      "highest_severity": "CRITICAL",
+      "status_text": "ALERT: CRITICAL DEFECT DETECTED",
+      "hardware_control": {
+        "health_state": "DEFECT_DETECTED",
+        "defect_class": "BELT_SPLICE",
+        "confidence": 0.693,
+        "severity": "CRITICAL",
+        "action": "STOP_CONVEYOR"
+      },
+      "latency_ms": 173.8,
+      "model_latency_ms": 173.4,
+      "pass_fail": "PASS"
+    },
+    {
+      "sequence_id": 3,
+      "title": "Major Deep Scratch & Gouge",
+      "defect_type": "deep_scratch",
+      "image_file": "deep_scratch_1_frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "image_path": "known_defect_tests/deep_scratch_1_frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg",
+      "expected_class": "Deep Scratch",
+      "model_predictions": [
+        {
+          "class_id": 1,
+          "class": "deep scratch",
+          "class_name": "deep scratch",
+          "display_name": "Deep Scratch",
+          "confidence": 0.674,
+          "bbox": [
+            318,
+            449,
+            679,
+            529
+          ],
+          "color": "#f59e0b",
+          "severity": "WARNING",
+          "recommended_action": "Schedule maintenance: measure groove depth with ultrasonic gauge."
+        },
+        {
+          "class_id": 2,
+          "class": "longitudinal tear",
+          "class_name": "longitudinal tear",
+          "display_name": "Longitudinal Tear",
+          "confidence": 0.521,
+          "bbox": [
+            307,
+            38,
+            462,
+            160
+          ],
+          "color": "#f43f5e",
+          "severity": "CRITICAL",
+          "recommended_action": "EMERGENCY: Shut down belt conveyor immediately to prevent complete split."
+        },
+        {
+          "class_id": 4,
+          "class": "slight scratch",
+          "class_name": "slight scratch",
+          "display_name": "Slight Scratch",
+          "confidence": 0.444,
+          "bbox": [
+            426,
+            236,
+            567,
+            317
+          ],
+          "color": "#06b6d4",
+          "severity": "INFO",
+          "recommended_action": "Routine logging: monitor surface wear rate during next scheduled downtime."
+        }
+      ],
+      "total_detections": 3,
+      "health_state": "DEFECT_DETECTED",
+      "highest_severity": "CRITICAL",
+      "status_text": "ALERT: CRITICAL DEFECT DETECTED",
+      "hardware_control": {
+        "health_state": "DEFECT_DETECTED",
+        "defect_class": "LONGITUDINAL_TEAR",
+        "confidence": 0.521,
+        "severity": "CRITICAL",
+        "action": "STOP_CONVEYOR"
+      },
+      "latency_ms": 152.9,
+      "model_latency_ms": 152.7,
+      "pass_fail": "PASS"
+    },
+    {
+      "sequence_id": 4,
+      "title": "Critical Longitudinal Tear",
+      "defect_type": "longitudinal_tear",
+      "image_file": "longitudinal_tear_2_frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "image_path": "known_defect_tests/longitudinal_tear_2_frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "expected_class": "Longitudinal Tear",
+      "model_predictions": [
+        {
+          "class_id": 2,
+          "class": "longitudinal tear",
+          "class_name": "longitudinal tear",
+          "display_name": "Longitudinal Tear",
+          "confidence": 0.604,
+          "bbox": [
+            249,
+            66,
+            532,
+            238
+          ],
+          "color": "#f43f5e",
+          "severity": "CRITICAL",
+          "recommended_action": "EMERGENCY: Shut down belt conveyor immediately to prevent complete split."
+        }
+      ],
+      "total_detections": 1,
+      "health_state": "DEFECT_DETECTED",
+      "highest_severity": "CRITICAL",
+      "status_text": "ALERT: CRITICAL DEFECT DETECTED",
+      "hardware_control": {
+        "health_state": "DEFECT_DETECTED",
+        "defect_class": "LONGITUDINAL_TEAR",
+        "confidence": 0.604,
+        "severity": "CRITICAL",
+        "action": "STOP_CONVEYOR"
+      },
+      "latency_ms": 148.4,
+      "model_latency_ms": 148.3,
+      "pass_fail": "PASS"
+    },
+    {
+      "sequence_id": 5,
+      "title": "Minor Slight Scratch & Scuff",
+      "defect_type": "slight_scratch",
+      "image_file": "slight_scratch_5_frame_00129_jpg.rf.7719d1d835cab947ea466cdf7469001a.jpg",
+      "image_path": "known_defect_tests/slight_scratch_5_frame_00129_jpg.rf.7719d1d835cab947ea466cdf7469001a.jpg",
+      "expected_class": "Slight Scratch",
+      "model_predictions": [
+        {
+          "class_id": 4,
+          "class": "slight scratch",
+          "class_name": "slight scratch",
+          "display_name": "Slight Scratch",
+          "confidence": 0.394,
+          "bbox": [
+            572,
+            356,
+            697,
+            447
+          ],
+          "color": "#06b6d4",
+          "severity": "INFO",
+          "recommended_action": "Routine logging: monitor surface wear rate during next scheduled downtime."
+        }
+      ],
+      "total_detections": 1,
+      "health_state": "DEFECT_DETECTED",
+      "highest_severity": "WARNING",
+      "status_text": "WARNING: DEFECT DETECTED",
+      "hardware_control": {
+        "health_state": "DEFECT_DETECTED",
+        "defect_class": "SLIGHT_SCRATCH",
+        "confidence": 0.394,
+        "severity": "INFO",
+        "action": "SCHEDULE_MAINTENANCE"
+      },
+      "latency_ms": 148.8,
+      "model_latency_ms": 148.7,
+      "pass_fail": "PASS"
+    },
+    {
+      "sequence_id": 6,
+      "title": "Clean Conveyor Belt (Return to Healthy)",
+      "defect_type": "clean_belt_return",
+      "image_file": "frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "image_path": "real_world_test/REAL_HEALTHY/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "expected_class": "Clean Rubber Surface (Zero False Alarms)",
+      "model_predictions": [],
+      "total_detections": 0,
+      "health_state": "NO_DETECTIONS",
+      "highest_severity": "NO_DETECTIONS",
+      "status_text": "NO DEFECT DETECTED ABOVE THRESHOLD (CONF >= 0.25)",
+      "hardware_control": {
+        "health_state": "NO_DETECTIONS",
+        "defect_class": null,
+        "confidence": null,
+        "severity": "NORMAL",
+        "action": "CONTINUE"
+      },
+      "latency_ms": 150.6,
+      "model_latency_ms": 150.6,
+      "pass_fail": "PASS"
+    }
+  ]
+}

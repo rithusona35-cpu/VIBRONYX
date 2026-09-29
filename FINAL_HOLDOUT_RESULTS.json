@@ -1,0 +1,113 @@
+{
+  "evaluation_date": "2026-09-18",
+  "holdout_suite": "real_world_test (12 independent unseen frames)",
+  "model_evaluated": "models/final_sih_model.pt",
+  "total_frames": 12,
+  "defective_frames": 11,
+  "clean_healthy_frames": 1,
+  "defect_recall": 1.0,
+  "clean_false_alarm_rate": 0.0,
+  "frame_level_details": [
+    {
+      "filename": "frame_00002_jpg...",
+      "category": "Belt Splice",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.69)",
+        "Longitudinal Tear (0.60)"
+      ]
+    },
+    {
+      "filename": "frame_00003_jpg...",
+      "category": "Belt Splice",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.72)",
+        "Longitudinal Tear (0.65)"
+      ]
+    },
+    {
+      "filename": "frame_00005_jpg...",
+      "category": "Belt Splice / Scratch",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.68)",
+        "Longitudinal Tear (0.62)"
+      ]
+    },
+    {
+      "filename": "frame_00007_jpg...",
+      "category": "Longitudinal Tear",
+      "detected": true,
+      "detections": [
+        "Longitudinal Tear (0.73)"
+      ]
+    },
+    {
+      "filename": "frame_00012_jpg...",
+      "category": "Belt Splice",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.78)",
+        "Slight Scratch (0.35)"
+      ]
+    },
+    {
+      "filename": "frame_00015_jpg...",
+      "category": "Belt Splice",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.81)"
+      ]
+    },
+    {
+      "filename": "frame_00019_jpg...",
+      "category": "Belt Splice",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.70)",
+        "Longitudinal Tear (0.58)"
+      ]
+    },
+    {
+      "filename": "frame_00021_jpg...",
+      "category": "Clean Healthy Belt",
+      "detected": false,
+      "detections": [],
+      "status": "CORRECT_HEALTHY_REJECTED"
+    },
+    {
+      "filename": "frame_00024_jpg...",
+      "category": "Deep Scratch / Tear",
+      "detected": true,
+      "detections": [
+        "Deep Scratch (0.67)",
+        "Longitudinal Tear (0.54)"
+      ]
+    },
+    {
+      "filename": "frame_00035_jpg...",
+      "category": "Belt Splice",
+      "detected": true,
+      "detections": [
+        "Belt Splice (0.65)"
+      ]
+    },
+    {
+      "filename": "frame_00043_jpg...",
+      "category": "Longitudinal Tear",
+      "detected": true,
+      "detections": [
+        "Longitudinal Tear (0.77)"
+      ]
+    },
+    {
+      "filename": "frame_00045_jpg...",
+      "category": "Longitudinal Tear",
+      "detected": true,
+      "detections": [
+        "Longitudinal Tear (0.80)"
+      ]
+    }
+  ]
+}

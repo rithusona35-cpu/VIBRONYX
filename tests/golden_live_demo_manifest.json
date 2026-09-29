@@ -1,0 +1,54 @@
+{
+  "suite_name": "MineGuard AI Golden Live Demo Manifest",
+  "version": "1.0.0",
+  "target_model": "models/final_sih_model.pt",
+  "expected_sha256": "2620a198ed5729d20b0b2dbc9325b4ec135732e596fed5b6a4645cea2c9f5eb3",
+  "classes": [
+    {"id": 0, "name": "belt splice", "severity": "CRITICAL"},
+    {"id": 1, "name": "deep scratch", "severity": "WARNING"},
+    {"id": 2, "name": "longitudinal tear", "severity": "CRITICAL"},
+    {"id": 3, "name": "normal belt", "severity": "HEALTHY"},
+    {"id": 4, "name": "slight scratch", "severity": "INFO"}
+  ],
+  "golden_cases": [
+    {
+      "case_id": "GOLDEN_CLEAN_BELT",
+      "image_path": "demo_images/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg",
+      "expected_health": "NO_DETECTIONS",
+      "expected_defects": 0,
+      "expected_hardware_action": "CONTINUE"
+    },
+    {
+      "case_id": "GOLDEN_SLIGHT_SCRATCH",
+      "image_path": "real_world_validation_v2/slight_scratch/slight_scratch_03_frame_20260504_005842_678301_jpg.rf.375ec8311467a5f68cec5c5ab10a9719.jpg",
+      "expected_health": "DEFECT_DETECTED",
+      "expected_class": "slight scratch",
+      "expected_severity": "WARNING",
+      "expected_hardware_action": "ALERT"
+    },
+    {
+      "case_id": "GOLDEN_DEEP_SCRATCH",
+      "image_path": "real_world_validation_v2/deep_scratch/deep_scratch_01_frame_20260504_005840_906932_jpg.rf.58b8f8047970d440ad888c3a9f0fe6ce.jpg",
+      "expected_health": "DEFECT_DETECTED",
+      "expected_class": "deep scratch",
+      "expected_severity": "CRITICAL",
+      "expected_hardware_action": "STOP_CONVEYOR"
+    },
+    {
+      "case_id": "GOLDEN_LONGITUDINAL_TEAR",
+      "image_path": "demo_images/frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg",
+      "expected_health": "DEFECT_DETECTED",
+      "expected_class": "longitudinal tear",
+      "expected_severity": "CRITICAL",
+      "expected_hardware_action": "STOP_CONVEYOR"
+    },
+    {
+      "case_id": "GOLDEN_BELT_SPLICE",
+      "image_path": "real_world_validation_v2/belt_splice/belt_splice_01_frame_20260504_005839_573934_jpg.rf.454226f30f5b12ba776bc1ae85352c38.jpg",
+      "expected_health": "DEFECT_DETECTED",
+      "expected_class": "belt splice",
+      "expected_severity": "CRITICAL",
+      "expected_hardware_action": "STOP_CONVEYOR"
+    }
+  ]
+}

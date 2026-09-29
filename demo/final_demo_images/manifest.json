@@ -1,0 +1,66 @@
+{
+  "dataset_title": "MineGuard AI Official SIH Demonstration Image Dataset",
+  "total_categories": 6,
+  "images": [
+    {
+      "folder": "01_clean",
+      "filename": "clean_conveyor_frame.jpg",
+      "class": "normal belt (no defects)",
+      "expected_state": "NORMAL",
+      "expected_severity": "NONE",
+      "expected_router_path": "FAST_PATH_STANDARD",
+      "expected_detection": false,
+      "expected_action": "CONTINUE"
+    },
+    {
+      "folder": "02_slight_scratch",
+      "filename": "slight_scratch_sample.jpg",
+      "class": "slight scratch",
+      "expected_state": "WARNING",
+      "expected_severity": "LOW",
+      "expected_router_path": "FAST_PATH_LANDSCAPE",
+      "expected_detection": true,
+      "expected_action": "CONTINUE"
+    },
+    {
+      "folder": "03_deep_scratch",
+      "filename": "deep_scratch_sample.jpg",
+      "class": "deep scratch",
+      "expected_state": "WARNING",
+      "expected_severity": "MEDIUM",
+      "expected_router_path": "FAST_PATH_LANDSCAPE",
+      "expected_detection": true,
+      "expected_action": "CONTINUE"
+    },
+    {
+      "folder": "04_longitudinal_tear",
+      "filename": "longitudinal_tear_sample.jpg",
+      "class": "longitudinal tear",
+      "expected_state": "CRITICAL",
+      "expected_severity": "HIGH",
+      "expected_router_path": "FAST_PATH_LANDSCAPE",
+      "expected_detection": true,
+      "expected_action": "STOP_CONVEYOR"
+    },
+    {
+      "folder": "05_belt_splice",
+      "filename": "belt_splice_sample.jpg",
+      "class": "belt splice",
+      "expected_state": "CRITICAL",
+      "expected_severity": "HIGH",
+      "expected_router_path": "FAST_PATH_LANDSCAPE",
+      "expected_detection": true,
+      "expected_action": "STOP_CONVEYOR"
+    },
+    {
+      "folder": "06_portrait_recovery",
+      "filename": "portrait_tear_recovery.jpg",
+      "class": "longitudinal tear (portrait 90 deg mismatch)",
+      "expected_state": "CRITICAL",
+      "expected_severity": "HIGH",
+      "expected_router_path": "FALLBACK_ROUTER_ACTIVATED",
+      "expected_detection": true,
+      "expected_action": "STOP_CONVEYOR"
+    }
+  ]
+}

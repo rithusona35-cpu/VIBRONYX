@@ -1,0 +1,2 @@
+camera_available,camera_index,resolution,ingestion_fps,inference_latency_ms,achievable_fps,policy,status
+True,0,640x480,0.0,168.6,5.93,LATEST_FRAME_WINS,PASS

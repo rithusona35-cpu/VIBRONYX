@@ -1,0 +1,1557 @@
+image,split,class,bbox_count,image_width,image_height,annotation_quality,possible_problem
+frame_00000_jpg.rf.a2ee0d4a3fc2adb8f97c3b8198a98f46.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00000_jpg.rf.a2ee0d4a3fc2adb8f97c3b8198a98f46_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00000_jpg.rf.a2ee0d4a3fc2adb8f97c3b8198a98f46_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00000_jpg.rf.b25756bb2ec71f1b58fd784c46a72cf8.jpg,train,"longitudinal_tear, normal_belt, belt_splice",5,800,800,GOOD,None
+frame_00000_jpg.rf.b25756bb2ec71f1b58fd784c46a72cf8_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00000_jpg.rf.b25756bb2ec71f1b58fd784c46a72cf8_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00000_jpg.rf.b25756bb2ec71f1b58fd784c46a72cf8_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00000_jpg.rf.b25756bb2ec71f1b58fd784c46a72cf8_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00001_jpg.rf.a795d778a3333fd4ef5c3c3e3f4baa08.jpg,train,"longitudinal_tear, belt_splice, normal_belt",5,800,800,GOOD,None
+frame_00001_jpg.rf.a795d778a3333fd4ef5c3c3e3f4baa08_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00001_jpg.rf.a795d778a3333fd4ef5c3c3e3f4baa08_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00001_jpg.rf.a795d778a3333fd4ef5c3c3e3f4baa08_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00001_jpg.rf.a795d778a3333fd4ef5c3c3e3f4baa08_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00004_jpg.rf.546dffb44a5a15aa36b2bd90899ca9c9.jpg,train,longitudinal_tear,4,800,800,SUSPICIOUS,Line 3 (longitudinal_tear): extremely small bounding box (area=0.007% of image)
+frame_00004_jpg.rf.546dffb44a5a15aa36b2bd90899ca9c9_aug_contrast_1.jpg,train,longitudinal_tear,4,800,800,SUSPICIOUS,Line 3 (longitudinal_tear): extremely small bounding box (area=0.007% of image)
+frame_00004_jpg.rf.546dffb44a5a15aa36b2bd90899ca9c9_aug_hflip_0.jpg,train,longitudinal_tear,4,800,800,SUSPICIOUS,Line 3 (longitudinal_tear): extremely small bounding box (area=0.007% of image)
+frame_00004_jpg.rf.c8b21a966ebc1ff769b7844eaadd3301.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00004_jpg.rf.c8b21a966ebc1ff769b7844eaadd3301_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00004_jpg.rf.c8b21a966ebc1ff769b7844eaadd3301_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00004_jpg.rf.c8b21a966ebc1ff769b7844eaadd3301_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00004_jpg.rf.c8b21a966ebc1ff769b7844eaadd3301_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00006_jpg.rf.8650a6dd406aa6f7ecf83506eac3db03.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00006_jpg.rf.8650a6dd406aa6f7ecf83506eac3db03_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00006_jpg.rf.8650a6dd406aa6f7ecf83506eac3db03_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00006_jpg.rf.b87689121ddd3d4a993e9166cab21dd1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00006_jpg.rf.b87689121ddd3d4a993e9166cab21dd1_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00006_jpg.rf.b87689121ddd3d4a993e9166cab21dd1_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00006_jpg.rf.b87689121ddd3d4a993e9166cab21dd1_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00006_jpg.rf.b87689121ddd3d4a993e9166cab21dd1_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00007_jpg.rf.5840139dbf6bec3d431d816289f4af54.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00007_jpg.rf.5840139dbf6bec3d431d816289f4af54_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00007_jpg.rf.5840139dbf6bec3d431d816289f4af54_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00008_jpg.rf.4be8233eb0507afacdb3da0c0ac709d8.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00008_jpg.rf.4be8233eb0507afacdb3da0c0ac709d8_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00008_jpg.rf.4be8233eb0507afacdb3da0c0ac709d8_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00008_jpg.rf.a3cbabe945107fa3f8f00e1c6316cafc.jpg,train,"longitudinal_tear, deep_scratch, normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00008_jpg.rf.a3cbabe945107fa3f8f00e1c6316cafc_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00008_jpg.rf.a3cbabe945107fa3f8f00e1c6316cafc_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00008_jpg.rf.a3cbabe945107fa3f8f00e1c6316cafc_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00009_jpg.rf.a978b612e1167476a670cb64d4d417c1.jpg,train,"longitudinal_tear, deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00009_jpg.rf.a978b612e1167476a670cb64d4d417c1_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00009_jpg.rf.a978b612e1167476a670cb64d4d417c1_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00009_jpg.rf.a978b612e1167476a670cb64d4d417c1_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00009_jpg.rf.dd2cdffd9b79a503f4981402f9c3c4fd.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00011_jpg.rf.482786caeb1cfb9778804640e7b2e590.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251.jpg,train,"longitudinal_tear, deep_scratch, normal_belt, slight_scratch",5,800,800,GOOD,None
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00013_jpg.rf.0d608754200269b37fe2df0f325b30d1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00013_jpg.rf.0d608754200269b37fe2df0f325b30d1_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00013_jpg.rf.0d608754200269b37fe2df0f325b30d1_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00013_jpg.rf.2bf3ed412dcb2ad576ced4a4b390c9b8.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00013_jpg.rf.2bf3ed412dcb2ad576ced4a4b390c9b8_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00013_jpg.rf.2bf3ed412dcb2ad576ced4a4b390c9b8_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00014_jpg.rf.178a54e82f73ee1636d6d0f9b00195dd.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.178a54e82f73ee1636d6d0f9b00195dd_aug_contrast_3.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.178a54e82f73ee1636d6d0f9b00195dd_aug_hflip_0.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.178a54e82f73ee1636d6d0f9b00195dd_aug_hvflip_2.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.178a54e82f73ee1636d6d0f9b00195dd_aug_vflip_1.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.7701024da6e27685af6bd0e008635e1d.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.7701024da6e27685af6bd0e008635e1d_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00014_jpg.rf.7701024da6e27685af6bd0e008635e1d_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00015_jpg.rf.70443fdd76906dd14f7a6ef3d2d77754.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00015_jpg.rf.70443fdd76906dd14f7a6ef3d2d77754_aug_contrast_1.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00015_jpg.rf.70443fdd76906dd14f7a6ef3d2d77754_aug_hflip_0.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00016_jpg.rf.611b1cd4f2359529a8618069ae363223.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00016_jpg.rf.611b1cd4f2359529a8618069ae363223_aug_contrast_1.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00016_jpg.rf.611b1cd4f2359529a8618069ae363223_aug_hflip_0.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00017_jpg.rf.644d1e2b3c01f185b37a8e3bc56edf30.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00017_jpg.rf.644d1e2b3c01f185b37a8e3bc56edf30_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00017_jpg.rf.644d1e2b3c01f185b37a8e3bc56edf30_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00018_jpg.rf.78b748c14610fb171b2da28a9248f27b.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00018_jpg.rf.78b748c14610fb171b2da28a9248f27b_aug_contrast_1.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00018_jpg.rf.78b748c14610fb171b2da28a9248f27b_aug_hflip_0.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00018_jpg.rf.899a804b0c90809804cbed9b1846c70b.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00018_jpg.rf.899a804b0c90809804cbed9b1846c70b_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00018_jpg.rf.899a804b0c90809804cbed9b1846c70b_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00020_jpg.rf.23b2ddc2379ffccdf98a20bcded56a14.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00020_jpg.rf.23b2ddc2379ffccdf98a20bcded56a14_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00020_jpg.rf.23b2ddc2379ffccdf98a20bcded56a14_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00020_jpg.rf.23b2ddc2379ffccdf98a20bcded56a14_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00020_jpg.rf.23b2ddc2379ffccdf98a20bcded56a14_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00020_jpg.rf.addfc43dca19bf9ffca425e6426d99d6.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00020_jpg.rf.addfc43dca19bf9ffca425e6426d99d6_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00020_jpg.rf.addfc43dca19bf9ffca425e6426d99d6_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00021_jpg.rf.0b557c963e8a8a7e967e431315ee2dc4.jpg,train,"belt_splice, normal_belt",4,800,800,GOOD,None
+frame_00021_jpg.rf.0b557c963e8a8a7e967e431315ee2dc4_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00021_jpg.rf.0b557c963e8a8a7e967e431315ee2dc4_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00021_jpg.rf.0b557c963e8a8a7e967e431315ee2dc4_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00021_jpg.rf.0b557c963e8a8a7e967e431315ee2dc4_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00022_jpg.rf.0e5cf0172a200119baa1eca0b83ee588.jpg,train,"longitudinal_tear, belt_splice, slight_scratch",3,800,800,GOOD,None
+frame_00022_jpg.rf.0e5cf0172a200119baa1eca0b83ee588_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice, slight_scratch",3,800,800,GOOD,None
+frame_00022_jpg.rf.0e5cf0172a200119baa1eca0b83ee588_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice, slight_scratch",3,800,800,GOOD,None
+frame_00022_jpg.rf.0e5cf0172a200119baa1eca0b83ee588_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice, slight_scratch",3,800,800,GOOD,None
+frame_00022_jpg.rf.0e5cf0172a200119baa1eca0b83ee588_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice, slight_scratch",3,800,800,GOOD,None
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00023_jpg.rf.44df7834ed72fe1c2863a3590f71ae30_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00023_jpg.rf.6725c6671d203cea73b8d2e94ab4a8de.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00024_jpg.rf.8aae30735477c030b26ef9faa1cf91fa.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00024_jpg.rf.8aae30735477c030b26ef9faa1cf91fa_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00024_jpg.rf.8aae30735477c030b26ef9faa1cf91fa_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00025_jpg.rf.61ab6cbc375f53bdfb9ccc96ac1426a5.jpg,train,"deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00025_jpg.rf.61ab6cbc375f53bdfb9ccc96ac1426a5_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00025_jpg.rf.61ab6cbc375f53bdfb9ccc96ac1426a5_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00025_jpg.rf.61ab6cbc375f53bdfb9ccc96ac1426a5_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00026_jpg.rf.347ef269c9bb705faa7cfd0ed768522b.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00026_jpg.rf.347ef269c9bb705faa7cfd0ed768522b_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00026_jpg.rf.347ef269c9bb705faa7cfd0ed768522b_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa.jpg,train,"deep_scratch, normal_belt",4,800,800,GOOD,None
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00027_jpg.rf.42835d881cedf717fbea604b406a6cef.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00027_jpg.rf.42835d881cedf717fbea604b406a6cef_aug_contrast_1.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00027_jpg.rf.42835d881cedf717fbea604b406a6cef_aug_hflip_0.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00027_jpg.rf.4a848f17595a366dae2f042b540340d8.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00027_jpg.rf.4a848f17595a366dae2f042b540340d8_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00027_jpg.rf.4a848f17595a366dae2f042b540340d8_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00027_jpg.rf.4a848f17595a366dae2f042b540340d8_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00028_jpg.rf.7591cc63411ab95edcd7ec5dfab3ba3c.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00028_jpg.rf.7591cc63411ab95edcd7ec5dfab3ba3c_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00028_jpg.rf.7591cc63411ab95edcd7ec5dfab3ba3c_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00028_jpg.rf.7591cc63411ab95edcd7ec5dfab3ba3c_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00028_jpg.rf.daa981d6c9cc8cefed40651ea2cfe77e.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00028_jpg.rf.daa981d6c9cc8cefed40651ea2cfe77e_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00028_jpg.rf.daa981d6c9cc8cefed40651ea2cfe77e_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00029_jpg.rf.78aeac889aa6ffe5a26bf2555f01500c.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00029_jpg.rf.78aeac889aa6ffe5a26bf2555f01500c_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00029_jpg.rf.78aeac889aa6ffe5a26bf2555f01500c_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00029_jpg.rf.78aeac889aa6ffe5a26bf2555f01500c_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00029_jpg.rf.e7f045e4dfa6b40152b16f3ceda9f051.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00029_jpg.rf.e7f045e4dfa6b40152b16f3ceda9f051_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00029_jpg.rf.e7f045e4dfa6b40152b16f3ceda9f051_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00030_jpg.rf.bf260995087fcb8392485fd8f4512e12.jpg,train,"longitudinal_tear, deep_scratch, normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00030_jpg.rf.bf260995087fcb8392485fd8f4512e12_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00030_jpg.rf.bf260995087fcb8392485fd8f4512e12_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00030_jpg.rf.bf260995087fcb8392485fd8f4512e12_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00030_jpg.rf.d93305d956d3e5f3e6c461f4232b863e.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00031_jpg.rf.bc0a2d8565beaa78ccdd40fa9478921c.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",8,800,800,GOOD,None
+frame_00031_jpg.rf.bc0a2d8565beaa78ccdd40fa9478921c_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00031_jpg.rf.bc0a2d8565beaa78ccdd40fa9478921c_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00031_jpg.rf.c1d1dde1b4c3e2dd897c4b21adb8986d.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00031_jpg.rf.c1d1dde1b4c3e2dd897c4b21adb8986d_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00031_jpg.rf.c1d1dde1b4c3e2dd897c4b21adb8986d_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00032_jpg.rf.f262ae80344e26bc71968fd1e8a91642.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00032_jpg.rf.f262ae80344e26bc71968fd1e8a91642_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00032_jpg.rf.f262ae80344e26bc71968fd1e8a91642_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00032_jpg.rf.f262ae80344e26bc71968fd1e8a91642_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00032_jpg.rf.f262ae80344e26bc71968fd1e8a91642_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00033_jpg.rf.5451d0e673bbe384fe7c715b3d4baa24.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00033_jpg.rf.5451d0e673bbe384fe7c715b3d4baa24_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00033_jpg.rf.5451d0e673bbe384fe7c715b3d4baa24_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00033_jpg.rf.eb81d6bcc81b11005ac38cd8784e0299.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00033_jpg.rf.eb81d6bcc81b11005ac38cd8784e0299_aug_contrast_3.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00033_jpg.rf.eb81d6bcc81b11005ac38cd8784e0299_aug_hflip_0.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00033_jpg.rf.eb81d6bcc81b11005ac38cd8784e0299_aug_hvflip_2.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00033_jpg.rf.eb81d6bcc81b11005ac38cd8784e0299_aug_vflip_1.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00034_jpg.rf.d102de3ba2cca0071c696c1d804ec954.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00034_jpg.rf.d102de3ba2cca0071c696c1d804ec954_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00034_jpg.rf.d102de3ba2cca0071c696c1d804ec954_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00034_jpg.rf.d102de3ba2cca0071c696c1d804ec954_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00034_jpg.rf.d102de3ba2cca0071c696c1d804ec954_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00034_jpg.rf.fd5a784c518bff82a91378a56d91b1a8_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00035_jpg.rf.553089e9db46f7fae8ec730a83908a1a.jpg,train,"belt_splice, normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00035_jpg.rf.553089e9db46f7fae8ec730a83908a1a_aug_contrast_3.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00035_jpg.rf.553089e9db46f7fae8ec730a83908a1a_aug_hflip_0.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00035_jpg.rf.553089e9db46f7fae8ec730a83908a1a_aug_hvflip_2.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00035_jpg.rf.553089e9db46f7fae8ec730a83908a1a_aug_vflip_1.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00036_jpg.rf.3be83fc8f3bccb4e2ad56dffd4403d89.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00036_jpg.rf.3be83fc8f3bccb4e2ad56dffd4403d89_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00036_jpg.rf.3be83fc8f3bccb4e2ad56dffd4403d89_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00036_jpg.rf.3be83fc8f3bccb4e2ad56dffd4403d89_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00036_jpg.rf.3be83fc8f3bccb4e2ad56dffd4403d89_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00036_jpg.rf.b5090e7cbc15ba1115c848400cbec5e5.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00036_jpg.rf.b5090e7cbc15ba1115c848400cbec5e5_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00036_jpg.rf.b5090e7cbc15ba1115c848400cbec5e5_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00036_jpg.rf.b5090e7cbc15ba1115c848400cbec5e5_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00036_jpg.rf.b5090e7cbc15ba1115c848400cbec5e5_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00037_jpg.rf.4de4c27b6fc798f3759e17ed6f1e79ce.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00037_jpg.rf.4de4c27b6fc798f3759e17ed6f1e79ce_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00037_jpg.rf.4de4c27b6fc798f3759e17ed6f1e79ce_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00037_jpg.rf.79a8c19f99317b2a85e37755f2d27373.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00037_jpg.rf.79a8c19f99317b2a85e37755f2d27373_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00037_jpg.rf.79a8c19f99317b2a85e37755f2d27373_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00038_jpg.rf.2f4b92ce4a36c5ba2fe20a551b480246.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00038_jpg.rf.7eb546b40cacf41489785042a2070830.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00038_jpg.rf.7eb546b40cacf41489785042a2070830_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00038_jpg.rf.7eb546b40cacf41489785042a2070830_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00039_jpg.rf.092f645af5ca08938054c6f218791721.jpg,train,"normal_belt, slight_scratch",5,800,800,GOOD,None
+frame_00039_jpg.rf.092f645af5ca08938054c6f218791721_aug_contrast_1.jpg,train,slight_scratch,3,800,800,GOOD,None
+frame_00039_jpg.rf.092f645af5ca08938054c6f218791721_aug_hflip_0.jpg,train,slight_scratch,3,800,800,GOOD,None
+frame_00039_jpg.rf.1e2eda719f7bed9b0e07c27e4dca0014.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00039_jpg.rf.1e2eda719f7bed9b0e07c27e4dca0014_aug_contrast_2.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00039_jpg.rf.1e2eda719f7bed9b0e07c27e4dca0014_aug_hflip_0.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00039_jpg.rf.1e2eda719f7bed9b0e07c27e4dca0014_aug_vflip_1.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00040_jpg.rf.2fce5c9c3e9e79a5ca1a5afd7825810c.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00040_jpg.rf.2fce5c9c3e9e79a5ca1a5afd7825810c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00040_jpg.rf.2fce5c9c3e9e79a5ca1a5afd7825810c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00041_jpg.rf.1993e2f7b2883d8bfd7ce168ff91fffc.jpg,train,normal_belt,5,800,800,GOOD,None
+frame_00041_jpg.rf.e368101da6759a013c2a06b0b8576307.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00041_jpg.rf.e368101da6759a013c2a06b0b8576307_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00041_jpg.rf.e368101da6759a013c2a06b0b8576307_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00042_jpg.rf.7cdc70269d35b5caa73f3a3fec6ab46e.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00042_jpg.rf.7cdc70269d35b5caa73f3a3fec6ab46e_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00042_jpg.rf.7cdc70269d35b5caa73f3a3fec6ab46e_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00042_jpg.rf.b6e2adcab38cc7b604311294b7f58a35.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00044_jpg.rf.6c75343077cedb31a508f69b503b22c2.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00045_jpg.rf.8504be295d545289b92c7ec8b3942bb3.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00045_jpg.rf.8504be295d545289b92c7ec8b3942bb3_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00045_jpg.rf.8504be295d545289b92c7ec8b3942bb3_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00046_jpg.rf.597aeefe507b74049ce0961ab2e040b8.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00046_jpg.rf.597aeefe507b74049ce0961ab2e040b8_aug_contrast_1.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00046_jpg.rf.597aeefe507b74049ce0961ab2e040b8_aug_hflip_0.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00047_jpg.rf.1ee9df6fd5f198f4e37ccf814dc9801b.jpg,train,normal_belt,3,800,800,SUSPICIOUS,Line 2 (normal_belt): extremely small bounding box (area=0.008% of image)
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00047_jpg.rf.2673d023bfed67e7fa2d538a41be2109_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00047_jpg.rf.513e6c95632593b0670419578da0689c.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00047_jpg.rf.513e6c95632593b0670419578da0689c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00047_jpg.rf.513e6c95632593b0670419578da0689c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00048_jpg.rf.a8ea60959ac429d41f306bef4c95eb67.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00048_jpg.rf.a8ea60959ac429d41f306bef4c95eb67_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00048_jpg.rf.a8ea60959ac429d41f306bef4c95eb67_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00049_jpg.rf.1340fe165d1a26e8c38de84989e98d24.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00049_jpg.rf.1340fe165d1a26e8c38de84989e98d24_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00049_jpg.rf.1340fe165d1a26e8c38de84989e98d24_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00049_jpg.rf.1340fe165d1a26e8c38de84989e98d24_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00049_jpg.rf.1340fe165d1a26e8c38de84989e98d24_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00050_jpg.rf.67795f75f13c07158bc6193f97812850.jpg,train,"longitudinal_tear, belt_splice, normal_belt",5,800,800,GOOD,None
+frame_00050_jpg.rf.67795f75f13c07158bc6193f97812850_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00050_jpg.rf.67795f75f13c07158bc6193f97812850_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00050_jpg.rf.67795f75f13c07158bc6193f97812850_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00050_jpg.rf.67795f75f13c07158bc6193f97812850_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00050_jpg.rf.d0cf41b078a6cc884ae25da9280bfdba.jpg,train,normal_belt,3,800,800,GOOD,None
+frame_00051_jpg.rf.19c9e212c43c05eafc0b85e39c0bf6a4.jpg,train,"longitudinal_tear, belt_splice, normal_belt",4,800,800,GOOD,None
+frame_00051_jpg.rf.19c9e212c43c05eafc0b85e39c0bf6a4_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00051_jpg.rf.19c9e212c43c05eafc0b85e39c0bf6a4_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00051_jpg.rf.19c9e212c43c05eafc0b85e39c0bf6a4_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00051_jpg.rf.19c9e212c43c05eafc0b85e39c0bf6a4_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00052_jpg.rf.2fdbaefb8e29fb459d6410f6dafa9643.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00053_jpg.rf.1ef0c5b33b5b16934882d45b48f37473.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00053_jpg.rf.1ef0c5b33b5b16934882d45b48f37473_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00053_jpg.rf.1ef0c5b33b5b16934882d45b48f37473_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00053_jpg.rf.1ef0c5b33b5b16934882d45b48f37473_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00053_jpg.rf.1ef0c5b33b5b16934882d45b48f37473_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00054_jpg.rf.78c8da677437c986af5991985d5736ff.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00054_jpg.rf.78c8da677437c986af5991985d5736ff_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00054_jpg.rf.78c8da677437c986af5991985d5736ff_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00054_jpg.rf.78c8da677437c986af5991985d5736ff_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00054_jpg.rf.78c8da677437c986af5991985d5736ff_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00056_jpg.rf.0b6760113da2e32cc20a499f90a47420.jpg,train,"longitudinal_tear, deep_scratch, normal_belt, slight_scratch",7,800,800,GOOD,None
+frame_00056_jpg.rf.0b6760113da2e32cc20a499f90a47420_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00056_jpg.rf.0b6760113da2e32cc20a499f90a47420_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00056_jpg.rf.0b6760113da2e32cc20a499f90a47420_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00057_jpg.rf.b6c9e0f07a0ed3942291c67604ea0193.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00058_jpg.rf.5a36be138357be768bad39e2d7ed488f.jpg,train,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00058_jpg.rf.5a36be138357be768bad39e2d7ed488f_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00058_jpg.rf.5a36be138357be768bad39e2d7ed488f_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00058_jpg.rf.86a3b721a7d5f09de7ccf678457088fd.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00058_jpg.rf.86a3b721a7d5f09de7ccf678457088fd_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00058_jpg.rf.86a3b721a7d5f09de7ccf678457088fd_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00059_jpg.rf.4df64c9b84a5255d1728fa2e53e70fe4.jpg,train,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00059_jpg.rf.4df64c9b84a5255d1728fa2e53e70fe4_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00059_jpg.rf.4df64c9b84a5255d1728fa2e53e70fe4_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00059_jpg.rf.998c9e72058e3d94015fae3d3bf3bf2e.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00060_jpg.rf.324847c05762fe6108c52af150fbca48.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00060_jpg.rf.c8abec0534e647d6473ecf6f2b040e49.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00060_jpg.rf.c8abec0534e647d6473ecf6f2b040e49_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00060_jpg.rf.c8abec0534e647d6473ecf6f2b040e49_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00061_jpg.rf.85864844781e7c2a28778d0a4e223ab8.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00061_jpg.rf.85864844781e7c2a28778d0a4e223ab8_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00061_jpg.rf.85864844781e7c2a28778d0a4e223ab8_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00062_jpg.rf.97566eabeb1a30e18da65a7addeccc9d.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00062_jpg.rf.97566eabeb1a30e18da65a7addeccc9d_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00062_jpg.rf.97566eabeb1a30e18da65a7addeccc9d_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00063_jpg.rf.6edb9f7894aaa9009613459a65509495.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00063_jpg.rf.6edb9f7894aaa9009613459a65509495_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00063_jpg.rf.6edb9f7894aaa9009613459a65509495_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00063_jpg.rf.e65aa6766890aeed3ab69003190660db.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00063_jpg.rf.e65aa6766890aeed3ab69003190660db_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00063_jpg.rf.e65aa6766890aeed3ab69003190660db_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00064_jpg.rf.59cf142d57780d3c799ca2029b593b54.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00064_jpg.rf.59cf142d57780d3c799ca2029b593b54_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00064_jpg.rf.59cf142d57780d3c799ca2029b593b54_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00064_jpg.rf.59cf142d57780d3c799ca2029b593b54_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00064_jpg.rf.59cf142d57780d3c799ca2029b593b54_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00066_jpg.rf.47c7fe3b16ed16593e38c50de8195d8e.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",7,800,800,GOOD,None
+frame_00066_jpg.rf.47c7fe3b16ed16593e38c50de8195d8e_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",3,800,800,GOOD,None
+frame_00066_jpg.rf.47c7fe3b16ed16593e38c50de8195d8e_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",3,800,800,GOOD,None
+frame_00067_jpg.rf.448ffb66d490adda81ad6094c16df655.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00067_jpg.rf.448ffb66d490adda81ad6094c16df655_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00067_jpg.rf.448ffb66d490adda81ad6094c16df655_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00067_jpg.rf.448ffb66d490adda81ad6094c16df655_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00067_jpg.rf.a47e9b152181795c356ade04e4b49948.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00067_jpg.rf.a47e9b152181795c356ade04e4b49948_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00067_jpg.rf.a47e9b152181795c356ade04e4b49948_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00068_jpg.rf.5fafc057bb33fcb16dec1aeeb8041644.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00068_jpg.rf.5fafc057bb33fcb16dec1aeeb8041644_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00068_jpg.rf.5fafc057bb33fcb16dec1aeeb8041644_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00069_jpg.rf.5f1e391d312cb886438add495154b3c7.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00070_jpg.rf.3a50940319e25dd49af096ecb6339cf2.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00070_jpg.rf.3a50940319e25dd49af096ecb6339cf2_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00070_jpg.rf.3a50940319e25dd49af096ecb6339cf2_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00071_jpg.rf.373bac3399376d9079a25ea62c74d297.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00073_jpg.rf.3a8e96d02d113626433e030f6ca2b1e6.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00073_jpg.rf.3a8e96d02d113626433e030f6ca2b1e6_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00073_jpg.rf.3a8e96d02d113626433e030f6ca2b1e6_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00073_jpg.rf.3a8e96d02d113626433e030f6ca2b1e6_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00073_jpg.rf.ccd20b05465aeb8da5b7e719aa3fc7d6.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00073_jpg.rf.ccd20b05465aeb8da5b7e719aa3fc7d6_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00073_jpg.rf.ccd20b05465aeb8da5b7e719aa3fc7d6_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00073_jpg.rf.ccd20b05465aeb8da5b7e719aa3fc7d6_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00073_jpg.rf.ccd20b05465aeb8da5b7e719aa3fc7d6_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00074_jpg.rf.166f6d5badf1b660e668254d5c37d79a.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00074_jpg.rf.166f6d5badf1b660e668254d5c37d79a_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00074_jpg.rf.166f6d5badf1b660e668254d5c37d79a_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00074_jpg.rf.166f6d5badf1b660e668254d5c37d79a_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00074_jpg.rf.166f6d5badf1b660e668254d5c37d79a_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00075_jpg.rf.7a628860e24f79d1b0c9d8665706213b.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00075_jpg.rf.7a628860e24f79d1b0c9d8665706213b_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00075_jpg.rf.7a628860e24f79d1b0c9d8665706213b_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00075_jpg.rf.7a628860e24f79d1b0c9d8665706213b_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00075_jpg.rf.7a628860e24f79d1b0c9d8665706213b_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00076_jpg.rf.ffa9f3ff77d739de43b895272e616802.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00076_jpg.rf.ffa9f3ff77d739de43b895272e616802_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00076_jpg.rf.ffa9f3ff77d739de43b895272e616802_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00076_jpg.rf.ffa9f3ff77d739de43b895272e616802_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00076_jpg.rf.ffa9f3ff77d739de43b895272e616802_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00077_jpg.rf.111633c77710278b157f99e3ce7a2f65.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00077_jpg.rf.111633c77710278b157f99e3ce7a2f65_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00077_jpg.rf.111633c77710278b157f99e3ce7a2f65_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00078_jpg.rf.73a0f44bcc578b069ea9374798309174.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00078_jpg.rf.73a0f44bcc578b069ea9374798309174_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00078_jpg.rf.73a0f44bcc578b069ea9374798309174_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00079_jpg.rf.2521d4c05efaaccbe0f1930d3a762347.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00080_jpg.rf.efb59745fa1072782b14e4b425e60bee.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00080_jpg.rf.efb59745fa1072782b14e4b425e60bee_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00080_jpg.rf.efb59745fa1072782b14e4b425e60bee_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00081_jpg.rf.13c937a9496ad418b622d7e96cd22321.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00081_jpg.rf.13c937a9496ad418b622d7e96cd22321_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00081_jpg.rf.13c937a9496ad418b622d7e96cd22321_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00082_jpg.rf.b55769a1a71678c24222d1535b1b459a.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00082_jpg.rf.b55769a1a71678c24222d1535b1b459a_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00082_jpg.rf.b55769a1a71678c24222d1535b1b459a_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00082_jpg.rf.e1a9120632f64dc9053b4253ce80d389.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00082_jpg.rf.e1a9120632f64dc9053b4253ce80d389_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00082_jpg.rf.e1a9120632f64dc9053b4253ce80d389_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00082_jpg.rf.e1a9120632f64dc9053b4253ce80d389_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00083_jpg.rf.86bcfed8eb666d88a13bd25b79137e5c.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00083_jpg.rf.86bcfed8eb666d88a13bd25b79137e5c_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00083_jpg.rf.86bcfed8eb666d88a13bd25b79137e5c_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00084_jpg.rf.1e13157f9f2a95c41ad0aac9720e7bc7.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00084_jpg.rf.1e13157f9f2a95c41ad0aac9720e7bc7_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00084_jpg.rf.1e13157f9f2a95c41ad0aac9720e7bc7_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00085_jpg.rf.66109794372208c8f8ee1f06965b5a69.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00085_jpg.rf.66109794372208c8f8ee1f06965b5a69_aug_contrast_1.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00085_jpg.rf.66109794372208c8f8ee1f06965b5a69_aug_hflip_0.jpg,train,longitudinal_tear,2,800,800,GOOD,None
+frame_00086_jpg.rf.3c8b35ab4c525cea0f49e92dfefd4ecf.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00086_jpg.rf.3c8b35ab4c525cea0f49e92dfefd4ecf_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00086_jpg.rf.3c8b35ab4c525cea0f49e92dfefd4ecf_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00087_jpg.rf.1cf68942998e08d73f50812d0b838dff.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00087_jpg.rf.1cf68942998e08d73f50812d0b838dff_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00087_jpg.rf.1cf68942998e08d73f50812d0b838dff_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00088_jpg.rf.87e59ab061d8b683f58916681b17a43c.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00088_jpg.rf.87e59ab061d8b683f58916681b17a43c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00088_jpg.rf.87e59ab061d8b683f58916681b17a43c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00089_jpg.rf.3c4ac6448477b80b330e60b97e25f284.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00089_jpg.rf.3c4ac6448477b80b330e60b97e25f284_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00089_jpg.rf.3c4ac6448477b80b330e60b97e25f284_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00090_jpg.rf.2c4b5a5b87946e27956a95f2025e8ba2.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00091_jpg.rf.1105ceb99a1da7237c52b3d3e35f9342.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00091_jpg.rf.1105ceb99a1da7237c52b3d3e35f9342_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00091_jpg.rf.1105ceb99a1da7237c52b3d3e35f9342_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00093_jpg.rf.326afc4876d0513be704b8a69f59a987.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00093_jpg.rf.326afc4876d0513be704b8a69f59a987_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00093_jpg.rf.326afc4876d0513be704b8a69f59a987_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00094_jpg.rf.d4336cd6c336ceb3c4498fa026f27e10.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00096_jpg.rf.8edcb31f47a77839cec1bf5c64ece661.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00096_jpg.rf.8edcb31f47a77839cec1bf5c64ece661_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00096_jpg.rf.8edcb31f47a77839cec1bf5c64ece661_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00097_jpg.rf.089abcc0aa4be83c175a4f0bad602d3c.jpg,train,normal_belt,3,800,800,GOOD,None
+frame_00098_jpg.rf.e2f184e14e5c49e4918a3b8f897ea584.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00099_jpg.rf.86c700d67db41c386ca3cdb733eb54c1.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00100_jpg.rf.9b26930109b8d694df8cc71cd78f0633.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00101_jpg.rf.006cb43f0d59b252a0bda660dccb2177.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_contrast_3.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_hflip_0.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_hvflip_2.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_vflip_1.jpg,train,"belt_splice, slight_scratch",2,800,800,GOOD,None
+frame_00103_jpg.rf.00b324ab7c066d8f8d7f6322599b3941.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00103_jpg.rf.00b324ab7c066d8f8d7f6322599b3941_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00103_jpg.rf.00b324ab7c066d8f8d7f6322599b3941_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00103_jpg.rf.00b324ab7c066d8f8d7f6322599b3941_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00103_jpg.rf.00b324ab7c066d8f8d7f6322599b3941_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00105_jpg.rf.acf0df8cb6a8ac88b5dbcaca25d2461e.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00106_jpg.rf.66c01adefaa664049888e17a96463474.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00106_jpg.rf.66c01adefaa664049888e17a96463474_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00106_jpg.rf.66c01adefaa664049888e17a96463474_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00108_jpg.rf.a1d24cc58c7bca2b3967c9b335d4aa1a.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00109_jpg.rf.b63ab4e3efb3483cfe7d129650b66942.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00109_jpg.rf.b63ab4e3efb3483cfe7d129650b66942_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00109_jpg.rf.b63ab4e3efb3483cfe7d129650b66942_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00113_jpg.rf.3c24baa5375ef67e96377d9a4487b941.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00113_jpg.rf.3c24baa5375ef67e96377d9a4487b941_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00113_jpg.rf.3c24baa5375ef67e96377d9a4487b941_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00114_jpg.rf.2d6e2d15d616071c2bc3641ee2bf01ef.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00114_jpg.rf.2d6e2d15d616071c2bc3641ee2bf01ef_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00114_jpg.rf.2d6e2d15d616071c2bc3641ee2bf01ef_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00114_jpg.rf.2d6e2d15d616071c2bc3641ee2bf01ef_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00115_jpg.rf.28b4796023ae92201ed0b6b52dcef9a5.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00115_jpg.rf.28b4796023ae92201ed0b6b52dcef9a5_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00115_jpg.rf.28b4796023ae92201ed0b6b52dcef9a5_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00116_jpg.rf.08b34aaaa777a3d5d55fa22ff11b14de.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00116_jpg.rf.08b34aaaa777a3d5d55fa22ff11b14de_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00116_jpg.rf.08b34aaaa777a3d5d55fa22ff11b14de_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00117_jpg.rf.dc8b15753471ed38160b14b362032076.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00117_jpg.rf.dc8b15753471ed38160b14b362032076_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00117_jpg.rf.dc8b15753471ed38160b14b362032076_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00120_jpg.rf.821de776cd8844174eeee71eb0400c3a.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00120_jpg.rf.821de776cd8844174eeee71eb0400c3a_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00120_jpg.rf.821de776cd8844174eeee71eb0400c3a_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00124_jpg.rf.db15bd75394c65b38849062d916baa6a.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00124_jpg.rf.db15bd75394c65b38849062d916baa6a_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00124_jpg.rf.db15bd75394c65b38849062d916baa6a_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00125_jpg.rf.153e3a52cb2f528a1a9e830cc16c1d08.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00125_jpg.rf.153e3a52cb2f528a1a9e830cc16c1d08_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00125_jpg.rf.153e3a52cb2f528a1a9e830cc16c1d08_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00125_jpg.rf.153e3a52cb2f528a1a9e830cc16c1d08_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00125_jpg.rf.153e3a52cb2f528a1a9e830cc16c1d08_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00126_jpg.rf.f2050ff5ea4bd64e8a4ffd0f4ace0ce2.jpg,train,"belt_splice, normal_belt",4,800,800,GOOD,None
+frame_00126_jpg.rf.f2050ff5ea4bd64e8a4ffd0f4ace0ce2_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00126_jpg.rf.f2050ff5ea4bd64e8a4ffd0f4ace0ce2_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00126_jpg.rf.f2050ff5ea4bd64e8a4ffd0f4ace0ce2_aug_hvflip_2.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00126_jpg.rf.f2050ff5ea4bd64e8a4ffd0f4ace0ce2_aug_vflip_1.jpg,train,"belt_splice, normal_belt",4,800,800,GOOD,None
+frame_00127_jpg.rf.6978339928de61ea4fa2fd4ddb5cd0ea.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00130_jpg.rf.4411bebdb5be05dc67be5bddfe26f88b.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00130_jpg.rf.4411bebdb5be05dc67be5bddfe26f88b_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00130_jpg.rf.4411bebdb5be05dc67be5bddfe26f88b_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00131_jpg.rf.8aff8c3afc6564a1e458acb76f1fb0bb.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00131_jpg.rf.8aff8c3afc6564a1e458acb76f1fb0bb_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00131_jpg.rf.8aff8c3afc6564a1e458acb76f1fb0bb_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00132_jpg.rf.816b54bff7d7c1db1cffa085f95eb41f.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00132_jpg.rf.816b54bff7d7c1db1cffa085f95eb41f_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00132_jpg.rf.816b54bff7d7c1db1cffa085f95eb41f_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00133_jpg.rf.02f04e0e9f8e84483807d4a29ad34c2c.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00133_jpg.rf.02f04e0e9f8e84483807d4a29ad34c2c_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00133_jpg.rf.02f04e0e9f8e84483807d4a29ad34c2c_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00135_jpg.rf.fd7c6c2f8a055276d7da5d1fb3c8e0a5.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00135_jpg.rf.fd7c6c2f8a055276d7da5d1fb3c8e0a5_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00135_jpg.rf.fd7c6c2f8a055276d7da5d1fb3c8e0a5_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00136_jpg.rf.0933f4c60a61ddd751562e77d012647a.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00136_jpg.rf.0933f4c60a61ddd751562e77d012647a_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00136_jpg.rf.0933f4c60a61ddd751562e77d012647a_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00137_jpg.rf.5a218ff005e1500e85dd867ea1794ea2.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00138_jpg.rf.396c04476b38d460b0af227fa794fef9.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00138_jpg.rf.396c04476b38d460b0af227fa794fef9_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00138_jpg.rf.396c04476b38d460b0af227fa794fef9_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00139_jpg.rf.d8ac4ec538406e8c87b94eb32823b952.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00139_jpg.rf.d8ac4ec538406e8c87b94eb32823b952_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00139_jpg.rf.d8ac4ec538406e8c87b94eb32823b952_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00140_jpg.rf.3ad545e80ef4a9a51eb58094c30d4a6d.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00140_jpg.rf.3ad545e80ef4a9a51eb58094c30d4a6d_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00140_jpg.rf.3ad545e80ef4a9a51eb58094c30d4a6d_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00141_jpg.rf.401688c6f85f0c962e721e03e5616ecf.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00141_jpg.rf.401688c6f85f0c962e721e03e5616ecf_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00141_jpg.rf.401688c6f85f0c962e721e03e5616ecf_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00142_jpg.rf.751e6f668859a76a907abedd6bcbfb86.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00143_jpg.rf.9c6a5ee5fe86522f3bc13bd72dbd4c0c.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00145_jpg.rf.58a2422cfe0072c619318830fefe1def.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00146_jpg.rf.df0fa335770dd8f74ca8300eae3c3d5b.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00147_jpg.rf.5bc5557c0a6e941e902bb80f6c6606de.jpg,train,normal_belt,2,800,800,GOOD,None
+frame_00150_jpg.rf.0419ef8dc161183eed7cdedd3924f394.jpg,train,"deep_scratch, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_00150_jpg.rf.0419ef8dc161183eed7cdedd3924f394_aug_contrast_3.jpg,train,"deep_scratch, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_00150_jpg.rf.0419ef8dc161183eed7cdedd3924f394_aug_hflip_0.jpg,train,"deep_scratch, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_00150_jpg.rf.0419ef8dc161183eed7cdedd3924f394_aug_hvflip_2.jpg,train,"deep_scratch, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_00150_jpg.rf.0419ef8dc161183eed7cdedd3924f394_aug_vflip_1.jpg,train,"deep_scratch, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966.jpg,train,"belt_splice, deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_contrast_3.jpg,train,"belt_splice, deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_hflip_0.jpg,train,"belt_splice, deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_hvflip_2.jpg,train,"belt_splice, deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_vflip_1.jpg,train,"belt_splice, deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_00152_jpg.rf.32e8dd7fe006593b41c591457823536d.jpg,train,"belt_splice, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00152_jpg.rf.32e8dd7fe006593b41c591457823536d_aug_contrast_3.jpg,train,"belt_splice, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00152_jpg.rf.32e8dd7fe006593b41c591457823536d_aug_hflip_0.jpg,train,"belt_splice, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00152_jpg.rf.32e8dd7fe006593b41c591457823536d_aug_hvflip_2.jpg,train,"belt_splice, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00152_jpg.rf.32e8dd7fe006593b41c591457823536d_aug_vflip_1.jpg,train,"belt_splice, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00154_jpg.rf.c313582698cd5a6c4c5ed510ca972a11.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00154_jpg.rf.c313582698cd5a6c4c5ed510ca972a11_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00154_jpg.rf.c313582698cd5a6c4c5ed510ca972a11_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00154_jpg.rf.c313582698cd5a6c4c5ed510ca972a11_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00155_jpg.rf.327ccb04001378bb5200fcb0256e047f.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00155_jpg.rf.327ccb04001378bb5200fcb0256e047f_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00155_jpg.rf.327ccb04001378bb5200fcb0256e047f_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00155_jpg.rf.327ccb04001378bb5200fcb0256e047f_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00155_jpg.rf.327ccb04001378bb5200fcb0256e047f_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00156_jpg.rf.5b701fade6a73a61dd651ff073a8c448.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00158_jpg.rf.f77a6496f9f3967c69ebfecdda220e02.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00158_jpg.rf.f77a6496f9f3967c69ebfecdda220e02_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00158_jpg.rf.f77a6496f9f3967c69ebfecdda220e02_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00159_jpg.rf.048cfb46cc697add6524c0c93f10cdb4.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00159_jpg.rf.048cfb46cc697add6524c0c93f10cdb4_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00159_jpg.rf.048cfb46cc697add6524c0c93f10cdb4_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00160_jpg.rf.6fdaf96f7a535b33727923cacc37f4f2.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00160_jpg.rf.6fdaf96f7a535b33727923cacc37f4f2_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00160_jpg.rf.6fdaf96f7a535b33727923cacc37f4f2_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00161_jpg.rf.fc7b2d99b4fbadf3e670ff35a69ca58c.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00161_jpg.rf.fc7b2d99b4fbadf3e670ff35a69ca58c_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00161_jpg.rf.fc7b2d99b4fbadf3e670ff35a69ca58c_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00165_jpg.rf.7246e72ad9e3e06494919fa0c79f81b9.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00165_jpg.rf.7246e72ad9e3e06494919fa0c79f81b9_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00165_jpg.rf.7246e72ad9e3e06494919fa0c79f81b9_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00166_jpg.rf.dc3328eb47af679023dceaba3836fa05.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00166_jpg.rf.dc3328eb47af679023dceaba3836fa05_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00166_jpg.rf.dc3328eb47af679023dceaba3836fa05_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00167_jpg.rf.cf80e56149b05215cb319fb294984ac0.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00167_jpg.rf.cf80e56149b05215cb319fb294984ac0_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00167_jpg.rf.cf80e56149b05215cb319fb294984ac0_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00168_jpg.rf.dad4ea37b0a2c85d0abde14ee8b09756.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00168_jpg.rf.dad4ea37b0a2c85d0abde14ee8b09756_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00168_jpg.rf.dad4ea37b0a2c85d0abde14ee8b09756_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00169_jpg.rf.e0c9b8472edebea23f2f59f68f047cd1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00169_jpg.rf.e0c9b8472edebea23f2f59f68f047cd1_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00169_jpg.rf.e0c9b8472edebea23f2f59f68f047cd1_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00170_jpg.rf.ad470f29c43bbe36ed3f919c4fdc960a.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00170_jpg.rf.ad470f29c43bbe36ed3f919c4fdc960a_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00170_jpg.rf.ad470f29c43bbe36ed3f919c4fdc960a_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00171_jpg.rf.a7666719014b7aa5853970a38eb03ca0.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00171_jpg.rf.a7666719014b7aa5853970a38eb03ca0_aug_contrast_3.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00171_jpg.rf.a7666719014b7aa5853970a38eb03ca0_aug_hflip_0.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00171_jpg.rf.a7666719014b7aa5853970a38eb03ca0_aug_hvflip_2.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00171_jpg.rf.a7666719014b7aa5853970a38eb03ca0_aug_vflip_1.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00173_jpg.rf.93e2d903951a07f8b9b14bd4ce3188da.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00173_jpg.rf.93e2d903951a07f8b9b14bd4ce3188da_aug_contrast_3.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00173_jpg.rf.93e2d903951a07f8b9b14bd4ce3188da_aug_hflip_0.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00173_jpg.rf.93e2d903951a07f8b9b14bd4ce3188da_aug_hvflip_2.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00173_jpg.rf.93e2d903951a07f8b9b14bd4ce3188da_aug_vflip_1.jpg,train,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00174_jpg.rf.8b39e7837b983cd5e687c04e04c06aa0.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00174_jpg.rf.8b39e7837b983cd5e687c04e04c06aa0_aug_contrast_3.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00174_jpg.rf.8b39e7837b983cd5e687c04e04c06aa0_aug_hflip_0.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00174_jpg.rf.8b39e7837b983cd5e687c04e04c06aa0_aug_hvflip_2.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00174_jpg.rf.8b39e7837b983cd5e687c04e04c06aa0_aug_vflip_1.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00200_jpg.rf.9db1c2ac8395ee080261e131d25b5b02.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00200_jpg.rf.9db1c2ac8395ee080261e131d25b5b02_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00200_jpg.rf.9db1c2ac8395ee080261e131d25b5b02_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00200_jpg.rf.9db1c2ac8395ee080261e131d25b5b02_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00200_jpg.rf.9db1c2ac8395ee080261e131d25b5b02_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00205_jpg.rf.573a80c098c957e897664f79900e9771.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00205_jpg.rf.573a80c098c957e897664f79900e9771_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00205_jpg.rf.573a80c098c957e897664f79900e9771_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00205_jpg.rf.573a80c098c957e897664f79900e9771_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00206_jpg.rf.fd65fe11860aa73db1408e7ca9a93cae.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00206_jpg.rf.fd65fe11860aa73db1408e7ca9a93cae_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00206_jpg.rf.fd65fe11860aa73db1408e7ca9a93cae_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00206_jpg.rf.fd65fe11860aa73db1408e7ca9a93cae_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b.jpg,train,slight_scratch,2,800,800,SUSPICIOUS,Line 1 (slight_scratch): extremely small bounding box (area=0.003% of image)
+frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b_aug_contrast_1.jpg,train,slight_scratch,2,800,800,SUSPICIOUS,Line 1 (slight_scratch): extremely small bounding box (area=0.003% of image)
+frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b_aug_hflip_0.jpg,train,slight_scratch,2,800,800,SUSPICIOUS,Line 1 (slight_scratch): extremely small bounding box (area=0.003% of image)
+frame_00208_jpg.rf.79c33d7732bf695d3b3ada855a240d55.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00208_jpg.rf.79c33d7732bf695d3b3ada855a240d55_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00208_jpg.rf.79c33d7732bf695d3b3ada855a240d55_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00208_jpg.rf.79c33d7732bf695d3b3ada855a240d55_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00209_jpg.rf.947db2c809e784ebae82140068922e38.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00209_jpg.rf.947db2c809e784ebae82140068922e38_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00209_jpg.rf.947db2c809e784ebae82140068922e38_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00210_jpg.rf.4f9c0d21a022bfc7dcee12b8e8d59cf5.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00210_jpg.rf.4f9c0d21a022bfc7dcee12b8e8d59cf5_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00210_jpg.rf.4f9c0d21a022bfc7dcee12b8e8d59cf5_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00212_jpg.rf.75c50a433ce13802ae77f9bdae6a92d0.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00214_jpg.rf.4ab0fa0081ef838a5b1b632e687e0d10.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00214_jpg.rf.4ab0fa0081ef838a5b1b632e687e0d10_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00214_jpg.rf.4ab0fa0081ef838a5b1b632e687e0d10_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00214_jpg.rf.4ab0fa0081ef838a5b1b632e687e0d10_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00214_jpg.rf.4ab0fa0081ef838a5b1b632e687e0d10_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00215_jpg.rf.0d7a44cc074f3934dd19e60d6edc61f8.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00217_jpg.rf.8a6f29de683f48dc20b97d6d94df145a.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00217_jpg.rf.8a6f29de683f48dc20b97d6d94df145a_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00217_jpg.rf.8a6f29de683f48dc20b97d6d94df145a_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00217_jpg.rf.8a6f29de683f48dc20b97d6d94df145a_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00218_jpg.rf.86c1526286c4ae762eb5d2d9c06309aa.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00218_jpg.rf.86c1526286c4ae762eb5d2d9c06309aa_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00218_jpg.rf.86c1526286c4ae762eb5d2d9c06309aa_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00218_jpg.rf.86c1526286c4ae762eb5d2d9c06309aa_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_contrast_2.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_hflip_0.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_vflip_1.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_00220_jpg.rf.fd5657702260f3c6c360c7c99e161cce.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00220_jpg.rf.fd5657702260f3c6c360c7c99e161cce_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00220_jpg.rf.fd5657702260f3c6c360c7c99e161cce_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00221_jpg.rf.31026b1b0b2887dc846f786f03824f91.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00221_jpg.rf.31026b1b0b2887dc846f786f03824f91_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00221_jpg.rf.31026b1b0b2887dc846f786f03824f91_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00223_jpg.rf.6b4c6511e53a25296685d949c17549f7.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00223_jpg.rf.6b4c6511e53a25296685d949c17549f7_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00223_jpg.rf.6b4c6511e53a25296685d949c17549f7_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00223_jpg.rf.6b4c6511e53a25296685d949c17549f7_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00224_jpg.rf.ead25eb5185721f2bee86d873028012e.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00224_jpg.rf.ead25eb5185721f2bee86d873028012e_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00224_jpg.rf.ead25eb5185721f2bee86d873028012e_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00224_jpg.rf.ead25eb5185721f2bee86d873028012e_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00225_jpg.rf.2973ef16c8adffa6629d2ca4d55d69ee.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00225_jpg.rf.2973ef16c8adffa6629d2ca4d55d69ee_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00225_jpg.rf.2973ef16c8adffa6629d2ca4d55d69ee_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00225_jpg.rf.2973ef16c8adffa6629d2ca4d55d69ee_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00226_jpg.rf.b73032569d5c7b4046923242be6a223f.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00228_jpg.rf.4a2e4b229c5b78d6a5d6ca12d8fa6de1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00228_jpg.rf.4a2e4b229c5b78d6a5d6ca12d8fa6de1_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00228_jpg.rf.4a2e4b229c5b78d6a5d6ca12d8fa6de1_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00229_jpg.rf.a15904a5f8cdab10c0301bcae5d4ab1a.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00229_jpg.rf.a15904a5f8cdab10c0301bcae5d4ab1a_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00229_jpg.rf.a15904a5f8cdab10c0301bcae5d4ab1a_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00230_jpg.rf.77092d9205048332004e18390047d6bf.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00230_jpg.rf.77092d9205048332004e18390047d6bf_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00230_jpg.rf.77092d9205048332004e18390047d6bf_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00231_jpg.rf.200d0d27b4659b6c59b92e3bde750e03.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00231_jpg.rf.200d0d27b4659b6c59b92e3bde750e03_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00231_jpg.rf.200d0d27b4659b6c59b92e3bde750e03_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00232_jpg.rf.584ccc3d4a230f5c6e924d5424b123d4.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00232_jpg.rf.584ccc3d4a230f5c6e924d5424b123d4_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00232_jpg.rf.584ccc3d4a230f5c6e924d5424b123d4_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00232_jpg.rf.584ccc3d4a230f5c6e924d5424b123d4_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00233_jpg.rf.c76fee29bed0cd15dd1be940a132adf8.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00233_jpg.rf.c76fee29bed0cd15dd1be940a132adf8_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00233_jpg.rf.c76fee29bed0cd15dd1be940a132adf8_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00234_jpg.rf.2589a2fb7d4b6a2cb5b1d3b167f65b34.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00234_jpg.rf.2589a2fb7d4b6a2cb5b1d3b167f65b34_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00234_jpg.rf.2589a2fb7d4b6a2cb5b1d3b167f65b34_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00234_jpg.rf.2589a2fb7d4b6a2cb5b1d3b167f65b34_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00236_jpg.rf.6efa869239ec0a88fcf514f1750f3265.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00236_jpg.rf.6efa869239ec0a88fcf514f1750f3265_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00236_jpg.rf.6efa869239ec0a88fcf514f1750f3265_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00237_jpg.rf.58263405e860a964396d25e5ecee0e2b.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00237_jpg.rf.58263405e860a964396d25e5ecee0e2b_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00237_jpg.rf.58263405e860a964396d25e5ecee0e2b_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00238_jpg.rf.421494679cf816f5acd1a906934d91ae.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00238_jpg.rf.421494679cf816f5acd1a906934d91ae_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00238_jpg.rf.421494679cf816f5acd1a906934d91ae_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00239_jpg.rf.e06f3cca97dae392c4b77e95eb2cea17.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00241_jpg.rf.fb2fa19df85427701f04d5b530290a35.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00242_jpg.rf.5203fc02faa0fef7fdd6d25f409847cc.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00243_jpg.rf.196b67d888970adf2a879da3ea56116a.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00243_jpg.rf.196b67d888970adf2a879da3ea56116a_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00243_jpg.rf.196b67d888970adf2a879da3ea56116a_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00243_jpg.rf.196b67d888970adf2a879da3ea56116a_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00243_jpg.rf.196b67d888970adf2a879da3ea56116a_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00244_jpg.rf.ed695baa857c86d7ae0daf8c2d72c81a.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00244_jpg.rf.ed695baa857c86d7ae0daf8c2d72c81a_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00244_jpg.rf.ed695baa857c86d7ae0daf8c2d72c81a_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00244_jpg.rf.ed695baa857c86d7ae0daf8c2d72c81a_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00244_jpg.rf.ed695baa857c86d7ae0daf8c2d72c81a_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00246_jpg.rf.1e0ee8aa28963ced72ccf5b118172fb7.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00247_jpg.rf.6ae013715a43fe5e203b58d99cf9cd81.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00247_jpg.rf.6ae013715a43fe5e203b58d99cf9cd81_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00247_jpg.rf.6ae013715a43fe5e203b58d99cf9cd81_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00248_jpg.rf.0d0442bf9fc098fdba64373cd7f8690d.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00248_jpg.rf.0d0442bf9fc098fdba64373cd7f8690d_aug_contrast_2.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00248_jpg.rf.0d0442bf9fc098fdba64373cd7f8690d_aug_hflip_0.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00248_jpg.rf.0d0442bf9fc098fdba64373cd7f8690d_aug_vflip_1.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00250_jpg.rf.09379da488d02f01e178e2999661a8ac.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00250_jpg.rf.09379da488d02f01e178e2999661a8ac_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00250_jpg.rf.09379da488d02f01e178e2999661a8ac_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00251_jpg.rf.893e3d754317e6e0978a2347bb4bf113.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00251_jpg.rf.893e3d754317e6e0978a2347bb4bf113_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00251_jpg.rf.893e3d754317e6e0978a2347bb4bf113_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00252_jpg.rf.70c0022389de44dbb30ddbdb3ff569ea.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00252_jpg.rf.70c0022389de44dbb30ddbdb3ff569ea_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00252_jpg.rf.70c0022389de44dbb30ddbdb3ff569ea_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00254_jpg.rf.2e9883bea9dff64b70121d262a345ab0.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00254_jpg.rf.2e9883bea9dff64b70121d262a345ab0_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00254_jpg.rf.2e9883bea9dff64b70121d262a345ab0_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00256_jpg.rf.f478e23cd47a36e77ce3fdfe3039e4a3.jpg,train,"longitudinal_tear, slight_scratch",4,800,800,GOOD,None
+frame_00256_jpg.rf.f478e23cd47a36e77ce3fdfe3039e4a3_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",4,800,800,GOOD,None
+frame_00256_jpg.rf.f478e23cd47a36e77ce3fdfe3039e4a3_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",4,800,800,GOOD,None
+frame_00257_jpg.rf.089b51cce94a843bf7842e86f5737b95.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00257_jpg.rf.089b51cce94a843bf7842e86f5737b95_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00257_jpg.rf.089b51cce94a843bf7842e86f5737b95_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_00259_jpg.rf.42d1a8eaa7282f73d5cdf53115d8ea28.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00261_jpg.rf.99e43006d6a8883edfe69e2a4373b90e.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00261_jpg.rf.99e43006d6a8883edfe69e2a4373b90e_aug_contrast_3.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00261_jpg.rf.99e43006d6a8883edfe69e2a4373b90e_aug_hflip_0.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00261_jpg.rf.99e43006d6a8883edfe69e2a4373b90e_aug_hvflip_2.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00261_jpg.rf.99e43006d6a8883edfe69e2a4373b90e_aug_vflip_1.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_contrast_2.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_hflip_0.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_vflip_1.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00266_jpg.rf.501f204c049787fd32a74c1ae299d3e4.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00266_jpg.rf.501f204c049787fd32a74c1ae299d3e4_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00266_jpg.rf.501f204c049787fd32a74c1ae299d3e4_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00269_jpg.rf.040839432cf33ee42b3a40fafc49d7d2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00269_jpg.rf.040839432cf33ee42b3a40fafc49d7d2_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00269_jpg.rf.040839432cf33ee42b3a40fafc49d7d2_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00269_jpg.rf.040839432cf33ee42b3a40fafc49d7d2_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00272_jpg.rf.33f3f21fda69cf5e5a88b48394bb0649.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00272_jpg.rf.33f3f21fda69cf5e5a88b48394bb0649_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00272_jpg.rf.33f3f21fda69cf5e5a88b48394bb0649_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00273_jpg.rf.8c4712e3982ecb5ad4ee34310110faf8.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00273_jpg.rf.8c4712e3982ecb5ad4ee34310110faf8_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00273_jpg.rf.8c4712e3982ecb5ad4ee34310110faf8_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00274_jpg.rf.f01f44b160bc0d5f7ce20e409cf6267d.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00274_jpg.rf.f01f44b160bc0d5f7ce20e409cf6267d_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00274_jpg.rf.f01f44b160bc0d5f7ce20e409cf6267d_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00275_jpg.rf.e01b52fd12bef086342ab93e907e6962.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00275_jpg.rf.e01b52fd12bef086342ab93e907e6962_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00275_jpg.rf.e01b52fd12bef086342ab93e907e6962_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00283_jpg.rf.d95f85774473f3f7d61919510dbe0a9b.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",4,800,800,GOOD,None
+frame_00283_jpg.rf.d95f85774473f3f7d61919510dbe0a9b_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",4,800,800,GOOD,None
+frame_00283_jpg.rf.d95f85774473f3f7d61919510dbe0a9b_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",4,800,800,GOOD,None
+frame_00283_jpg.rf.d95f85774473f3f7d61919510dbe0a9b_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch, slight_scratch",4,800,800,GOOD,None
+frame_00284_jpg.rf.86a72dcc9f48a4fb912d6739bb390e30.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00284_jpg.rf.86a72dcc9f48a4fb912d6739bb390e30_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00284_jpg.rf.86a72dcc9f48a4fb912d6739bb390e30_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00285_jpg.rf.1dc217d617760bdb0e9a04999960999c.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00285_jpg.rf.1dc217d617760bdb0e9a04999960999c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00285_jpg.rf.1dc217d617760bdb0e9a04999960999c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00287_jpg.rf.3c52efabe4d4d7fe7dc7c3a9afe75ff3.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00287_jpg.rf.3c52efabe4d4d7fe7dc7c3a9afe75ff3_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00287_jpg.rf.3c52efabe4d4d7fe7dc7c3a9afe75ff3_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_00288_jpg.rf.130a4c33afeeff83082db5650cc50ff2.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00291_jpg.rf.ddc2f95b905b817159bfafe99c9d910e.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00291_jpg.rf.ddc2f95b905b817159bfafe99c9d910e_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00291_jpg.rf.ddc2f95b905b817159bfafe99c9d910e_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00291_jpg.rf.ddc2f95b905b817159bfafe99c9d910e_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00291_jpg.rf.ddc2f95b905b817159bfafe99c9d910e_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_00294_jpg.rf.56b00f3f19a6ff3888d890571593a43d.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00294_jpg.rf.56b00f3f19a6ff3888d890571593a43d_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00294_jpg.rf.56b00f3f19a6ff3888d890571593a43d_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00295_jpg.rf.73cb1309239696b8ecfba78d6a3248fe.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00295_jpg.rf.73cb1309239696b8ecfba78d6a3248fe_aug_contrast_2.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00295_jpg.rf.73cb1309239696b8ecfba78d6a3248fe_aug_hflip_0.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00295_jpg.rf.73cb1309239696b8ecfba78d6a3248fe_aug_vflip_1.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00297_jpg.rf.0a4a1da94de8cf082cc7eeedf504eeeb.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00297_jpg.rf.0a4a1da94de8cf082cc7eeedf504eeeb_aug_contrast_2.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00297_jpg.rf.0a4a1da94de8cf082cc7eeedf504eeeb_aug_hflip_0.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00297_jpg.rf.0a4a1da94de8cf082cc7eeedf504eeeb_aug_vflip_1.jpg,train,"deep_scratch, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00299_jpg.rf.58913378fb97f6cd1ec19984ed1b552b.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00299_jpg.rf.58913378fb97f6cd1ec19984ed1b552b_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00299_jpg.rf.58913378fb97f6cd1ec19984ed1b552b_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00301_jpg.rf.253162d181cb9d95f1c65a3e39308e23.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00301_jpg.rf.253162d181cb9d95f1c65a3e39308e23_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00301_jpg.rf.253162d181cb9d95f1c65a3e39308e23_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00302_jpg.rf.3561df1687fbdf91d9217ca0009adb74.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00302_jpg.rf.3561df1687fbdf91d9217ca0009adb74_aug_contrast_2.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00302_jpg.rf.3561df1687fbdf91d9217ca0009adb74_aug_hflip_0.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00302_jpg.rf.3561df1687fbdf91d9217ca0009adb74_aug_vflip_1.jpg,train,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00304_jpg.rf.207920f57db81fe221bf24a796de7ba5.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00304_jpg.rf.207920f57db81fe221bf24a796de7ba5_aug_contrast_1.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00304_jpg.rf.207920f57db81fe221bf24a796de7ba5_aug_hflip_0.jpg,train,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00306_jpg.rf.72655df170ca7e2abbec878e77a8f0a4.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_00309_jpg.rf.6b94fe49f12da98f7c6a5b25b404a825.jpg,train,"longitudinal_tear, belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00309_jpg.rf.6b94fe49f12da98f7c6a5b25b404a825_aug_contrast_3.jpg,train,"longitudinal_tear, belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00309_jpg.rf.6b94fe49f12da98f7c6a5b25b404a825_aug_hflip_0.jpg,train,"longitudinal_tear, belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00309_jpg.rf.6b94fe49f12da98f7c6a5b25b404a825_aug_hvflip_2.jpg,train,"longitudinal_tear, belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00309_jpg.rf.6b94fe49f12da98f7c6a5b25b404a825_aug_vflip_1.jpg,train,"longitudinal_tear, belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00310_jpg.rf.14d327f2549a0a5b93f50bae259473d1.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00310_jpg.rf.14d327f2549a0a5b93f50bae259473d1_aug_contrast_3.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00310_jpg.rf.14d327f2549a0a5b93f50bae259473d1_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00310_jpg.rf.14d327f2549a0a5b93f50bae259473d1_aug_hvflip_2.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00310_jpg.rf.14d327f2549a0a5b93f50bae259473d1_aug_vflip_1.jpg,train,"longitudinal_tear, normal_belt, belt_splice",4,800,800,GOOD,None
+frame_00313_jpg.rf.f50e311dd4a20248f796a5d651e36cb0.jpg,train,"deep_scratch, normal_belt, slight_scratch",5,800,800,GOOD,None
+frame_00313_jpg.rf.f50e311dd4a20248f796a5d651e36cb0_aug_contrast_2.jpg,train,"deep_scratch, normal_belt, slight_scratch",5,800,800,GOOD,None
+frame_00313_jpg.rf.f50e311dd4a20248f796a5d651e36cb0_aug_hflip_0.jpg,train,"deep_scratch, normal_belt, slight_scratch",5,800,800,GOOD,None
+frame_00313_jpg.rf.f50e311dd4a20248f796a5d651e36cb0_aug_vflip_1.jpg,train,"deep_scratch, normal_belt, slight_scratch",5,800,800,GOOD,None
+frame_00316_jpg.rf.d65b0124bff93fba9bbc03e2c5b0d2f9.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00316_jpg.rf.d65b0124bff93fba9bbc03e2c5b0d2f9_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00316_jpg.rf.d65b0124bff93fba9bbc03e2c5b0d2f9_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00323_jpg.rf.02afbff569d60b46f9c2e7ce494c3ce0.jpg,train,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00323_jpg.rf.02afbff569d60b46f9c2e7ce494c3ce0_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00323_jpg.rf.02afbff569d60b46f9c2e7ce494c3ce0_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00325_jpg.rf.76efdf919f818222fcdf6dedb6c0d8bc.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00325_jpg.rf.76efdf919f818222fcdf6dedb6c0d8bc_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_00325_jpg.rf.76efdf919f818222fcdf6dedb6c0d8bc_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001426_418414_jpg.rf.161c709ef1bd88450caf793a1dd2d5d2.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001426_418414_jpg.rf.161c709ef1bd88450caf793a1dd2d5d2_aug_contrast_2.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001426_418414_jpg.rf.161c709ef1bd88450caf793a1dd2d5d2_aug_hflip_0.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001426_418414_jpg.rf.161c709ef1bd88450caf793a1dd2d5d2_aug_vflip_1.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001427_194997_jpg.rf.c120e9b8ef8efb9d1278dbd5c44b0bbe.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001427_194997_jpg.rf.c120e9b8ef8efb9d1278dbd5c44b0bbe_aug_contrast_2.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001427_194997_jpg.rf.c120e9b8ef8efb9d1278dbd5c44b0bbe_aug_hflip_0.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001427_194997_jpg.rf.c120e9b8ef8efb9d1278dbd5c44b0bbe_aug_vflip_1.jpg,train,"deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_20260504_001428_139165_jpg.rf.6919eb4a4d94d18f19961c12d1b181cf.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_139165_jpg.rf.6919eb4a4d94d18f19961c12d1b181cf_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_139165_jpg.rf.6919eb4a4d94d18f19961c12d1b181cf_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_139165_jpg.rf.6919eb4a4d94d18f19961c12d1b181cf_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_997880_jpg.rf.ffb58c3abd33fdafd1b5bc9c71c4bf90.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_997880_jpg.rf.ffb58c3abd33fdafd1b5bc9c71c4bf90_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_997880_jpg.rf.ffb58c3abd33fdafd1b5bc9c71c4bf90_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001428_997880_jpg.rf.ffb58c3abd33fdafd1b5bc9c71c4bf90_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001430_293195_jpg.rf.72b04e3058dd21b8fa6af7fd40ad0261.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001430_293195_jpg.rf.72b04e3058dd21b8fa6af7fd40ad0261_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001430_293195_jpg.rf.72b04e3058dd21b8fa6af7fd40ad0261_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001430_293195_jpg.rf.72b04e3058dd21b8fa6af7fd40ad0261_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001431_208607_jpg.rf.a0a3672eef9af93716af13a483dbd162.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_20260504_001431_208607_jpg.rf.a0a3672eef9af93716af13a483dbd162_aug_contrast_2.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_20260504_001431_208607_jpg.rf.a0a3672eef9af93716af13a483dbd162_aug_hflip_0.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_20260504_001431_208607_jpg.rf.a0a3672eef9af93716af13a483dbd162_aug_vflip_1.jpg,train,deep_scratch,2,800,800,GOOD,None
+frame_20260504_001432_273343_jpg.rf.40f508fad80025b65e6a826779a7ab93.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001432_273343_jpg.rf.40f508fad80025b65e6a826779a7ab93_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001432_273343_jpg.rf.40f508fad80025b65e6a826779a7ab93_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001432_273343_jpg.rf.40f508fad80025b65e6a826779a7ab93_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001438_044448_jpg.rf.8f76c6fbc3935e0f25cec922cd082db7.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001438_044448_jpg.rf.8f76c6fbc3935e0f25cec922cd082db7_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001438_044448_jpg.rf.8f76c6fbc3935e0f25cec922cd082db7_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001438_044448_jpg.rf.8f76c6fbc3935e0f25cec922cd082db7_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001439_991865_jpg.rf.e635d61d04b96eba5456a5dbbaf7132f.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001439_991865_jpg.rf.e635d61d04b96eba5456a5dbbaf7132f_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001439_991865_jpg.rf.e635d61d04b96eba5456a5dbbaf7132f_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001439_991865_jpg.rf.e635d61d04b96eba5456a5dbbaf7132f_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001440_968717_jpg.rf.36cffe7128ee4282b86d411b03fb4a3c.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001440_968717_jpg.rf.36cffe7128ee4282b86d411b03fb4a3c_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001440_968717_jpg.rf.36cffe7128ee4282b86d411b03fb4a3c_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001440_968717_jpg.rf.36cffe7128ee4282b86d411b03fb4a3c_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001441_961350_jpg.rf.aebad6485a90033e8aafb8473b255733.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_001441_961350_jpg.rf.aebad6485a90033e8aafb8473b255733_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_001441_961350_jpg.rf.aebad6485a90033e8aafb8473b255733_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_001442_973718_jpg.rf.90d4f9f9ea14388c79734122d099959d.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001442_973718_jpg.rf.90d4f9f9ea14388c79734122d099959d_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001442_973718_jpg.rf.90d4f9f9ea14388c79734122d099959d_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001443_963840_jpg.rf.791ffd9b275f42be102838619f9c3a4f.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001445_047434_jpg.rf.1fd76942948d19edb8efa98b10b9b4a5.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001445_047434_jpg.rf.1fd76942948d19edb8efa98b10b9b4a5_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001445_047434_jpg.rf.1fd76942948d19edb8efa98b10b9b4a5_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001445_047434_jpg.rf.1fd76942948d19edb8efa98b10b9b4a5_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001445_047434_jpg.rf.1fd76942948d19edb8efa98b10b9b4a5_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001446_073037_jpg.rf.41a1e03f738daaea4fa37ef8e77b8514.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001446_073037_jpg.rf.41a1e03f738daaea4fa37ef8e77b8514_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001446_073037_jpg.rf.41a1e03f738daaea4fa37ef8e77b8514_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001448_939978_jpg.rf.7bf0c76ea72908b43a9992a6835b52fc.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001448_939978_jpg.rf.7bf0c76ea72908b43a9992a6835b52fc_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001448_939978_jpg.rf.7bf0c76ea72908b43a9992a6835b52fc_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001448_939978_jpg.rf.7bf0c76ea72908b43a9992a6835b52fc_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001448_939978_jpg.rf.7bf0c76ea72908b43a9992a6835b52fc_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001452_040040_jpg.rf.18d7d5655e4dd4ae51f2216eab0a746a.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001452_040040_jpg.rf.18d7d5655e4dd4ae51f2216eab0a746a_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001452_040040_jpg.rf.18d7d5655e4dd4ae51f2216eab0a746a_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001452_040040_jpg.rf.18d7d5655e4dd4ae51f2216eab0a746a_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001453_094795_jpg.rf.965b1f19600269ad921f53f2648c46a9.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001455_947952_jpg.rf.a59f4518711a13185bc4b021c761c130.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001455_947952_jpg.rf.a59f4518711a13185bc4b021c761c130_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001455_947952_jpg.rf.a59f4518711a13185bc4b021c761c130_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001455_947952_jpg.rf.a59f4518711a13185bc4b021c761c130_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001457_172954_jpg.rf.c14014192a520d1f9c41d3a31ef9b8e0.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001458_186179_jpg.rf.45c9d9611e5b70db947eea4e15b0ee40.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001458_186179_jpg.rf.45c9d9611e5b70db947eea4e15b0ee40_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001458_186179_jpg.rf.45c9d9611e5b70db947eea4e15b0ee40_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001459_046383_jpg.rf.9e74d9fd5028709eff76c5804d3ffbc3.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001500_986995_jpg.rf.137e077228e57924f663b0fc7ab37f2c.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001500_986995_jpg.rf.137e077228e57924f663b0fc7ab37f2c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001500_986995_jpg.rf.137e077228e57924f663b0fc7ab37f2c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001502_987492_jpg.rf.ea59c6a8e3d6142a6de006250a1f59ff.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001506_013874_jpg.rf.505f8f14ab8c2fd9a7fa0609dcc8f890.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001506_013874_jpg.rf.505f8f14ab8c2fd9a7fa0609dcc8f890_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001506_013874_jpg.rf.505f8f14ab8c2fd9a7fa0609dcc8f890_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001506_993389_jpg.rf.7db8d527c44990b90771d9997fcef3d0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001506_993389_jpg.rf.7db8d527c44990b90771d9997fcef3d0_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001506_993389_jpg.rf.7db8d527c44990b90771d9997fcef3d0_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001506_993389_jpg.rf.7db8d527c44990b90771d9997fcef3d0_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001508_000036_jpg.rf.efb61e2418a00773b1f1ece1ade28d53.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001508_000036_jpg.rf.efb61e2418a00773b1f1ece1ade28d53_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001508_000036_jpg.rf.efb61e2418a00773b1f1ece1ade28d53_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001508_967870_jpg.rf.b7771161e87c3437f792f3e372614fa0.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001510_983327_jpg.rf.2915bf7adf223fdb0459ef0f829ab6f5.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001510_983327_jpg.rf.2915bf7adf223fdb0459ef0f829ab6f5_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001510_983327_jpg.rf.2915bf7adf223fdb0459ef0f829ab6f5_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001510_983327_jpg.rf.2915bf7adf223fdb0459ef0f829ab6f5_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001512_057324_jpg.rf.4c796b5db2f5f181c065f179bf92452e.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001513_018302_jpg.rf.f7516e8158c1e059f9d729290f1cadd1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001513_018302_jpg.rf.f7516e8158c1e059f9d729290f1cadd1_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001513_018302_jpg.rf.f7516e8158c1e059f9d729290f1cadd1_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001514_079555_jpg.rf.37495c3e65cc5b3de1175ca91421b6fb.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001516_192421_jpg.rf.47ba6e82dc7c892129965266c47dab0f.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001516_192421_jpg.rf.47ba6e82dc7c892129965266c47dab0f_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001516_192421_jpg.rf.47ba6e82dc7c892129965266c47dab0f_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001530_072063_jpg.rf.f4c1202042ea105fc6517cd283fdcc3c.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001530_072063_jpg.rf.f4c1202042ea105fc6517cd283fdcc3c_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001530_072063_jpg.rf.f4c1202042ea105fc6517cd283fdcc3c_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001530_072063_jpg.rf.f4c1202042ea105fc6517cd283fdcc3c_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001530_996480_jpg.rf.79076124b49cc1e78d71bf932343f671.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001530_996480_jpg.rf.79076124b49cc1e78d71bf932343f671_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001530_996480_jpg.rf.79076124b49cc1e78d71bf932343f671_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001532_107976_jpg.rf.e2256b7b504ab5419bc49e378fe15c04.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001532_107976_jpg.rf.e2256b7b504ab5419bc49e378fe15c04_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001532_107976_jpg.rf.e2256b7b504ab5419bc49e378fe15c04_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001533_079628_jpg.rf.54a1f6294ab3d89ab46808bf151cbf93.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001534_122536_jpg.rf.ccb51e749bead969d37c4cbeea5d6bcc.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001534_122536_jpg.rf.ccb51e749bead969d37c4cbeea5d6bcc_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001534_122536_jpg.rf.ccb51e749bead969d37c4cbeea5d6bcc_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001534_122536_jpg.rf.ccb51e749bead969d37c4cbeea5d6bcc_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001534_122536_jpg.rf.ccb51e749bead969d37c4cbeea5d6bcc_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001536_052864_jpg.rf.67016407ef0efb81ee410788bcd28473.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001537_025726_jpg.rf.ec97a516259791d37b4e847ca318d5f5.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001544_003810_jpg.rf.c1c19fbf1fe20e1fa38152a624690169.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001544_003810_jpg.rf.c1c19fbf1fe20e1fa38152a624690169_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001544_003810_jpg.rf.c1c19fbf1fe20e1fa38152a624690169_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001545_043138_jpg.rf.a204ab3dbdb152a48315b19067e521d8.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001545_043138_jpg.rf.a204ab3dbdb152a48315b19067e521d8_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001545_043138_jpg.rf.a204ab3dbdb152a48315b19067e521d8_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001545_043138_jpg.rf.a204ab3dbdb152a48315b19067e521d8_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001546_021033_jpg.rf.ab254af675da1ec558b09b0ab306214b.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001547_038102_jpg.rf.308d6a3ba2b03895f1128f376357827f.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001547_038102_jpg.rf.308d6a3ba2b03895f1128f376357827f_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001547_038102_jpg.rf.308d6a3ba2b03895f1128f376357827f_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001548_002420_jpg.rf.546d4039eb67ad0fc551ffa6f7e6ecd1.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001549_078762_jpg.rf.4c9b6a416fb4d0d4d54b9f63c4bc5d6f.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_20260504_001549_078762_jpg.rf.4c9b6a416fb4d0d4d54b9f63c4bc5d6f_aug_contrast_3.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_20260504_001549_078762_jpg.rf.4c9b6a416fb4d0d4d54b9f63c4bc5d6f_aug_hflip_0.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_20260504_001549_078762_jpg.rf.4c9b6a416fb4d0d4d54b9f63c4bc5d6f_aug_hvflip_2.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_20260504_001549_078762_jpg.rf.4c9b6a416fb4d0d4d54b9f63c4bc5d6f_aug_vflip_1.jpg,train,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_20260504_001550_044144_jpg.rf.691e57613f81c56eb9e6314e8cef8683.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_001550_044144_jpg.rf.691e57613f81c56eb9e6314e8cef8683_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_001550_044144_jpg.rf.691e57613f81c56eb9e6314e8cef8683_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_001552_051405_jpg.rf.fbe3c6f052dd7cd37e34610d9f0fb500.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001553_104920_jpg.rf.06910f1fa4eef6889b1ae7cbc7dfe8a1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001553_104920_jpg.rf.06910f1fa4eef6889b1ae7cbc7dfe8a1_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001553_104920_jpg.rf.06910f1fa4eef6889b1ae7cbc7dfe8a1_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001553_104920_jpg.rf.06910f1fa4eef6889b1ae7cbc7dfe8a1_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001553_104920_jpg.rf.06910f1fa4eef6889b1ae7cbc7dfe8a1_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001554_019290_jpg.rf.cca280432ec81191b9cd2866d2c093cc.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001556_054329_jpg.rf.be72c461d23c71e9a1bbf6f247c5de1e.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001556_054329_jpg.rf.be72c461d23c71e9a1bbf6f247c5de1e_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001556_054329_jpg.rf.be72c461d23c71e9a1bbf6f247c5de1e_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001557_041982_jpg.rf.9cde12a12079ac00cfbcc36a820f89bd.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001558_022123_jpg.rf.842536e8ea30804bb731c12ca4f9b32b.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001600_027709_jpg.rf.365e507d864b730408367403afe69659.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001600_027709_jpg.rf.365e507d864b730408367403afe69659_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001600_027709_jpg.rf.365e507d864b730408367403afe69659_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001600_027709_jpg.rf.365e507d864b730408367403afe69659_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001601_041886_jpg.rf.f8ad1b0f8eca3614278a63395963fd7d.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001601_041886_jpg.rf.f8ad1b0f8eca3614278a63395963fd7d_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001601_041886_jpg.rf.f8ad1b0f8eca3614278a63395963fd7d_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001602_072948_jpg.rf.c245a05622b0a5eab12c30f035d11e42.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001602_072948_jpg.rf.c245a05622b0a5eab12c30f035d11e42_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001602_072948_jpg.rf.c245a05622b0a5eab12c30f035d11e42_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001603_223753_jpg.rf.4eb1b8325d2139d1bc93d2ab51d84ce5.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001605_302441_jpg.rf.1a361e38a220be83117f3c8fdb5b9066.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001605_302441_jpg.rf.1a361e38a220be83117f3c8fdb5b9066_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001605_302441_jpg.rf.1a361e38a220be83117f3c8fdb5b9066_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001607_186712_jpg.rf.f609f97e2f2811e62ebc1df49d6f9dc8.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001608_041157_jpg.rf.895ce85f4da9544401e7c7ae81b135b4.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001608_041157_jpg.rf.895ce85f4da9544401e7c7ae81b135b4_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001608_041157_jpg.rf.895ce85f4da9544401e7c7ae81b135b4_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001608_041157_jpg.rf.895ce85f4da9544401e7c7ae81b135b4_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001608_041157_jpg.rf.895ce85f4da9544401e7c7ae81b135b4_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_001609_085785_jpg.rf.564e198d7ed9f00b0a45420b33f61760.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_001616_036004_jpg.rf.08ea1340e060373c2a43dd4fd6e5aa98.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002332_685934_jpg.rf.4ad06a701d2513465eb7824e282bba43.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002333_709096_jpg.rf.dd645c0a70d10493d9f0d56615478629.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002333_709096_jpg.rf.dd645c0a70d10493d9f0d56615478629_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002333_709096_jpg.rf.dd645c0a70d10493d9f0d56615478629_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002334_688567_jpg.rf.1151e52fa3ad0ff7ad711438a01f4ee3.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_20260504_002334_688567_jpg.rf.1151e52fa3ad0ff7ad711438a01f4ee3_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_20260504_002334_688567_jpg.rf.1151e52fa3ad0ff7ad711438a01f4ee3_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_20260504_002335_732681_jpg.rf.d3e61a9888ef2b6ba2309574f5e732f5.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_002335_732681_jpg.rf.d3e61a9888ef2b6ba2309574f5e732f5_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_002335_732681_jpg.rf.d3e61a9888ef2b6ba2309574f5e732f5_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_002346_693302_jpg.rf.84b51e397889636ea10532bf918b10eb.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002346_693302_jpg.rf.84b51e397889636ea10532bf918b10eb_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002346_693302_jpg.rf.84b51e397889636ea10532bf918b10eb_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002348_694508_jpg.rf.49c978eab7c0ec720525abcdb41a905a.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002348_694508_jpg.rf.49c978eab7c0ec720525abcdb41a905a_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002348_694508_jpg.rf.49c978eab7c0ec720525abcdb41a905a_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002349_703193_jpg.rf.95599bf96798561ecbb62f89c41e02fd.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002349_703193_jpg.rf.95599bf96798561ecbb62f89c41e02fd_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002349_703193_jpg.rf.95599bf96798561ecbb62f89c41e02fd_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002350_696874_jpg.rf.67afa279e2f7582b3f0d6e0188d0310a.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002351_721258_jpg.rf.61050ff5514265572a506e35b06ad461.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002351_721258_jpg.rf.61050ff5514265572a506e35b06ad461_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002351_721258_jpg.rf.61050ff5514265572a506e35b06ad461_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002351_721258_jpg.rf.61050ff5514265572a506e35b06ad461_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002351_721258_jpg.rf.61050ff5514265572a506e35b06ad461_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002352_724720_jpg.rf.f92cef07d4028fdc11eaee588ba359b9.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002352_724720_jpg.rf.f92cef07d4028fdc11eaee588ba359b9_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002352_724720_jpg.rf.f92cef07d4028fdc11eaee588ba359b9_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002353_727595_jpg.rf.883e0b18bed32b79e1da8bb4f922c11a.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002355_717638_jpg.rf.9bd9227984df4f46c166e76263bddbd8.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002355_717638_jpg.rf.9bd9227984df4f46c166e76263bddbd8_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002355_717638_jpg.rf.9bd9227984df4f46c166e76263bddbd8_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002355_717638_jpg.rf.9bd9227984df4f46c166e76263bddbd8_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002355_717638_jpg.rf.9bd9227984df4f46c166e76263bddbd8_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002357_706435_jpg.rf.d832e83050f6ecd76d7b9d2a3e933c87.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002357_706435_jpg.rf.d832e83050f6ecd76d7b9d2a3e933c87_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002357_706435_jpg.rf.d832e83050f6ecd76d7b9d2a3e933c87_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002359_717757_jpg.rf.62d5259233ef832813a943c301a5a014.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002359_717757_jpg.rf.62d5259233ef832813a943c301a5a014_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002359_717757_jpg.rf.62d5259233ef832813a943c301a5a014_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002400_805702_jpg.rf.2e9b33f857a2f2388896b954a3dcacdc.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_002400_805702_jpg.rf.2e9b33f857a2f2388896b954a3dcacdc_aug_contrast_1.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_002400_805702_jpg.rf.2e9b33f857a2f2388896b954a3dcacdc_aug_hflip_0.jpg,train,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_20260504_002401_714369_jpg.rf.d43df3b2eaf6df3ae01745c6530b7869.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002401_714369_jpg.rf.d43df3b2eaf6df3ae01745c6530b7869_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002401_714369_jpg.rf.d43df3b2eaf6df3ae01745c6530b7869_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002404_723887_jpg.rf.b84fe2f481e74c66ff01cfb0ce118572.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002404_723887_jpg.rf.b84fe2f481e74c66ff01cfb0ce118572_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002404_723887_jpg.rf.b84fe2f481e74c66ff01cfb0ce118572_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002405_793625_jpg.rf.736f75cef00bdaf34523ddc61a1aca80.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002406_708018_jpg.rf.be4013cacfa2e012ff1421bd1bb97e7c.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002406_708018_jpg.rf.be4013cacfa2e012ff1421bd1bb97e7c_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002406_708018_jpg.rf.be4013cacfa2e012ff1421bd1bb97e7c_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002406_708018_jpg.rf.be4013cacfa2e012ff1421bd1bb97e7c_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002406_708018_jpg.rf.be4013cacfa2e012ff1421bd1bb97e7c_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002407_724847_jpg.rf.d50408168af6d073c0a39ed77110132c.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002407_724847_jpg.rf.d50408168af6d073c0a39ed77110132c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002407_724847_jpg.rf.d50408168af6d073c0a39ed77110132c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002422_730793_jpg.rf.cb5fc4c97565b782ae4c5776fb3ea026.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002422_730793_jpg.rf.cb5fc4c97565b782ae4c5776fb3ea026_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002422_730793_jpg.rf.cb5fc4c97565b782ae4c5776fb3ea026_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002425_778323_jpg.rf.0e4735c4a839e8aee99776e79283029d.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002425_778323_jpg.rf.0e4735c4a839e8aee99776e79283029d_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002425_778323_jpg.rf.0e4735c4a839e8aee99776e79283029d_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002425_778323_jpg.rf.0e4735c4a839e8aee99776e79283029d_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002425_778323_jpg.rf.0e4735c4a839e8aee99776e79283029d_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002432_760097_jpg.rf.3c7e098a361a24b3487ba55e392faf4e.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002432_760097_jpg.rf.3c7e098a361a24b3487ba55e392faf4e_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002432_760097_jpg.rf.3c7e098a361a24b3487ba55e392faf4e_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_002433_747187_jpg.rf.3bd3b7c3891d2d694d5137bebf3be1e5.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002434_835725_jpg.rf.3de390eb41e6b433c78d46b85711320c.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002434_835725_jpg.rf.3de390eb41e6b433c78d46b85711320c_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002434_835725_jpg.rf.3de390eb41e6b433c78d46b85711320c_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002437_783980_jpg.rf.7df0f34eb178fdebe3de7c511f8ac547.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002437_783980_jpg.rf.7df0f34eb178fdebe3de7c511f8ac547_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002437_783980_jpg.rf.7df0f34eb178fdebe3de7c511f8ac547_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002438_736207_jpg.rf.8156d0200d27880c738a8b0f7f71fb42.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002438_736207_jpg.rf.8156d0200d27880c738a8b0f7f71fb42_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002438_736207_jpg.rf.8156d0200d27880c738a8b0f7f71fb42_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002439_746797_jpg.rf.71f5df3ee089bda14ee2e7222f62194d.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002440_754928_jpg.rf.6f9273205dd81c9df04bb6a1b0ace422.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002440_754928_jpg.rf.6f9273205dd81c9df04bb6a1b0ace422_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002440_754928_jpg.rf.6f9273205dd81c9df04bb6a1b0ace422_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002440_754928_jpg.rf.6f9273205dd81c9df04bb6a1b0ace422_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002440_754928_jpg.rf.6f9273205dd81c9df04bb6a1b0ace422_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_002443_779404_jpg.rf.02f037bf5c18aad88907fcb8e01bb48c.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002449_769055_jpg.rf.bd258b31dda3ef6dfd90338b16133eb8.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_002452_150649_jpg.rf.5bb4b8d3d8b40fd75e1b4abdf487be92.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002452_150649_jpg.rf.5bb4b8d3d8b40fd75e1b4abdf487be92_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002452_150649_jpg.rf.5bb4b8d3d8b40fd75e1b4abdf487be92_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002452_150649_jpg.rf.5bb4b8d3d8b40fd75e1b4abdf487be92_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_002453_126063_jpg.rf.917f805c37535e6a88a8e20eb969cee3.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003200_300380_jpg.rf.d01c7c124f66fa632b692823c8e1baa9.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003201_178219_jpg.rf.e005c8a6d4a09e0fa36936efeb83509b.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003202_188372_jpg.rf.2923e02e80779cc3849fa09ac0e29eb6.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003203_249735_jpg.rf.a7f0044f922611f4982c42a57a6b0fe8.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003204_269019_jpg.rf.1bdd1feb77ea230c7d36f0e0cbc60ab0.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003205_331722_jpg.rf.31a75d5f13ddd606ec044e83704d43d0.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003207_232708_jpg.rf.ff693030717c5a3eff5100efc072dc43.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003208_164135_jpg.rf.5752a18bea9d53891c7b9cc59f07d068.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003209_176977_jpg.rf.53c56a91d14d155c646808b5c0af2a1e.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003211_767211_jpg.rf.24aa0cd6a067fe59e27ec4740554ff24.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003224_170635_jpg.rf.f93cbe6755da3686af287f674962a132.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003717_312621_jpg.rf.21e1e1a655707633c9c97511214d01c6.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003718_280771_jpg.rf.c3647cf0579ee0f1bc05c4f6b0ee27ae.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003726_285128_jpg.rf.2b0904f2541ecd404ff164bb592d1780.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003727_347662_jpg.rf.efcde069b3b73e7d999255c87ad8a7ac.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003728_277086_jpg.rf.3fb4e0ce3d29765ca003da43bf90f3cf.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003730_260230_jpg.rf.2d34cc1f04928495c89cbe0a7335f876.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003731_291734_jpg.rf.0fe76035a47dfc28df63312aa462f168.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003735_272171_jpg.rf.7da0415225adbf46365cac9fa0d46be5.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003736_276444_jpg.rf.770c7b46ff3e6b6f42b5dc1472820752.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003737_295509_jpg.rf.628e99c1a7473859ea2f796a1f746af2.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003738_264921_jpg.rf.a8283c19e4d32f8c511c4711a12e8069.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003738_264921_jpg.rf.a8283c19e4d32f8c511c4711a12e8069_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003738_264921_jpg.rf.a8283c19e4d32f8c511c4711a12e8069_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003738_264921_jpg.rf.a8283c19e4d32f8c511c4711a12e8069_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003738_264921_jpg.rf.a8283c19e4d32f8c511c4711a12e8069_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003740_274263_jpg.rf.c84eaaf5d045bafc8a06bb7b1cc180f8.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003743_306443_jpg.rf.33701eb52f5f1b8e8ce8e08fb56b75f9.jpg,train,normal_belt,5,800,800,GOOD,None
+frame_20260504_003744_255847_jpg.rf.337efddedc0a2f6e96dfeeb3e8fd704f.jpg,train,normal_belt,6,800,800,GOOD,None
+frame_20260504_003748_269952_jpg.rf.e0af07aa931dd7d04443167c02ba6bfe.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003749_285762_jpg.rf.52f0b53fab1f1fa2d768eea9abef141f.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003749_285762_jpg.rf.52f0b53fab1f1fa2d768eea9abef141f_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003749_285762_jpg.rf.52f0b53fab1f1fa2d768eea9abef141f_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003749_285762_jpg.rf.52f0b53fab1f1fa2d768eea9abef141f_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003749_285762_jpg.rf.52f0b53fab1f1fa2d768eea9abef141f_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003752_272879_jpg.rf.4ea2f649e453cfe4e47ceb4081304ee8.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003802_291892_jpg.rf.fe3ac5c51825d422e5a8e85657e472e3.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003803_293861_jpg.rf.f623a63839e9230fd2c0351fc3f5dd6a.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003804_298077_jpg.rf.5953da7289d654c56b9d3a3c2545f702.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003806_307882_jpg.rf.b917a97a7117c01cb7af5577a8437142.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003807_344530_jpg.rf.03c8a8ad0831ed3be46c107ea52cabef.jpg,train,normal_belt,1,800,800,GOOD,None
+frame_20260504_003808_345436_jpg.rf.b9abac02d81ba7193d7fa9a0f6232ed7.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003808_345436_jpg.rf.b9abac02d81ba7193d7fa9a0f6232ed7_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003808_345436_jpg.rf.b9abac02d81ba7193d7fa9a0f6232ed7_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003808_345436_jpg.rf.b9abac02d81ba7193d7fa9a0f6232ed7_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_003808_345436_jpg.rf.b9abac02d81ba7193d7fa9a0f6232ed7_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004417_338750_jpg.rf.020265f2aa7ade05c47663b04a049fee.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004417_338750_jpg.rf.020265f2aa7ade05c47663b04a049fee_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004417_338750_jpg.rf.020265f2aa7ade05c47663b04a049fee_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004417_338750_jpg.rf.020265f2aa7ade05c47663b04a049fee_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004419_135670_jpg.rf.ee9bd7158c50245cb4253366baea415c.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004419_135670_jpg.rf.ee9bd7158c50245cb4253366baea415c_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004419_135670_jpg.rf.ee9bd7158c50245cb4253366baea415c_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004419_135670_jpg.rf.ee9bd7158c50245cb4253366baea415c_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004420_087646_jpg.rf.1c1176d8ecef1134f80421b038c9e810.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004420_087646_jpg.rf.1c1176d8ecef1134f80421b038c9e810_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004420_087646_jpg.rf.1c1176d8ecef1134f80421b038c9e810_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004420_087646_jpg.rf.1c1176d8ecef1134f80421b038c9e810_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004422_198155_jpg.rf.48a1f9bf2f4826e9fdec761c15ae92d1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_004422_198155_jpg.rf.48a1f9bf2f4826e9fdec761c15ae92d1_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_004422_198155_jpg.rf.48a1f9bf2f4826e9fdec761c15ae92d1_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_004427_979748_jpg.rf.73625f18ced5a5540d1146b85bc57ff0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004427_979748_jpg.rf.73625f18ced5a5540d1146b85bc57ff0_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004427_979748_jpg.rf.73625f18ced5a5540d1146b85bc57ff0_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004427_979748_jpg.rf.73625f18ced5a5540d1146b85bc57ff0_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004430_979805_jpg.rf.dacc581a63b8ce684ff27593d3fe0494.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004430_979805_jpg.rf.dacc581a63b8ce684ff27593d3fe0494_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004430_979805_jpg.rf.dacc581a63b8ce684ff27593d3fe0494_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004430_979805_jpg.rf.dacc581a63b8ce684ff27593d3fe0494_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004430_979805_jpg.rf.dacc581a63b8ce684ff27593d3fe0494_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004432_961191_jpg.rf.3d345c7e243dc6d4805602b88c894e53.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_004432_961191_jpg.rf.3d345c7e243dc6d4805602b88c894e53_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_004432_961191_jpg.rf.3d345c7e243dc6d4805602b88c894e53_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_004437_949566_jpg.rf.b37247f8d50fb96426e555de8ce4a54a.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004437_949566_jpg.rf.b37247f8d50fb96426e555de8ce4a54a_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004437_949566_jpg.rf.b37247f8d50fb96426e555de8ce4a54a_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004437_949566_jpg.rf.b37247f8d50fb96426e555de8ce4a54a_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004438_972477_jpg.rf.58f1cebf3528df4db37a28de5f69f95a.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004438_972477_jpg.rf.58f1cebf3528df4db37a28de5f69f95a_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004438_972477_jpg.rf.58f1cebf3528df4db37a28de5f69f95a_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004438_972477_jpg.rf.58f1cebf3528df4db37a28de5f69f95a_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004445_970180_jpg.rf.69abb3f3ae45da9dd5b4a6b016d46a03.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004445_970180_jpg.rf.69abb3f3ae45da9dd5b4a6b016d46a03_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004445_970180_jpg.rf.69abb3f3ae45da9dd5b4a6b016d46a03_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004445_970180_jpg.rf.69abb3f3ae45da9dd5b4a6b016d46a03_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004445_970180_jpg.rf.69abb3f3ae45da9dd5b4a6b016d46a03_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004447_974224_jpg.rf.c2a90542747a571732118a90f30d442a.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_004447_974224_jpg.rf.c2a90542747a571732118a90f30d442a_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_004447_974224_jpg.rf.c2a90542747a571732118a90f30d442a_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_004451_049861_jpg.rf.a69f79979dcd2b1a492471f623b10c32.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004451_049861_jpg.rf.a69f79979dcd2b1a492471f623b10c32_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004451_049861_jpg.rf.a69f79979dcd2b1a492471f623b10c32_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004451_049861_jpg.rf.a69f79979dcd2b1a492471f623b10c32_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004452_003492_jpg.rf.8602d4540bc0afb1fc8d94c599037e0f.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004452_003492_jpg.rf.8602d4540bc0afb1fc8d94c599037e0f_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004452_003492_jpg.rf.8602d4540bc0afb1fc8d94c599037e0f_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004452_003492_jpg.rf.8602d4540bc0afb1fc8d94c599037e0f_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004501_016110_jpg.rf.d77b1094a463b29f8e3528567e6a70cf.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004501_016110_jpg.rf.d77b1094a463b29f8e3528567e6a70cf_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004501_016110_jpg.rf.d77b1094a463b29f8e3528567e6a70cf_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004501_016110_jpg.rf.d77b1094a463b29f8e3528567e6a70cf_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_004501_016110_jpg.rf.d77b1094a463b29f8e3528567e6a70cf_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005312_597339_jpg.rf.a44b1aa378f5d2b4ebf83a5cca6e04e8.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_20260504_005312_597339_jpg.rf.a44b1aa378f5d2b4ebf83a5cca6e04e8_aug_contrast_2.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_20260504_005312_597339_jpg.rf.a44b1aa378f5d2b4ebf83a5cca6e04e8_aug_hflip_0.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_20260504_005312_597339_jpg.rf.a44b1aa378f5d2b4ebf83a5cca6e04e8_aug_vflip_1.jpg,train,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_20260504_005313_848486_jpg.rf.20d810f340187d4069e35af5bd3eb2d1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005313_848486_jpg.rf.20d810f340187d4069e35af5bd3eb2d1_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005313_848486_jpg.rf.20d810f340187d4069e35af5bd3eb2d1_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005316_078867_jpg.rf.798b9fa7082401fae52e561340199147.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_078867_jpg.rf.798b9fa7082401fae52e561340199147_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_078867_jpg.rf.798b9fa7082401fae52e561340199147_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_078867_jpg.rf.798b9fa7082401fae52e561340199147_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_820953_jpg.rf.f7655344574d707d269a8619ae8d1306.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_820953_jpg.rf.f7655344574d707d269a8619ae8d1306_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_820953_jpg.rf.f7655344574d707d269a8619ae8d1306_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005316_820953_jpg.rf.f7655344574d707d269a8619ae8d1306_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005322_621231_jpg.rf.8de2ff35e4f6d1a3048d7e6449d44736.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005322_621231_jpg.rf.8de2ff35e4f6d1a3048d7e6449d44736_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005322_621231_jpg.rf.8de2ff35e4f6d1a3048d7e6449d44736_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005322_621231_jpg.rf.8de2ff35e4f6d1a3048d7e6449d44736_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005324_589624_jpg.rf.67817ee4800b0f13ecc08e07fc2efc0e.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005324_589624_jpg.rf.67817ee4800b0f13ecc08e07fc2efc0e_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005324_589624_jpg.rf.67817ee4800b0f13ecc08e07fc2efc0e_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005324_589624_jpg.rf.67817ee4800b0f13ecc08e07fc2efc0e_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005325_586893_jpg.rf.c4764091d214a9bcf4b95d6a1217d39e.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005325_586893_jpg.rf.c4764091d214a9bcf4b95d6a1217d39e_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005325_586893_jpg.rf.c4764091d214a9bcf4b95d6a1217d39e_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005325_586893_jpg.rf.c4764091d214a9bcf4b95d6a1217d39e_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005330_589754_jpg.rf.6f142fbbe3f8837691e961212edab5cb.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005330_589754_jpg.rf.6f142fbbe3f8837691e961212edab5cb_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005330_589754_jpg.rf.6f142fbbe3f8837691e961212edab5cb_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005330_589754_jpg.rf.6f142fbbe3f8837691e961212edab5cb_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005330_589754_jpg.rf.6f142fbbe3f8837691e961212edab5cb_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005334_600307_jpg.rf.6f10585afc985232388f418f857d52bb.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005334_600307_jpg.rf.6f10585afc985232388f418f857d52bb_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005334_600307_jpg.rf.6f10585afc985232388f418f857d52bb_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005334_600307_jpg.rf.6f10585afc985232388f418f857d52bb_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005334_600307_jpg.rf.6f10585afc985232388f418f857d52bb_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005339_583958_jpg.rf.918574edca4582dbd81a046a707ff793.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005339_583958_jpg.rf.918574edca4582dbd81a046a707ff793_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005339_583958_jpg.rf.918574edca4582dbd81a046a707ff793_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005843_685632_jpg.rf.af8684afd05fee0dfc14c57a73a4108c.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005843_685632_jpg.rf.af8684afd05fee0dfc14c57a73a4108c_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005843_685632_jpg.rf.af8684afd05fee0dfc14c57a73a4108c_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005846_706580_jpg.rf.07e149f632e9ae44d4e1fe7f60f6b433.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005846_706580_jpg.rf.07e149f632e9ae44d4e1fe7f60f6b433_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005846_706580_jpg.rf.07e149f632e9ae44d4e1fe7f60f6b433_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005857_692350_jpg.rf.9b53f8e31f77c081ae59d428c7f9dd60.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005857_692350_jpg.rf.9b53f8e31f77c081ae59d428c7f9dd60_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005857_692350_jpg.rf.9b53f8e31f77c081ae59d428c7f9dd60_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005857_692350_jpg.rf.9b53f8e31f77c081ae59d428c7f9dd60_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005859_691526_jpg.rf.16be485b24e0c02f9dbdf805fda50ad6.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_20260504_005859_691526_jpg.rf.16be485b24e0c02f9dbdf805fda50ad6_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_20260504_005859_691526_jpg.rf.16be485b24e0c02f9dbdf805fda50ad6_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_20260504_005904_878080_jpg.rf.76c89b60828324b9603a29c2d168f93d.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005904_878080_jpg.rf.76c89b60828324b9603a29c2d168f93d_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005904_878080_jpg.rf.76c89b60828324b9603a29c2d168f93d_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005904_878080_jpg.rf.76c89b60828324b9603a29c2d168f93d_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005904_878080_jpg.rf.76c89b60828324b9603a29c2d168f93d_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005905_744834_jpg.rf.e27346feab1dfbe40eecfb4b21ab8616.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005905_744834_jpg.rf.e27346feab1dfbe40eecfb4b21ab8616_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005905_744834_jpg.rf.e27346feab1dfbe40eecfb4b21ab8616_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005907_777469_jpg.rf.af950e414e3cd620f574bfa46cb5c1b8.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005907_777469_jpg.rf.af950e414e3cd620f574bfa46cb5c1b8_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005907_777469_jpg.rf.af950e414e3cd620f574bfa46cb5c1b8_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005908_880939_jpg.rf.839d54b4e0b9c456980aec1d6aaa735a.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005908_880939_jpg.rf.839d54b4e0b9c456980aec1d6aaa735a_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005908_880939_jpg.rf.839d54b4e0b9c456980aec1d6aaa735a_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005908_880939_jpg.rf.839d54b4e0b9c456980aec1d6aaa735a_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005908_880939_jpg.rf.839d54b4e0b9c456980aec1d6aaa735a_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005910_724374_jpg.rf.a060ff08e8a8c698794022c8b7d7248f.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005910_724374_jpg.rf.a060ff08e8a8c698794022c8b7d7248f_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005910_724374_jpg.rf.a060ff08e8a8c698794022c8b7d7248f_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005911_687449_jpg.rf.d81aa89a5bb719c2dd721149bdbcbc62.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005911_687449_jpg.rf.d81aa89a5bb719c2dd721149bdbcbc62_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005911_687449_jpg.rf.d81aa89a5bb719c2dd721149bdbcbc62_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005911_687449_jpg.rf.d81aa89a5bb719c2dd721149bdbcbc62_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005917_695686_jpg.rf.e5dc31b5f1ed15ff5da16534f7113318.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005917_695686_jpg.rf.e5dc31b5f1ed15ff5da16534f7113318_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005917_695686_jpg.rf.e5dc31b5f1ed15ff5da16534f7113318_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005919_851039_jpg.rf.ea52f15c4114ff8fa5eee8d43110263a.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005919_851039_jpg.rf.ea52f15c4114ff8fa5eee8d43110263a_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005919_851039_jpg.rf.ea52f15c4114ff8fa5eee8d43110263a_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005919_851039_jpg.rf.ea52f15c4114ff8fa5eee8d43110263a_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005919_851039_jpg.rf.ea52f15c4114ff8fa5eee8d43110263a_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005923_721811_jpg.rf.640e9356565a774e647fadc2baf3cd6a.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005923_721811_jpg.rf.640e9356565a774e647fadc2baf3cd6a_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005923_721811_jpg.rf.640e9356565a774e647fadc2baf3cd6a_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005923_721811_jpg.rf.640e9356565a774e647fadc2baf3cd6a_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005923_721811_jpg.rf.640e9356565a774e647fadc2baf3cd6a_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005926_761019_jpg.rf.8280908a6c0ac3ffa071efc2e8343f6b.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005926_761019_jpg.rf.8280908a6c0ac3ffa071efc2e8343f6b_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005926_761019_jpg.rf.8280908a6c0ac3ffa071efc2e8343f6b_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005927_727732_jpg.rf.3a1cf2027dd593f74378677517261659.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005927_727732_jpg.rf.3a1cf2027dd593f74378677517261659_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005927_727732_jpg.rf.3a1cf2027dd593f74378677517261659_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005928_792853_jpg.rf.8dde107f4396585bdc983bd3f503670d.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005928_792853_jpg.rf.8dde107f4396585bdc983bd3f503670d_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005928_792853_jpg.rf.8dde107f4396585bdc983bd3f503670d_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005939_055585_jpg.rf.a0c6486814cba0df8df9eddbfc813679.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005939_055585_jpg.rf.a0c6486814cba0df8df9eddbfc813679_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005939_055585_jpg.rf.a0c6486814cba0df8df9eddbfc813679_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005939_055585_jpg.rf.a0c6486814cba0df8df9eddbfc813679_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005939_055585_jpg.rf.a0c6486814cba0df8df9eddbfc813679_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_005943_009049_jpg.rf.88245a5a32413aac146d4dd05331b072.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005943_009049_jpg.rf.88245a5a32413aac146d4dd05331b072_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005943_009049_jpg.rf.88245a5a32413aac146d4dd05331b072_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005944_005080_jpg.rf.a3f6ca620fd76b2dbd699ab7754ae5a2.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005944_005080_jpg.rf.a3f6ca620fd76b2dbd699ab7754ae5a2_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005944_005080_jpg.rf.a3f6ca620fd76b2dbd699ab7754ae5a2_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005946_008202_jpg.rf.18942a6c9344d35f5f7662aebdf35f4d.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_005946_008202_jpg.rf.18942a6c9344d35f5f7662aebdf35f4d_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_005946_008202_jpg.rf.18942a6c9344d35f5f7662aebdf35f4d_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_005947_023684_jpg.rf.c70e8cab68d4f78073862faeaad69a9b.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005947_023684_jpg.rf.c70e8cab68d4f78073862faeaad69a9b_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005947_023684_jpg.rf.c70e8cab68d4f78073862faeaad69a9b_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005947_983602_jpg.rf.c7d7b049efca1ebde1fdc4bddf162778.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005947_983602_jpg.rf.c7d7b049efca1ebde1fdc4bddf162778_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005947_983602_jpg.rf.c7d7b049efca1ebde1fdc4bddf162778_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005953_017942_jpg.rf.67f689a48067d68db170ccbb8c6a108c.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005953_017942_jpg.rf.67f689a48067d68db170ccbb8c6a108c_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005953_017942_jpg.rf.67f689a48067d68db170ccbb8c6a108c_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010000_031685_jpg.rf.4c42401e60a1f06679913b960c101329.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010000_031685_jpg.rf.4c42401e60a1f06679913b960c101329_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010000_031685_jpg.rf.4c42401e60a1f06679913b960c101329_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010001_005058_jpg.rf.7c329401c205a204bf6a9178329f2848.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010001_005058_jpg.rf.7c329401c205a204bf6a9178329f2848_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010001_005058_jpg.rf.7c329401c205a204bf6a9178329f2848_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010001_005058_jpg.rf.7c329401c205a204bf6a9178329f2848_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010001_005058_jpg.rf.7c329401c205a204bf6a9178329f2848_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010005_042922_jpg.rf.8e8f7ef5a02e465736fb7661a849fd26.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010005_042922_jpg.rf.8e8f7ef5a02e465736fb7661a849fd26_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010005_042922_jpg.rf.8e8f7ef5a02e465736fb7661a849fd26_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010005_042922_jpg.rf.8e8f7ef5a02e465736fb7661a849fd26_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010005_042922_jpg.rf.8e8f7ef5a02e465736fb7661a849fd26_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010007_020670_jpg.rf.68417f929bca8702d1d1b3e7645ec323.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010007_020670_jpg.rf.68417f929bca8702d1d1b3e7645ec323_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010007_020670_jpg.rf.68417f929bca8702d1d1b3e7645ec323_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010012_028519_jpg.rf.61c435c802a330caa19ad1eedc184a93.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_010012_028519_jpg.rf.61c435c802a330caa19ad1eedc184a93_aug_contrast_1.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_010012_028519_jpg.rf.61c435c802a330caa19ad1eedc184a93_aug_hflip_0.jpg,train,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_010016_019268_jpg.rf.2539841ae4c0e74bf8e48dab700db809.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010016_019268_jpg.rf.2539841ae4c0e74bf8e48dab700db809_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010016_019268_jpg.rf.2539841ae4c0e74bf8e48dab700db809_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010016_019268_jpg.rf.2539841ae4c0e74bf8e48dab700db809_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010016_019268_jpg.rf.2539841ae4c0e74bf8e48dab700db809_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010018_027444_jpg.rf.8510104267ddef297955ae65deae9091.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010018_027444_jpg.rf.8510104267ddef297955ae65deae9091_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010018_027444_jpg.rf.8510104267ddef297955ae65deae9091_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264_aug_contrast_1.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264_aug_hflip_0.jpg,train,slight_scratch,2,800,800,GOOD,None
+frame_20260504_010334_915906_jpg.rf.b26a015e7925de38b8df19c97654de1f.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010334_915906_jpg.rf.b26a015e7925de38b8df19c97654de1f_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010334_915906_jpg.rf.b26a015e7925de38b8df19c97654de1f_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010338_926795_jpg.rf.a608a27cc5c7f65106b4855ff662a2d4.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010338_926795_jpg.rf.a608a27cc5c7f65106b4855ff662a2d4_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010338_926795_jpg.rf.a608a27cc5c7f65106b4855ff662a2d4_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010339_907935_jpg.rf.db46cdecb60d2baf496b8db2d7df74fb.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010339_907935_jpg.rf.db46cdecb60d2baf496b8db2d7df74fb_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010339_907935_jpg.rf.db46cdecb60d2baf496b8db2d7df74fb_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010340_964463_jpg.rf.2a92b9256df2484dcf765c476d114fba.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010340_964463_jpg.rf.2a92b9256df2484dcf765c476d114fba_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010340_964463_jpg.rf.2a92b9256df2484dcf765c476d114fba_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010345_901782_jpg.rf.746a825b6596cd482a8b9c2b53e435a3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010345_901782_jpg.rf.746a825b6596cd482a8b9c2b53e435a3_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010345_901782_jpg.rf.746a825b6596cd482a8b9c2b53e435a3_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010345_901782_jpg.rf.746a825b6596cd482a8b9c2b53e435a3_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010345_901782_jpg.rf.746a825b6596cd482a8b9c2b53e435a3_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010348_906249_jpg.rf.f25feacd925258ae5102d7b3189c792e.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_20260504_010348_906249_jpg.rf.f25feacd925258ae5102d7b3189c792e_aug_contrast_1.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_20260504_010348_906249_jpg.rf.f25feacd925258ae5102d7b3189c792e_aug_hflip_0.jpg,train,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_20260504_010350_894749_jpg.rf.15e18fe6c9e419ed3afd37c71e93c125.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010350_894749_jpg.rf.15e18fe6c9e419ed3afd37c71e93c125_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010350_894749_jpg.rf.15e18fe6c9e419ed3afd37c71e93c125_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010350_894749_jpg.rf.15e18fe6c9e419ed3afd37c71e93c125_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010356_918602_jpg.rf.5b44d5c8beb9abaea665574af1f508dc.jpg,train,"belt_splice, deep_scratch",2,800,800,GOOD,None
+frame_20260504_010356_918602_jpg.rf.5b44d5c8beb9abaea665574af1f508dc_aug_contrast_3.jpg,train,"belt_splice, deep_scratch",2,800,800,GOOD,None
+frame_20260504_010356_918602_jpg.rf.5b44d5c8beb9abaea665574af1f508dc_aug_hflip_0.jpg,train,"belt_splice, deep_scratch",2,800,800,GOOD,None
+frame_20260504_010356_918602_jpg.rf.5b44d5c8beb9abaea665574af1f508dc_aug_hvflip_2.jpg,train,"belt_splice, deep_scratch",2,800,800,GOOD,None
+frame_20260504_010356_918602_jpg.rf.5b44d5c8beb9abaea665574af1f508dc_aug_vflip_1.jpg,train,"belt_splice, deep_scratch",2,800,800,GOOD,None
+frame_20260504_010358_932057_jpg.rf.407ad56fcf868380ead0af6196444894.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010358_932057_jpg.rf.407ad56fcf868380ead0af6196444894_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010358_932057_jpg.rf.407ad56fcf868380ead0af6196444894_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010358_932057_jpg.rf.407ad56fcf868380ead0af6196444894_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010359_918819_jpg.rf.6e70b5fc0c0f23d7744b36498aa6744b.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010359_918819_jpg.rf.6e70b5fc0c0f23d7744b36498aa6744b_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010359_918819_jpg.rf.6e70b5fc0c0f23d7744b36498aa6744b_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010400_915458_jpg.rf.bffe6cf12a2a31a37ceb34c71bc25a8f.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010400_915458_jpg.rf.bffe6cf12a2a31a37ceb34c71bc25a8f_aug_contrast_3.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010400_915458_jpg.rf.bffe6cf12a2a31a37ceb34c71bc25a8f_aug_hflip_0.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010400_915458_jpg.rf.bffe6cf12a2a31a37ceb34c71bc25a8f_aug_hvflip_2.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010400_915458_jpg.rf.bffe6cf12a2a31a37ceb34c71bc25a8f_aug_vflip_1.jpg,train,belt_splice,1,800,800,GOOD,None
+frame_20260504_010401_918697_jpg.rf.a17aa45fd01cc215c7ee5dbdc4f537c5.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010401_918697_jpg.rf.a17aa45fd01cc215c7ee5dbdc4f537c5_aug_contrast_1.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010401_918697_jpg.rf.a17aa45fd01cc215c7ee5dbdc4f537c5_aug_hflip_0.jpg,train,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3_aug_contrast_2.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3_aug_hflip_0.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3_aug_vflip_1.jpg,train,deep_scratch,1,800,800,GOOD,None
+frame_00000_jpg.rf.9430a444971e2dd5cae0636ba9e7ddbb.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00001_jpg.rf.baff79d4c192eb139217178abc48805e.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00003_jpg.rf.b12305baa3f8edfd7393f3bf8a1f9644.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00005_jpg.rf.79ad186fc37ad867d1a49f40ddb4bbe7.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00011_jpg.rf.19efdc8a690a0280e957f97f70f5a9fa.jpg,valid,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00017_jpg.rf.d3e4b2f7b11a7f75eb8fddb529da4e9d.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_00022_jpg.rf.5d14230a0e761bc15eaec31fac6e80d8.jpg,valid,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00025_jpg.rf.5fd825c5c4a4218ce57cc3983aff9bf7.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00031_jpg.rf.f59233ad33836eda95f05dcc5ba5ef57.jpg,valid,normal_belt,2,800,800,GOOD,None
+frame_00032_jpg.rf.1915b95ab4aa780f85df3fc8c7be6447.jpg,valid,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,valid,"normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00040_jpg.rf.d6731b0082e1189ac7557863e628f3de.jpg,valid,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00048_jpg.rf.23cb7d68be09494a137b0ed1a99c9478.jpg,valid,longitudinal_tear,2,800,800,GOOD,None
+frame_00049_jpg.rf.d7a34499e224d988b7a7d12269c6c2d9.jpg,valid,normal_belt,2,800,800,GOOD,None
+frame_00051_jpg.rf.c63b2cfbe9a1bd63daac7b16a6816015.jpg,valid,normal_belt,2,800,800,GOOD,None
+frame_00054_jpg.rf.f0f1a41f42a859a7be17bf5a39e58f3f.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_00065_jpg.rf.7fca657840938c5e9a566a8572598d7e.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_00066_jpg.rf.78abbb5a4e03c98ff540cef205566125.jpg,valid,"longitudinal_tear, normal_belt",4,800,800,GOOD,None
+frame_00085_jpg.rf.0d48e869b7d6acc37aa2ccaeb64713e6.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00088_jpg.rf.3a1860ff9ad2dc53b01415d56b45f0c2.jpg,valid,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00092_jpg.rf.0a3ea5f53c60ab61308d1ff9635957a9.jpg,valid,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00095_jpg.rf.73fd9b14aedf960eb29fe942e586744c.jpg,valid,normal_belt,3,800,800,GOOD,None
+frame_00097_jpg.rf.2f7676c8ebbeacd07eef050597643b59.jpg,valid,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00104_jpg.rf.9c59e812c20eda7a8f1049ae5bc1fb0e.jpg,valid,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00106_jpg.rf.d74973aeb96a2286e2ff0af46547676d.jpg,valid,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00107_jpg.rf.cefbb6849466e2fe63487d8f67cbbf83.jpg,valid,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00110_jpg.rf.42313121e547feec62a2f7cdb015bda2.jpg,valid,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00111_jpg.rf.a639ac443daad7b5631a22d5b1490fa6.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00112_jpg.rf.84315d186bf506f996d73d0b32082171.jpg,valid,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00114_jpg.rf.bf68c9ffe229d1310914a1b699898b03.jpg,valid,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00116_jpg.rf.2521d7902c18a521c6c9c8a56f2b5618.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_00119_jpg.rf.289a50dfca24fa6b302d90498165896d.jpg,valid,normal_belt,2,800,800,GOOD,None
+frame_00119_jpg.rf.3775ae1353159f616a1e6d4188664454.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00123_jpg.rf.6f84b5a6de9b5a3127558f24371d6f55.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00128_jpg.rf.338fdca7701bd7c0e61f430a67dda654.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00134_jpg.rf.92113ddaeb18d60c3d074b0bbe4f9c70.jpg,valid,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00144_jpg.rf.e488a3770777cb5c16cfa762da095123.jpg,valid,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00148_jpg.rf.2fd6b369120cfd16452b387e733b49c1.jpg,valid,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00153_jpg.rf.707036da6ca2753f6575ae8811cb6ac7.jpg,valid,"belt_splice, deep_scratch, normal_belt",4,800,800,GOOD,None
+frame_00155_jpg.rf.ab4e1435ce64025f56cf3730562b4e7d.jpg,valid,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00161_jpg.rf.3366de605295122a838878ba2b3e1192.jpg,valid,"longitudinal_tear, belt_splice",3,800,800,GOOD,None
+frame_00162_jpg.rf.a3c042652dab6bdd9631f2c0ec9d25e9.jpg,valid,"longitudinal_tear, normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00164_jpg.rf.91aac27898ea9af3e7768c28165fdd05.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00168_jpg.rf.333b5ba14e9140750064385ce45259a1.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00172_jpg.rf.656aae0267003eb4c94d5957e4068a2a.jpg,valid,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00204_jpg.rf.e8490fb86590212e9505c58bd7aa7093.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_00209_jpg.rf.f8573d4f8638a5cf82d56eaa8db0dad5.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_00211_jpg.rf.a092ba411fab532e10e2677d4ddbb338.jpg,valid,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00213_jpg.rf.7fe7845109982ae1702fedf079c9555d.jpg,valid,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00218_jpg.rf.a19cc2cab3588d166d926aa4ad0f00f9.jpg,valid,longitudinal_tear,2,800,800,GOOD,None
+frame_00240_jpg.rf.a977c646f6364a33cda27295f0d07b2b.jpg,valid,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00241_jpg.rf.dca375dd71e22a5877969725d4c0e444.jpg,valid,"deep_scratch, normal_belt",2,800,800,GOOD,None
+frame_00245_jpg.rf.973b907942cf1b9c6ef01640fca7119d.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00247_jpg.rf.5410bb937b8229ef41183b0ec196d9e9.jpg,valid,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00249_jpg.rf.3d7c569547c332d89fa5f94a23582275.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_00249_jpg.rf.ae5d365947f03fcefc5a7b83e02523eb.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_00250_jpg.rf.84728941c209a1cf92bde0d5be6de5ba.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_00252_jpg.rf.2104f1ab13c064ee11afe87ccfc2f58a.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00260_jpg.rf.081b26a80a4862628943ea49abf7545e.jpg,valid,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00262_jpg.rf.c7b6c9f6252a09d7782579194403bf9c.jpg,valid,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00265_jpg.rf.86fdcaf2b1d050762ec2c49232ad6ac4.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00267_jpg.rf.106ab0c01ab76edb3d85cf62d2e01470.jpg,valid,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00271_jpg.rf.9334e71c50da4b4980000b56fa1a5689.jpg,valid,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00275_jpg.rf.ca371c774994c3da6eb71380d064ba54.jpg,valid,"deep_scratch, normal_belt",4,800,800,GOOD,None
+frame_00277_jpg.rf.b9a50cebe77976c7839123b7c9b376fa.jpg,valid,"longitudinal_tear, normal_belt",5,800,800,GOOD,None
+frame_00290_jpg.rf.9465c7ab98a485bbb88d83a7583a532d.jpg,valid,normal_belt,2,800,800,GOOD,None
+frame_00293_jpg.rf.d2f7e378f4455106077b75ed6643cc26.jpg,valid,"normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00306_jpg.rf.f03ea60f2bcc91eabb22775ccc6eea38.jpg,valid,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00310_jpg.rf.fd07abab66750fc44e47a4eebcd2798c.jpg,valid,"longitudinal_tear, deep_scratch, normal_belt",4,800,800,GOOD,None
+frame_00313_jpg.rf.06ecf93cabd3c886c090ef9ee6a4dcd0.jpg,valid,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00318_jpg.rf.802a61753b8d0a644b6beb543a80571e.jpg,valid,slight_scratch,2,800,800,GOOD,None
+frame_00320_jpg.rf.b9dac8090ddbfa2ea88e555b3c8391d9.jpg,valid,"longitudinal_tear, normal_belt, slight_scratch",4,800,800,GOOD,None
+frame_00324_jpg.rf.6ec322afc65f7a414bba0b5b2e324c47.jpg,valid,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00332_jpg.rf.8c21e6978c5619541f1b3cbba6f044f3.jpg,valid,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00339_jpg.rf.e90432e295ee79f2506e5e6dd4726f1d.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_00360_jpg.rf.ea20bf7c5e8ab7501f16abac75b20866.jpg,valid,"longitudinal_tear, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_20260504_001433_181294_jpg.rf.119e5ca3e09c5febbff720673bf43e12.jpg,valid,"deep_scratch, normal_belt",3,800,800,GOOD,None
+frame_20260504_001453_966585_jpg.rf.a4790fcec9d367f9f403de3dbb34b00a.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_001454_956714_jpg.rf.6cfac201046dab91cd1f3f75fcb84110.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001500_053336_jpg.rf.a8505f41ddbfeeb79f8839ade894a2c1.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_001517_327370_jpg.rf.a758a6122411d631d170ce6fac148297.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_001518_018720_jpg.rf.d2415578a54771e59fb429ad4e6afdc9.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_001518_985620_jpg.rf.edc0b8d5fba61ddedc6f3e0f8f3dd5de.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_20260504_001526_048751_jpg.rf.2c23b4910b8a85aef1cc9ab7898e8a63.jpg,valid,"deep_scratch, normal_belt",2,800,800,GOOD,None
+frame_20260504_001529_004005_jpg.rf.4f6e236adf04f26b539c1779b2781794.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_001535_094204_jpg.rf.b23399b9cf29dcc58822f0587ea5034c.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001538_123335_jpg.rf.ad33ff15ea2da39fd5515461a4fadd02.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001542_022112_jpg.rf.d9f923c3e7e4ce971f13a2270957bd51.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_001559_002976_jpg.rf.b215b6c01d001c983283cfa261478325.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001604_151184_jpg.rf.c2c9d79cf45025edfdf2f30400d4dbdf.jpg,valid,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_20260504_001611_075948_jpg.rf.88a72a546fa033af35a7340031636f68.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_20260504_001612_038150_jpg.rf.98a8f212d4b9f3d8abd4f2875ebe29b6.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_20260504_001612_992364_jpg.rf.9441672b0ba2eae4b9be2bcf979489ce.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002339_715234_jpg.rf.f2166334a9d090d4e23dbb5ad5294dc3.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002345_692784_jpg.rf.14c1c201cce0b90a4d8d46f03b3158d3.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002354_699344_jpg.rf.b8ff37f203c1f27a1ad0ba01874446a1.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_002435_787683_jpg.rf.5db6c63acb3c67d6c20e01984b8aec7c.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_002444_804939_jpg.rf.8b57e7f3abbf5f97732c028830071e36.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_20260504_002448_847547_jpg.rf.a963fe1f0451351d4cb892f7c9f4015b.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_002451_857420_jpg.rf.108ef7c140857fdf2987d1273dc9e633.jpg,valid,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_003206_223347_jpg.rf.b651970cfd8a13092cd5212d40902a79.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_003212_296983_jpg.rf.c1503e5357a782c369ddb0e86495d9b5.jpg,valid,normal_belt,2,800,800,GOOD,None
+frame_20260504_003219_130213_jpg.rf.3baf4ab673c4d4fafad1eb32aaa54dad.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_003220_190564_jpg.rf.ae609f9f4e5de7a542fd8f0beeedd564.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_003729_284542_jpg.rf.c1cc9ece7a908f494b8371280a69a531.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_003732_277680_jpg.rf.5236a66d3166c974e6c6a6b63ccec823.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_003734_358167_jpg.rf.bd47a581919951ea5f24170d9db050d2.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_20260504_003750_292935_jpg.rf.255938dc3def9c33d5bb52ada5960d97.jpg,valid,normal_belt,1,800,800,GOOD,None
+frame_20260504_003753_295545_jpg.rf.4d35d0d3c481df3e7c4c5e82d0169cc1.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_20260504_004418_010416_jpg.rf.ff6ac19afaa7604f8c0f19030bdcdbfb.jpg,valid,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_20260504_004431_972926_jpg.rf.ab98bddab859eda36358c0c676a4a835.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_20260504_004441_988612_jpg.rf.28f67585554b81c8e33e23789e66aed1.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_20260504_004442_990762_jpg.rf.c248eda32a5038aba0c5dc8f51e18200.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005335_576977_jpg.rf.322c9f42b2c0ebf8fac6cb00f8d0cbaa.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005336_590961_jpg.rf.893b707a9452e61061ab1e4d127b70b7.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005840_721273_jpg.rf.117ddd8ca25b5ee0d24d16a8c64061ed.jpg,valid,slight_scratch,2,800,800,GOOD,None
+frame_20260504_005922_713341_jpg.rf.5d11d91e11759238e366e9c2320da7b3.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005934_735492_jpg.rf.24c29301759f506a9f1b4d4031d88480.jpg,valid,belt_splice,1,800,800,GOOD,None
+frame_20260504_005941_007720_jpg.rf.a08e3375f522b10bfcd059bb9f6698d1.jpg,valid,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010006_032398_jpg.rf.37575219fd5d997c215990c04c49943a.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010352_906660_jpg.rf.b63c8898f86df0a09260efc803d15247.jpg,valid,"longitudinal_tear, deep_scratch",2,800,800,SUSPICIOUS,Line 1 (deep_scratch): extremely small bounding box (area=0.011% of image)
+frame_20260504_010355_923881_jpg.rf.0e41f50a10898b67991bc824c83614ea.jpg,valid,slight_scratch,1,800,800,GOOD,None
+frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,test,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00003_jpg.rf.49968cb55095c8b650a32b4de9b866a4.jpg,test,"longitudinal_tear, belt_splice, normal_belt",4,800,800,GOOD,None
+frame_00005_jpg.rf.0a13708ad0e588d678226308cacc8c9b.jpg,test,belt_splice,1,800,800,GOOD,None
+frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,test,longitudinal_tear,1,800,800,GOOD,None
+frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg,test,"belt_splice, normal_belt, slight_scratch",3,800,800,GOOD,None
+frame_00015_jpg.rf.8130d85e915ded4d5e29721b9dda2ff3.jpg,test,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00019_jpg.rf.c9d90cbe0a1e82afbccd085d19bd1cae.jpg,test,"longitudinal_tear, belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,test,normal_belt,2,800,800,GOOD,None
+frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,test,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00035_jpg.rf.cfcbd4ea3415701965f8fedda293fb50.jpg,test,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00043_jpg.rf.18a2450e12175f4369c1a958dc52304b.jpg,test,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00045_jpg.rf.1ad7ac3267692d24b90701ef60772951.jpg,test,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00046_jpg.rf.9075689b3baa501f6d8d9f1d91930a32.jpg,test,"longitudinal_tear, slight_scratch",2,800,800,GOOD,None
+frame_00052_jpg.rf.28706526d8f19576dc058ac9629bc90a.jpg,test,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00055_jpg.rf.21c7dbe8fddf9f4b645d945f63c435b2.jpg,test,deep_scratch,1,800,800,GOOD,None
+frame_00055_jpg.rf.e744ec4acd877f1fafac7ac05b9b0cd1.jpg,test,belt_splice,1,800,800,GOOD,None
+frame_00056_jpg.rf.7154a70d40a859c07c4f74152c8ad5f8.jpg,test,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00064_jpg.rf.388be8135d2ae5802f530028dd44d209.jpg,test,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00068_jpg.rf.7da2953212e752b7957050e8ee29e21a.jpg,test,deep_scratch,1,800,800,GOOD,None
+frame_00072_jpg.rf.17f52449f1addb0f6c6582bddc7799c5.jpg,test,"belt_splice, normal_belt",2,800,800,GOOD,None
+frame_00118_jpg.rf.e12e22049d8d6145c480a4dfa6d766a7.jpg,test,"longitudinal_tear, normal_belt",2,800,800,GOOD,None
+frame_00121_jpg.rf.35938fe6d80f1299c994e9cb2adbac77.jpg,test,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00121_jpg.rf.e676092e667ba16cc8dbaea2e3f6e68e.jpg,test,normal_belt,2,800,800,GOOD,None
+frame_00122_jpg.rf.2b6e6a949ebb789b76b27f54547b6100.jpg,test,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00122_jpg.rf.ef82374d953643dc00d5b2e740175659.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_00129_jpg.rf.7719d1d835cab947ea466cdf7469001a.jpg,test,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00133_jpg.rf.08588b3c2c4d5f07036cdf7167fb5835.jpg,test,"longitudinal_tear, deep_scratch, normal_belt",4,800,800,GOOD,None
+frame_00145_jpg.rf.28de6b4f1cefd6f0fcad1fa00844e109.jpg,test,"longitudinal_tear, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_00147_jpg.rf.4236fd5c421b244e3cc621b0456cbd53.jpg,test,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00163_jpg.rf.b893a064c6aad478d69a8cc1526403f7.jpg,test,"longitudinal_tear, normal_belt",3,800,800,GOOD,None
+frame_00189_jpg.rf.c7dab786a793127414d50046e6460338.jpg,test,"longitudinal_tear, deep_scratch",3,800,800,GOOD,None
+frame_00201_jpg.rf.cd3cffac3073a90239f19dc48b4d2ab1.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_00202_jpg.rf.6599e94d4c7baaa74e8df514c068cf03.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_00203_jpg.rf.9f5131940ce58b66e884df068812f646.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_00204_jpg.rf.e9ef6b3587b3b8c80144677043a54774.jpg,test,"longitudinal_tear, belt_splice",2,800,800,GOOD,None
+frame_00211_jpg.rf.87abcf75c80cadd5d9698cf317255561.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_00216_jpg.rf.99ebfe9235e40e3e99e5b6d5a2c549fb.jpg,test,deep_scratch,1,800,800,GOOD,None
+frame_00222_jpg.rf.d5386d109a49425f99085c40ff8718cd.jpg,test,deep_scratch,1,800,800,GOOD,None
+frame_00227_jpg.rf.91588165b3a0ebb8b637b194bba4fb26.jpg,test,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00234_jpg.rf.99360b072b65e0d3b9bb20ab111f4853.jpg,test,normal_belt,2,800,800,GOOD,None
+frame_00235_jpg.rf.b91f64501d8aa0280c67f55e7f27eb09.jpg,test,"deep_scratch, slight_scratch",2,800,800,GOOD,None
+frame_00253_jpg.rf.b72939094379c48469d10c4cfe41d23f.jpg,test,longitudinal_tear,1,800,800,GOOD,None
+frame_00255_jpg.rf.3702829bf03c073677d55730ab175aab.jpg,test,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00258_jpg.rf.8495302627c08f50516bdb7cbad66c3c.jpg,test,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00262_jpg.rf.17f62de077eac04c6467f356500ff063.jpg,test,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00263_jpg.rf.1badb537291d9a32bd59c13d59f387d3.jpg,test,"normal_belt, slight_scratch",2,800,800,GOOD,None
+frame_00268_jpg.rf.a82fe1d138dad79c98072b02ad93910c.jpg,test,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00270_jpg.rf.100f7c2de6a2745b6dcb03fc74e1e093.jpg,test,"longitudinal_tear, deep_scratch, slight_scratch",3,800,800,GOOD,None
+frame_00270_jpg.rf.b3197b894a59cc2aec6f8122e789579a.jpg,test,"belt_splice, normal_belt",3,800,800,GOOD,None
+frame_00292_jpg.rf.ec10799484faeda60ac0c67437252408.jpg,test,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00308_jpg.rf.1876a1558e76506ec7f5f859dab8eaf6.jpg,test,"longitudinal_tear, deep_scratch",2,800,800,GOOD,None
+frame_00324_jpg.rf.6b40fb38c333a1914c0de0ab2033aa1c.jpg,test,belt_splice,1,800,800,GOOD,None
+frame_00329_jpg.rf.155580efe3fd29faa5781530a590c807.jpg,test,longitudinal_tear,1,800,800,GOOD,None
+frame_00334_jpg.rf.9f064ea934e0c7214b4d3f4226703337.jpg,test,"longitudinal_tear, normal_belt, belt_splice",3,800,800,GOOD,None
+frame_20260504_001504_008469_jpg.rf.9d08b7e32f548664329b119f66d4611b.jpg,test,belt_splice,1,800,800,GOOD,None
+frame_20260504_001509_988740_jpg.rf.03c9d782be7db917b7aaca7aeb339782.jpg,test,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_001551_068015_jpg.rf.2eae1557a440a3106f20cad67bc9714f.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_20260504_001606_073276_jpg.rf.4548423d7cd1e025f133c156c2ba2c5b.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_20260504_001610_014236_jpg.rf.3eae5a7e3561521329e39c8bf75f3ab2.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_20260504_001614_049752_jpg.rf.4f4263eb05be3c5dd2b42729460aa66e.jpg,test,longitudinal_tear,1,800,800,GOOD,None
+frame_20260504_003223_261865_jpg.rf.c57cb6c90f2306caa729815a699c3894.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_20260504_003751_279429_jpg.rf.1d65e958909e76e16226a7b388d7f5e2.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_20260504_004428_968516_jpg.rf.17abd8ef295655f2457393854b6f0f2c.jpg,test,normal_belt,1,800,800,GOOD,None
+frame_20260504_005333_580647_jpg.rf.733f8a7857837c2cd635cf0377d0bb8d.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005841_669567_jpg.rf.3fd04fd5405cc984bf43bcfe6c6ab419.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005842_678301_jpg.rf.375ec8311467a5f68cec5c5ab10a9719.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005906_773257_jpg.rf.a5efba1b2b765512f9944b0d89dd10ec.jpg,test,deep_scratch,1,800,800,GOOD,None
+frame_20260504_005913_708942_jpg.rf.de54908c81e5e744e12851844dacbb41.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_20260504_005941_985035_jpg.rf.443b36939fe4355f2011e3c0e9bf75f6.jpg,test,deep_scratch,1,800,800,GOOD,None
+frame_20260504_010346_903311_jpg.rf.4f4bec097d753052698e826f0fe66281.jpg,test,slight_scratch,1,800,800,GOOD,None
+frame_20260504_010353_895335_jpg.rf.d339c892c6d1d0625aefec9eafc61439.jpg,test,deep_scratch,1,800,800,GOOD,None

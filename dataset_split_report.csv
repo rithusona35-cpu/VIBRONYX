@@ -1,0 +1,4 @@
+split,total_images,corrupted_images,empty_label_images,missing_label_images,total_annotations,problematic_images,boxes_belt_splice,imgs_belt_splice,boxes_deep_scratch,imgs_deep_scratch,boxes_longitudinal_tear,imgs_longitudinal_tear,boxes_normal_belt,imgs_normal_belt,boxes_slight_scratch,imgs_slight_scratch
+train,1363,0,0,0,2126,7,370,370,332,320,482,452,470,319,472,406
+valid,122,0,0,0,218,1,15,15,28,27,51,45,92,62,32,29
+test,71,0,0,0,130,0,17,16,19,19,30,27,42,34,22,22

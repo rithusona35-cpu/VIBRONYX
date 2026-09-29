@@ -1,0 +1,3 @@
+category,component,expected,actual,root_cause,severity,reproducibility,recommended_fix,model_affected
+HARDWARE_SIMULATION,STM32 UART / RS485,Physical COM port connection,Simulation Loopback (Safe Mode),Laptop laboratory demo profile prevents 24V/400V electrical hazard,LOW,100%,Deploy physical RS-485 transceiver on Jetson carrier board during plant commissioning,NO
+PERFORMANCE,Inference Acceleration,38 FPS (Jetson Orin Nano TensorRT),6.6 - 7.6 FPS (Laptop CPU PyTorch In-Memory),Laptop CPU lack of TensorRT INT8/FP16 edge TPU hardware,LOW (For Demo),100%,Export TensorRT engine when flashing NVIDIA Jetson Orin Nano,NO

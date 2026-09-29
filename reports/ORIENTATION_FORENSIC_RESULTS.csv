@@ -1,0 +1,21 @@
+image,view_angle,detections_count,top_class,top_confidence,latency_ms
+tests/fixtures/portrait_conveyor_failure.jpg,0,0,NONE,0.0,1681.6
+tests/fixtures/portrait_conveyor_failure.jpg,90,0,NONE,0.0,124.5
+tests/fixtures/portrait_conveyor_failure.jpg,180,0,NONE,0.0,86.3
+tests/fixtures/portrait_conveyor_failure.jpg,270,1,longitudinal tear,0.073,85.9
+golden_test_images/frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,0,3,longitudinal tear,0.604,187.5
+golden_test_images/frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,90,4,normal belt,0.2,152.8
+golden_test_images/frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,180,3,longitudinal tear,0.605,158.3
+golden_test_images/frame_00007_jpg.rf.fc0f5aff005d781418faaa297ff2471c.jpg,270,3,longitudinal tear,0.107,156.1
+golden_test_images/frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,0,6,belt splice,0.693,157.7
+golden_test_images/frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,90,6,belt splice,0.682,149.4
+golden_test_images/frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,180,4,belt splice,0.676,159.7
+golden_test_images/frame_00002_jpg.rf.5e28130cc2199a50e3b0fdc3d2e38885.jpg,270,5,belt splice,0.676,160.4
+golden_test_images/frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,0,3,deep scratch,0.674,163.8
+golden_test_images/frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,90,4,longitudinal tear,0.542,163.9
+golden_test_images/frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,180,3,deep scratch,0.577,159.6
+golden_test_images/frame_00024_jpg.rf.40676e62568fb1c96b30338f08050897.jpg,270,5,normal belt,0.6,160.3
+golden_test_images/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,0,2,longitudinal tear,0.214,158.2
+golden_test_images/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,90,3,normal belt,0.294,154.5
+golden_test_images/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,180,2,longitudinal tear,0.329,160.9
+golden_test_images/frame_00021_jpg.rf.6831210c001ea5ff0d9b88a309b62f97.jpg,270,3,normal belt,0.379,167.7

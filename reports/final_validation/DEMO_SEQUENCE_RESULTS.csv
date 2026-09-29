@@ -1,0 +1,15 @@
+step,name,expected,actual,status
+1,System Startup,READY,READY,PASS
+2,Clean Belt,CONTINUE,CONTINUE,PASS
+3,Minor Defect,ALERT,ALERT,PASS
+4,Serious Defect,STOP_CONVEYOR,STOP_CONVEYOR,PASS
+5,STOP_CONVEYOR Triggered,STOP_CONVEYOR,STOP_CONVEYOR,PASS
+6,Clean Frame with Latched Stop,STOP_CONVEYOR,STOP_CONVEYOR,PASS
+7,Authorized Reset,CONTINUE,CONTINUE,PASS
+8,Portrait Orientation Recovery,RECOVERED,RECOVERED,PASS
+9,API Detection Endpoint,200_OK,200_OK,PASS
+10,Live Camera Pipeline,LATEST_FRAME_WINS,LATEST_FRAME_WINS,PASS
+11,Continuous Stability Loop,0_CRASHES,0_CRASHES,PASS
+12,Failure Handling Safe State,SAFE_STATE,SAFE_STATE,PASS
+13,Safe System Standby,STANDBY,STANDBY,PASS
+14,Final Clean Belt Verification,CONTINUE,CONTINUE,PASS

@@ -1,0 +1,18 @@
+{
+  "model_name": "candidate_B_v3.pt",
+  "checkpoint_path": "models/candidates/candidate_B_v3.pt",
+  "precision": 0.6059,
+  "recall": 0.6911,
+  "f1_score": 0.6457,
+  "mAP50": 0.6514,
+  "mAP50_95": 0.333,
+  "per_class_recall": {
+    "belt_splice": 1.0,
+    "deep_scratch": 0.8936,
+    "longitudinal_tear": 0.871,
+    "normal_belt": 0.0366,
+    "slight_scratch": 0.8676
+  },
+  "false_positives": 147,
+  "false_negatives": 101
+}

@@ -1,0 +1,116 @@
+image,original_label,box_area_norm,aspect_ratio,classification,notes
+frame_00012_jpg.rf.0bccc92f2975e1b5d666489e29c08648.jpg,Slight Scratch,0.021933,1.35,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251.jpg,Slight Scratch,0.013489,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251.jpg,Deep Scratch,0.074764,4.08,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_contrast_2.jpg,Slight Scratch,0.013489,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_contrast_2.jpg,Deep Scratch,0.074764,4.08,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_hflip_0.jpg,Slight Scratch,0.013489,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_hflip_0.jpg,Deep Scratch,0.074764,4.08,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_vflip_1.jpg,Slight Scratch,0.013489,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00012_jpg.rf.0d8466686c462b0fa8ab27361226f251_aug_vflip_1.jpg,Deep Scratch,0.074764,4.08,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7.jpg,Slight Scratch,0.008410,1.29,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7.jpg,Slight Scratch,0.028647,1.03,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7_aug_contrast_1.jpg,Slight Scratch,0.008410,1.29,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7_aug_contrast_1.jpg,Slight Scratch,0.028647,1.03,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7_aug_hflip_0.jpg,Slight Scratch,0.008410,1.29,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00016_jpg.rf.6a0d913b35a523b3d9acd11956fdb2c7_aug_hflip_0.jpg,Slight Scratch,0.028647,1.03,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193.jpg,Slight Scratch,0.019327,1.97,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193.jpg,Slight Scratch,0.002279,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_contrast_1.jpg,Slight Scratch,0.019327,1.97,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_contrast_1.jpg,Slight Scratch,0.002279,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_hflip_0.jpg,Slight Scratch,0.019327,1.97,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00019_jpg.rf.f96afc8d4e28297ece4d5903d3dc3193_aug_hflip_0.jpg,Slight Scratch,0.002279,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa.jpg,Deep Scratch,0.059139,5.45,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa_aug_contrast_2.jpg,Deep Scratch,0.059139,5.45,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa_aug_hflip_0.jpg,Deep Scratch,0.059139,5.45,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00026_jpg.rf.e8ec001ea693acc90402ee08c0d142aa_aug_vflip_1.jpg,Deep Scratch,0.059139,5.45,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,Slight Scratch,0.005697,1.90,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00040_jpg.rf.152648caa55aaf841b8c2ad43566a747.jpg,Slight Scratch,0.008286,1.81,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00040_jpg.rf.d6731b0082e1189ac7557863e628f3de.jpg,Slight Scratch,0.023274,1.77,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00040_jpg.rf.d6731b0082e1189ac7557863e628f3de.jpg,Deep Scratch,0.035005,6.14,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1.jpg,Deep Scratch,0.085857,3.52,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1_aug_contrast_2.jpg,Deep Scratch,0.085857,3.52,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1_aug_hflip_0.jpg,Deep Scratch,0.085857,3.52,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00043_jpg.rf.3a6ca76b12671a581d3b1a7e5bd1eed1_aug_vflip_1.jpg,Deep Scratch,0.085857,3.52,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00080_jpg.rf.efb59745fa1072782b14e4b425e60bee.jpg,Slight Scratch,0.013706,1.09,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00080_jpg.rf.efb59745fa1072782b14e4b425e60bee_aug_contrast_1.jpg,Slight Scratch,0.013706,1.09,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00080_jpg.rf.efb59745fa1072782b14e4b425e60bee_aug_hflip_0.jpg,Slight Scratch,0.013706,1.09,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2.jpg,Slight Scratch,0.015950,1.33,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_contrast_3.jpg,Slight Scratch,0.015950,1.33,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_hflip_0.jpg,Slight Scratch,0.015950,1.33,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_hvflip_2.jpg,Slight Scratch,0.015950,1.33,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00102_jpg.rf.57d4ad52ae4dd3c2ab1a4431577e73a2_aug_vflip_1.jpg,Slight Scratch,0.015950,1.33,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966.jpg,Deep Scratch,0.022392,4.89,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_contrast_3.jpg,Deep Scratch,0.022392,4.89,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_hflip_0.jpg,Deep Scratch,0.022392,4.89,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_hvflip_2.jpg,Deep Scratch,0.022392,4.89,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00151_jpg.rf.d69634b232de3cd6ea5d428af7368966_aug_vflip_1.jpg,Deep Scratch,0.022392,4.89,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00158_jpg.rf.f77a6496f9f3967c69ebfecdda220e02.jpg,Slight Scratch,0.011231,1.28,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00158_jpg.rf.f77a6496f9f3967c69ebfecdda220e02_aug_contrast_1.jpg,Slight Scratch,0.011231,1.28,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00158_jpg.rf.f77a6496f9f3967c69ebfecdda220e02_aug_hflip_0.jpg,Slight Scratch,0.011231,1.28,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00189_jpg.rf.c7dab786a793127414d50046e6460338.jpg,Deep Scratch,0.048161,2.53,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b.jpg,Slight Scratch,0.018778,1.82,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b_aug_contrast_1.jpg,Slight Scratch,0.018778,1.82,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00207_jpg.rf.b505015d06fe64c2a2363cae70d1126b_aug_hflip_0.jpg,Slight Scratch,0.018778,1.82,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6.jpg,Deep Scratch,0.057207,5.84,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6.jpg,Deep Scratch,0.021362,1.79,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_contrast_2.jpg,Deep Scratch,0.057207,5.84,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_contrast_2.jpg,Deep Scratch,0.021362,1.79,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_hflip_0.jpg,Deep Scratch,0.057207,5.84,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_hflip_0.jpg,Deep Scratch,0.021362,1.79,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_vflip_1.jpg,Deep Scratch,0.057207,5.84,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00219_jpg.rf.bb096542fc798790e1104c3704221cf6_aug_vflip_1.jpg,Deep Scratch,0.021362,1.79,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00222_jpg.rf.d5386d109a49425f99085c40ff8718cd.jpg,Deep Scratch,0.013766,2.41,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00231_jpg.rf.200d0d27b4659b6c59b92e3bde750e03.jpg,Slight Scratch,0.028320,1.81,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00231_jpg.rf.200d0d27b4659b6c59b92e3bde750e03_aug_contrast_1.jpg,Slight Scratch,0.028320,1.81,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00231_jpg.rf.200d0d27b4659b6c59b92e3bde750e03_aug_hflip_0.jpg,Slight Scratch,0.028320,1.81,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00237_jpg.rf.58263405e860a964396d25e5ecee0e2b.jpg,Slight Scratch,0.009881,1.52,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00237_jpg.rf.58263405e860a964396d25e5ecee0e2b_aug_contrast_1.jpg,Slight Scratch,0.009881,1.52,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00237_jpg.rf.58263405e860a964396d25e5ecee0e2b_aug_hflip_0.jpg,Slight Scratch,0.009881,1.52,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f.jpg,Deep Scratch,0.063671,5.59,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f.jpg,Slight Scratch,0.025079,2.00,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_contrast_2.jpg,Deep Scratch,0.063671,5.59,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_contrast_2.jpg,Slight Scratch,0.025079,2.00,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_hflip_0.jpg,Deep Scratch,0.063671,5.59,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_hflip_0.jpg,Slight Scratch,0.025079,2.00,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_vflip_1.jpg,Deep Scratch,0.063671,5.59,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00264_jpg.rf.593e8de6fee679d386dbb6a7c5706c6f_aug_vflip_1.jpg,Slight Scratch,0.025079,2.00,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00275_jpg.rf.ca371c774994c3da6eb71380d064ba54.jpg,Deep Scratch,0.035268,8.32,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_00275_jpg.rf.e01b52fd12bef086342ab93e907e6962.jpg,Slight Scratch,0.011353,1.74,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00275_jpg.rf.e01b52fd12bef086342ab93e907e6962_aug_contrast_1.jpg,Slight Scratch,0.011353,1.74,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00275_jpg.rf.e01b52fd12bef086342ab93e907e6962_aug_hflip_0.jpg,Slight Scratch,0.011353,1.74,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00318_jpg.rf.802a61753b8d0a644b6beb543a80571e.jpg,Slight Scratch,0.006673,1.71,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00318_jpg.rf.802a61753b8d0a644b6beb543a80571e.jpg,Slight Scratch,0.032809,2.88,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_00332_jpg.rf.8c21e6978c5619541f1b3cbba6f044f3.jpg,Deep Scratch,0.027765,1.93,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_001538_123335_jpg.rf.ad33ff15ea2da39fd5515461a4fadd02.jpg,Slight Scratch,0.022944,1.17,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_001611_075948_jpg.rf.88a72a546fa033af35a7340031636f68.jpg,Deep Scratch,0.072247,2.12,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784.jpg,Deep Scratch,0.036816,1.68,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784_aug_contrast_2.jpg,Deep Scratch,0.036816,1.68,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784_aug_hflip_0.jpg,Deep Scratch,0.036816,1.68,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_002347_704094_jpg.rf.5928463527010388c391e40919e8c784_aug_vflip_1.jpg,Deep Scratch,0.036816,1.68,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926.jpg,Deep Scratch,0.019374,6.39,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926_aug_contrast_2.jpg,Deep Scratch,0.019374,6.39,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926_aug_hflip_0.jpg,Deep Scratch,0.019374,6.39,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_005340_601214_jpg.rf.c98697255d5f5eeb8450c6b7b7872926_aug_vflip_1.jpg,Deep Scratch,0.019374,6.39,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_005905_744834_jpg.rf.e27346feab1dfbe40eecfb4b21ab8616.jpg,Slight Scratch,0.004519,1.21,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005905_744834_jpg.rf.e27346feab1dfbe40eecfb4b21ab8616_aug_contrast_1.jpg,Slight Scratch,0.004519,1.21,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005905_744834_jpg.rf.e27346feab1dfbe40eecfb4b21ab8616_aug_hflip_0.jpg,Slight Scratch,0.004519,1.21,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005928_792853_jpg.rf.8dde107f4396585bdc983bd3f503670d.jpg,Slight Scratch,0.013764,1.36,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005928_792853_jpg.rf.8dde107f4396585bdc983bd3f503670d_aug_contrast_1.jpg,Slight Scratch,0.013764,1.36,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005928_792853_jpg.rf.8dde107f4396585bdc983bd3f503670d_aug_hflip_0.jpg,Slight Scratch,0.013764,1.36,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005944_005080_jpg.rf.a3f6ca620fd76b2dbd699ab7754ae5a2.jpg,Slight Scratch,0.010574,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005944_005080_jpg.rf.a3f6ca620fd76b2dbd699ab7754ae5a2_aug_contrast_1.jpg,Slight Scratch,0.010574,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_005944_005080_jpg.rf.a3f6ca620fd76b2dbd699ab7754ae5a2_aug_hflip_0.jpg,Slight Scratch,0.010574,1.31,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264.jpg,Slight Scratch,0.007264,1.95,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264.jpg,Slight Scratch,0.017609,1.58,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264_aug_contrast_1.jpg,Slight Scratch,0.007264,1.95,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264_aug_contrast_1.jpg,Slight Scratch,0.017609,1.58,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264_aug_hflip_0.jpg,Slight Scratch,0.007264,1.95,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010333_927390_jpg.rf.d8fdc1e3f34afb2a665eda2e1e1e3264_aug_hflip_0.jpg,Slight Scratch,0.017609,1.58,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010340_964463_jpg.rf.2a92b9256df2484dcf765c476d114fba.jpg,Slight Scratch,0.015562,2.02,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010340_964463_jpg.rf.2a92b9256df2484dcf765c476d114fba_aug_contrast_1.jpg,Slight Scratch,0.015562,2.02,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010340_964463_jpg.rf.2a92b9256df2484dcf765c476d114fba_aug_hflip_0.jpg,Slight Scratch,0.015562,2.02,AMBIGUOUS,Moderate abrasion displaying noticeable shadow gradient
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3.jpg,Deep Scratch,0.026296,2.35,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3_aug_contrast_2.jpg,Deep Scratch,0.026296,2.35,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3_aug_hflip_0.jpg,Deep Scratch,0.026296,2.35,CLEAR_DEEP,Significant longitudinal depth/width indentation
+frame_20260504_010402_927053_jpg.rf.274a826494cd0634e13a911a3fa255c3_aug_vflip_1.jpg,Deep Scratch,0.026296,2.35,CLEAR_DEEP,Significant longitudinal depth/width indentation

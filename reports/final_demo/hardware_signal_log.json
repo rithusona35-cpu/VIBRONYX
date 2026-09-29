@@ -1,0 +1,43 @@
+{
+  "hardware_mode": "SIMULATION",
+  "timestamp": "2026-09-21 21:05:44",
+  "log": [
+    {
+      "step": 2,
+      "time": "2026-09-21 21:05:35",
+      "cmd": "CONTINUE",
+      "latch": false,
+      "action": "CONTINUE"
+    },
+    {
+      "step": 3,
+      "time": "2026-09-21 21:05:37",
+      "cmd": "CONTINUE_ALERT",
+      "latch": false,
+      "action": "ALERT"
+    },
+    {
+      "step": 4,
+      "time": "2026-09-21 21:05:38",
+      "cmd": "STOP_CONVEYOR",
+      "latch": false,
+      "action": "ALERT"
+    },
+    {
+      "step": 6,
+      "substep": "clean_while_latched",
+      "time": "2026-09-21 21:05:43",
+      "cmd": "STOP_CONVEYOR_HELD",
+      "latch": true,
+      "action": "STOP_CONVEYOR"
+    },
+    {
+      "step": 6,
+      "substep": "after_authorized_reset",
+      "time": "2026-09-21 21:05:43",
+      "cmd": "CONTINUE_CLEARED",
+      "latch": false,
+      "action": "CONTINUE"
+    }
+  ]
+}

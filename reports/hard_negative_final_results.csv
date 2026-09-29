@@ -1,0 +1,7 @@
+filename,hard_surface_feature,defect_detections_count,predictions,result
+hard_neg_normal_texture_1.jpg,Clean Rubber Texture / Seam / Shadow,0,CLEAN_BACKGROUND,CORRECT_REJECTION
+hard_neg_normal_texture_2.jpg,Clean Rubber Texture / Seam / Shadow,1,Deep Scratch(0.37),FALSE_ALARM
+hard_neg_normal_texture_3.jpg,Clean Rubber Texture / Seam / Shadow,0,CLEAN_BACKGROUND,CORRECT_REJECTION
+hard_neg_normal_texture_4.jpg,Clean Rubber Texture / Seam / Shadow,0,CLEAN_BACKGROUND,CORRECT_REJECTION
+hard_neg_normal_texture_5.jpg,Clean Rubber Texture / Seam / Shadow,0,CLEAN_BACKGROUND,CORRECT_REJECTION
+hard_neg_normal_texture_6.jpg,Clean Rubber Texture / Seam / Shadow,0,CLEAN_BACKGROUND,CORRECT_REJECTION
